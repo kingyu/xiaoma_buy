@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>小马飞腾-自助点餐</title>
+  <link href="/css/food/index.min.css" rel="stylesheet"></head>
+  <body class="theme-white">
+    <nav class="xm-nav">
+  <div class="xm-content">
+    <div class="xm-item xm-item-logo">
+      <a class="xm-link xm-link-logo" href="/index.html">
+        <span class="xm-link-text">小马飞腾</span>
+      </a>
+    </div>
+    <div class="xm-list">
+      <div class="xm-item">
+        <a class="xm-link" href="/applet.html">
+          <span class="xm-link-text">小程序</span>
+        </a>
+      </div>
+      <div class="xm-item">
+        <a class="xm-link" href="/smart.html">
+          <span class="xm-link-text">SMART</span>
+        </a>
+      </div>
+      <div class="xm-item">
+        <a class="xm-link" href="#">
+          <span class="xm-link-text">保驾护航</span>
+        </a>
+      </div>
+      <div class="xm-item">
+        <a class="xm-link" href="/contact.html">
+          <span class="xm-link-text">联系我们</span>
+        </a>
+      </div>
+    </div>
+    <div class="xm-item xm-item-user">
+      <a class="xm-link xm-link-user" href="http://wxapp.xiaomafeiteng.com/login">
+        <span class="xm-link-text">用户中心</span>
+      </a>
+    </div>
+  </div>
+</nav>
+<div id="xm-placeholder" class="ac-nav-placeholder"></div>
+<!-- 
+<nav id="chapternav" class="xm-chapter-nav">
+  <div class="xm-chapter-nav-wrapper">
+    <div class="xm-chapter-nav-items">
+      <div class="xm-chapter-nav-item">
+        <a class="xm-chapter-nav-link" href="/pastime/index.html">
+          <figure class="xm-chapter-nav-icon icon-pastime"></figure>
+          <span class="xm-chapter-nav-label">休闲娱乐</span>
+        </a>
+      </div>
+      <div class="xm-chapter-nav-item">
+        <a class="xm-chapter-nav-link" href="/shop/newIndex.html">
+          <figure class="xm-chapter-nav-icon icon-shop"></figure>
+          <span class="xm-chapter-nav-label">小马商城</span>
+        </a>
+      </div>
+      <div class="xm-chapter-nav-item">
+        <a class="xm-chapter-nav-link" href="/food/index.html">
+          <figure class="xm-chapter-nav-icon icon-food"></figure>
+          <span class="xm-chapter-nav-label">自助点餐</span>
+        </a>
+      </div>
+      <div class="xm-chapter-nav-item">
+        <a class="xm-chapter-nav-link" href="#">
+          <figure class="xm-chapter-nav-icon icon-minisite"></figure>
+          <span class="xm-chapter-nav-label">自助建站</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav> -->
+
+    <nav id="xm-dc-localnav" class="xm-dc-localnav-scrim css-sticky">
+  <div class="xm-dc-wrapper">
+    <div class="xm-dc-background"></div>
+    <div class="xm-dc-content">
+      <div class="xm-dc-title">
+        <a href="#">自助点餐</a>
+      </div>
+      <div class="xm-dc-menu">
+        <div class="xm-dc-menu-tray">
+          <div class="xm-dc-menu-items">
+            <div class="xm-dc-menu-item">
+              <span class="xm-dc-menu-link current">经营体系</span>
+            </div>
+            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">风格自定义</a></div>
+            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">点餐模式</a></div>
+            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">套餐组合</a></div>
+            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">智能推送</a></div>
+            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">营销</a></div>
+            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">客户与标签</a></div>
+            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">订单与分组</a></div>
+            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">数据分析</a></div>
+            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">资产</a></div>
+            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">适用范围</a></div>
+            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">物料</a></div>
+          </div>
+        </div>
+        <div class="xm-dc-actions">
+          <div class="xm-dc-action xm-dc-action-button">
+            <a class="xm-dc-button" href="#">购买<span class="xm-dc-action-product"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <div class="scroll-container-vertical">
+      <div class="scroll-container-horizontal">
+        <div
+          id="scroll-content"
+          class="scroll-content"
+          style="transform: translateX(0px);"
+        >
+          <main id="main" class="main" role="main" data-page-type="overview">
+                <section class="section section-hero visible">
+  <div class="section-content">
+    <div class="hero-wrap">
+      <div class="headline">
+        <h2 class="headline-subhead">小马自助点餐</h2>
+        <p class="headline-caption">
+          融合堂食，自助点单，外卖于一体，提前下单，无需排队。
+        </p>
+      </div>
+      <div class="figure-container">
+        <figure class="image-hero-air-text js-hero-hardware-translate"></figure>
+        <figure class="image-hero-resolved js-hero-hardware-translate"></figure>
+        <figure
+          class="image-hero-reflection image-hero-reflect-top image-hero-reflect-top-a js-full-scale"
+        ></figure>
+        <figure
+          class="image-hero-reflection image-hero-reflect-top image-hero-reflect-top-i js-full-scale"
+        ></figure>
+        <figure
+          class="image-hero-reflection image-hero-reflect-top image-hero-reflect-top-r js-full-scale"
+        ></figure>
+        <figure
+          class="image-hero-reflection image-hero-reflect-bottom js-full-scale"
+        ></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+                <section class="section section-system visible">
+  <div class="section-content">
+    <div class="image-group">
+      <figure class="image-item image-2"></figure>
+      <figure class="image-item image-3"></figure>
+      <figure class="image-item image-4"></figure>
+    </div>
+    <div class="headline-wrap">
+      <div class="headline">
+        <h2 class="headline-subhead">
+          三大经营体系。<span class="weak">更丰富，更全面，满足不同场景的各种需求。</span>
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+                <section class="section section-blendent visible">
+  <div class="section-content">
+    <div class="wrap">
+      <div class="image-wrap screen">
+        <figure class="image-screen image-wallet"></figure>
+        <figure class="image-iphonex"></figure>
+      </div>
+      <div class="color-list">
+        <ul class="color-ul">
+          <li class="color-li"><figure class="color-item color-rose"></figure></li>
+          <li class="color-li"><figure class="color-item color-green"></figure></li>
+          <li class="color-li"><figure class="color-item color-yellow"></figure></li>
+          <li class="color-li"><figure class="color-item color-red"></figure></li>
+          <li class="color-li"><figure class="color-item color-blue"></figure></li>
+          <li class="color-li"><figure class="color-item color-orange"></figure></li>
+        </ul>
+      </div>
+    </div>
+    <div class="headline-wrap">
+      <div class="headline">
+        <h2 class="headline-subhead">
+          店铺配色风格自定义。<span class="weak"
+            >你想要的幸运色，这里都有。</span
+          >
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+                <section class="section section-card visible">
+  <div class="section-content">
+    <div class="watch-container">
+      <div class="image-container">
+        <figure class="image-watch"></figure>
+        <figure
+          class="image-watch-screen"
+          style="transform: translate(134.6px, 0px); opacity: 0;"
+        ></figure>
+        <figure class="image-watch-mask"></figure>
+        <figure
+          class="image-s4"
+          style="transform: translate(0px, 0px); opacity: 1;"
+        ></figure>
+        <figure
+          class="image-cpu-chip"
+          style="transform: translate(0px, 0px); transition: opacity 0.4s linear 0s; opacity: 1;"
+        ></figure>
+      </div>
+    </div>
+    <div class="headline-wrap">
+      <div class="headline">
+        <h2 class="headline-subhead">
+          经典点餐模式。<span class="weak"
+            >左菜单，右商品，界面更简洁，信息更明了。</span
+          >
+        </h2>
+        <p
+          class="headline-caption will-change"
+          style="transform: translate(0px, 0px);"
+        >
+          亲眼看一看，亲手试一试， 你就知道了。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+                <section class="section section-stack visible">
+  <div class="section-content">
+    <div class="started">
+      <figure class="image-internals-hero can-reveal">
+        <div class="internals-layer image-internals-one"></div>
+        <div class="internals-layer image-internals-two"></div>
+        <div class="internals-layer image-internals-three"></div>
+        <div class="internals-layer image-internals-four"></div>
+      </figure>
+    </div>
+    <div class="headline-wrap">
+      <div class="headline">
+        <h2 class="headline-subhead">
+          套餐随意组合，标签丰富多彩。<span class="weak"
+            >别具一格，丰富多彩。</span
+          >
+        </h2>
+        <p class="headline-caption will-change" style="transform: translate(0px, 0px);">
+            商品可任意组合成套餐，自定义标签--推荐  热卖。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+                <section class="section section-aipush visible">
+  <div class="section-content">
+    <div class="left-content">
+      <div class="icon-group">
+        <figure class="icon-content icon-content-3">
+          <div class="icon-image icon-3"></div>
+          <figcaption class="icon-caption">偏好</figcaption>
+        </figure>
+        <figure class="icon-content icon-content-4">
+          <div class="icon-image icon-4"></div>
+          <figcaption class="icon-caption">用户人群</figcaption>
+        </figure>
+        <figure class="icon-content icon-content-5">
+          <div class="icon-image icon-5"></div>
+          <figcaption class="icon-caption">活跃度</figcaption>
+        </figure>
+      </div>
+      <div class="image-wrap">
+        <figure class="image-screen image-wallet"></figure>
+        <figure class="image-iphonex"></figure>
+      </div>
+    </div>
+    <div class="headline-wrap">
+      <div class="headline">
+        <h2 class="headline-subhead">
+          智能推送。<span class="weak">识别各种用户的兴趣或特征。</span>
+        </h2>
+        <p class="headline-caption will-change" style="transform: translate(0px, 0px);">从而有针对性地向用户主动推送所需信息。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+                <section class="section section-market visible">
+  <div class="section-content">
+    <div class="headline-wrap">
+      <div class="headline">
+        <h2 class="headline-subhead">
+          营销。<span class="weak">多种优惠券，可应对各种场景。</span>
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+                <section class="section section-label visible">
+  <div class="section-content">
+    <div class="image-tag-grid will-change">
+      <div>
+        <div class="image-tag-row row-1">
+          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
+          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
+          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
+        </div>
+        <div class="image-tag-row row-2">
+          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
+          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
+          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
+        </div>
+        <div class="image-tag-row row-3">
+          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
+          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
+          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
+        </div>
+        <div class="image-tag-row row-4">
+          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
+          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
+          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
+        </div>
+      </div>
+    </div>
+    <div class="headline-wrap">
+      <div class="headline">
+        <h2 class="headline-subhead">
+          客户与标签。<span class="weak"
+            >根据组成标签 条件的类型，自动为客户打标签，管理更高效。</span
+          >
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+                <section class="section section-order visible">
+  <div class="section-content">
+    <div class="image-tag-grid will-change">
+      <div>
+        <div class="image-tag-row row-1">
+          <div class="image-tag">
+            <figure class="image-bands"><div></div></figure>
+          </div>
+          <div class="image-tag">
+            <figure class="image-bands"><div></div></figure>
+          </div>
+          <div class="image-tag">
+            <figure class="image-bands"><div></div></figure>
+          </div>
+        </div>
+        <div class="image-tag-row row-2">
+          <div class="image-tag">
+            <figure class="image-bands"><div></div></figure>
+          </div>
+          <div class="image-tag">
+            <figure class="image-bands"><div></div></figure>
+          </div>
+          <div class="image-tag">
+            <figure class="image-bands"><div></div></figure>
+          </div>
+        </div>
+        <div class="image-tag-row row-3">
+          <div class="image-tag">
+            <figure class="image-bands"><div></div></figure>
+          </div>
+          <div class="image-tag">
+            <figure class="image-bands"><div></div></figure>
+          </div>
+          <div class="image-tag">
+            <figure class="image-bands"><div></div></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="headline-wrap">
+      <div class="headline">
+        <h2 class="headline-subhead">
+          订单与分组。<span class="weak">
+            根据每笔订单信息分组归类，提高工作效率。</span
+          >
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+                <section class="section section-analyze visible">
+  <div class="section-content">
+    <div class="figure-background">
+      <div class="image-wrap"><figure class="image-bg"></figure></div>
+      <div class="figure-max-width labels-max-width">
+        <div class="label-container electrical-label-container">
+          <div class="label-line-group">
+            <label class="label electrical-label label-subheader"
+              >访问次数</label
+            >
+            <div class="keyline"></div>
+          </div>
+          <div class="label-line-group">
+            <label class="label optical-label">新增人数</label>
+            <div class="keyline"></div>
+          </div>
+          <div class="label-line-group">
+            <label class="label optical-label">停留时长</label>
+            <div class="keyline"></div>
+          </div>
+        </div>
+        <div class="label-container optical-label-container">
+          <div class="label-line-group">
+            <label class="label optical-label">访问人数</label>
+            <div class="keyline optical-keyline"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="headline-wrap">
+      <div class="headline">
+        <h2 class="headline-subhead">
+          数据分析。<span class="weak"
+            >全方面数据分析，辅助你进行战略调整。</span
+          >
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+                <section class="section section-statistics visible">
+  <div class="section-content">
+    <div class="data-table">
+      <div class="progress-table">
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical">
+            <div class="tile is-parent">
+              <article class="tile is-child">
+                <h4 class="graph-heading">2019/1/7 今日数据</h4>
+              </article>
+            </div>
+            <div class="tile">
+              <div class="tile is-parent">
+                <article class="tile is-child">
+                  <figure class="graph graph-horizontalbar catch">
+                    <div class="graph-unit unit-1">
+                      <div class="graph-data">
+                        <div class="progress-bar primary"></div>
+                        <div class="graph-caption">
+                          店铺总收入
+                        </div>
+                      </div>
+                    </div>
+                    <div class="graph-unit unit-2">
+                      <div class="graph-data">
+                        <div class="progress-bar"></div>
+                        <div class="graph-caption">
+                          优惠券总折扣
+                        </div>
+                      </div>
+                    </div>
+                    <div class="graph-unit unit-3">
+                      <div class="graph-data">
+                        <div class="progress-bar"></div>
+                        <div class="graph-caption">
+                          店铺总退款
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+              <div class="tile is-parent is-4">
+                <article class="tile is-child">
+                  <figure class="badge graph-badge catch">
+                    <div class="badge-content">
+                      <span class="badge-caption graph-label">今日资产统计数据</span>
+                      <span class="badge-value">资产统计</span>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="progress-table">
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical">
+            <div class="tile is-parent">
+              <article class="tile is-child">
+                <h4 class="graph-heading">2019/1/7 今日数据</h4>
+              </article>
+            </div>
+            <div class="tile">
+              <div class="tile is-parent">
+                <article class="tile is-child">
+                  <figure class="graph graph-horizontalbar catch">
+                    <div class="graph-unit unit-1">
+                      <div class="graph-data">
+                        <div class="progress-bar primary"></div>
+                        <div class="graph-caption">
+                          本期支付金额
+                        </div>
+                      </div>
+                    </div>
+                    <div class="graph-unit unit-3">
+                      <div class="graph-data">
+                        <div class="progress-bar"></div>
+                        <div class="graph-caption">
+                          支付单数
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+              <div class="tile is-parent is-4">
+                <article class="tile is-child">
+                  <figure class="badge graph-badge catch">
+                    <div class="badge-content">
+                      <span class="badge-caption graph-label">今日资产账单数据</span>
+                      <span class="badge-value">资产账单</span>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="progress-table">
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical">
+            <div class="tile is-parent">
+              <article class="tile is-child">
+                <h4 class="graph-heading">2019/1/7 今日数据</h4>
+              </article>
+            </div>
+            <div class="tile">
+              <div class="tile is-parent">
+                <article class="tile is-child">
+                  <figure class="graph graph-horizontalbar catch">
+                    <div class="graph-unit unit-1">
+                      <div class="graph-data">
+                        <div class="progress-bar primary"></div>
+                        <div class="graph-caption">
+                          总金额
+                        </div>
+                      </div>
+                    </div>
+                    <div class="graph-unit unit-4">
+                      <div class="graph-data">
+                        <div class="progress-bar"></div>
+                        <div class="graph-caption">
+                          券数
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+              <div class="tile is-parent is-4">
+                <article class="tile is-child">
+                  <figure class="badge graph-badge catch">
+                    <div class="badge-content">
+                      <span class="badge-caption graph-label">今日营销账单数据</span>
+                      <span class="badge-value">营销账单</span>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="headline-wrap">
+      <div class="headline">
+        <h2 class="headline-subhead">
+          资产。<span class="weak">
+            告别糊涂账，每一笔 订单资金一目了然。
+          </span>
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+                <section class="section section-scope visible">
+  <div class="section-content">
+    <div class="headline-wrap">
+      <hgroup class="headline">
+        <h1 class="headline-title">适用范围</h1>
+        <h2 class="headline-subhead">快餐、饮品等<br />热门行业。</h2>
+      </hgroup>
+      <div class="icon-group">
+        <figure class="icon-content icon-content-3">
+          <div class="icon-image icon-3"></div>
+          <figcaption class="icon-caption">快餐</figcaption>
+        </figure>
+        <figure class="icon-content icon-content-4">
+          <div class="icon-image icon-4"></div>
+          <figcaption class="icon-caption">饮品</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="image-wrap"><figure class="image-bg"></figure></div>
+  </div>
+</section>
+
+          </main>
+          <section id="footer" class="section section-footer visible" style="transform: translateY(0px);">
+     1111111111111111111
+</section>
+      
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="/js/vendor.3430adca0c911ae0deb2.js"></script><script type="text/javascript" src="/js/food/index.3430adca0c911ae0deb2.js"></script></body>
+</html>
