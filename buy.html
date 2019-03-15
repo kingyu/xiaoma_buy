@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>小马飞腾 - 购买</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.bootcss.com/bulma/0.7.2/css/bulma.min.css"
+    />
+  <link href="/css/buy.min.css" rel="stylesheet"></head>
+  <body class="theme-white">
+    <!-- 引入头部组件 -->
+    <nav class="xm-nav">
+  <div class="xm-content">
+    <div class="xm-item xm-item-logo">
+      <a class="xm-link xm-link-logo" href="/index.html">
+        <span class="xm-link-text">小马飞腾</span>
+      </a>
+    </div>
+    <div class="xm-list">
+      <div class="xm-item">
+        <a class="xm-link" href="/applet.html">
+          <span class="xm-link-text">小程序</span>
+        </a>
+      </div>
+      <div class="xm-item">
+        <a class="xm-link" href="/amortize.html">
+          <span class="xm-link-text">SMART</span>
+        </a>
+      </div>
+      <div class="xm-item">
+        <a class="xm-link" href="/oem.html">
+          <span class="xm-link-text">OEM工厂</span>
+        </a>
+      </div>
+      <div class="xm-item">
+        <a class="xm-link" href="/protect.html">
+          <span class="xm-link-text">保驾护航</span>
+        </a>
+      </div>
+      <div class="xm-item">
+        <a class="xm-link" href="/contact.html">
+          <span class="xm-link-text">联系我们</span>
+        </a>
+      </div>
+    </div>
+    <div class="xm-item xm-item-user">
+      <a
+        class="xm-link xm-link-user"
+        href="http://wxapp.xiaomafeiteng.com/login"
+      >
+        <span class="xm-link-text">用户中心</span>
+      </a>
+    </div>
+  </div>
+</nav>
+<div id="xm-placeholder" class="xm-nav-placeholder"></div>
+
+    <nav id="xm-localnav" class="xm-localnav-scrim css-sticky">
+    <div class="xm-localnav-wrapper">
+      <div class="xm-localnav-background"></div>
+      <div class="xm-localnav-content">
+        <div class="xm-localnav-title">
+            <a href="http://192.168.31.139:8000/">购买</a>
+        </div>
+        <div class="xm-localnav-menu">
+          <div class="xm-localnav-actions">
+            <div class="xm-localnav-action xm-localnav-action-button">
+                <div class="xm-localnav-menu-item">购买产品</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+    <main class="main">
+      <div class="html-wrapper">
+        <section class="section section-step-one">
+  <div class="container">
+    <div class="html-content">
+      <div class="unit-wrapper">
+        <div class="unit-copy-wrapper">
+          <h2 class="xm-typography-headline">
+            OEM工厂<br />让你拥有自己的品牌
+          </h2>
+          <h3 class="xm-typography-eyebrow">
+            <span class="interval">2个产品9.5折</span>
+            <span class="interval">3个产品9折</span>
+            <span class="interval">全套尊享8折</span>
+            <br />
+            全年子账号不限量
+          </h3>
+        </div>
+        <div class="product-wrapper">
+          <div class="product-draw-wrapper">
+            <div>
+              <figure class="product-draw product-pastime selected-figure"  data-product-key="pastime">
+                <figcaption>RMB 10800</figcaption>
+              </figure>
+            </div>
+            <div>
+              <figure class="product-draw product-shop selected-figure" data-product-key="shop">
+                <figcaption>RMB 9800</figcaption>
+              </figure>
+            </div>
+            <div>
+              <figure class="product-draw product-minisite selected-figure" data-product-key="minisite">
+                <figcaption>RMB 8800</figcaption>
+              </figure>
+            </div>
+            <div>
+              <figure class="product-draw product-food selected-figure" data-product-key="food">
+                <figcaption>RMB 7800</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="product-choices-wrapper">
+            <h5 class="product-headline">
+              点击选择组合套餐
+            </h5>
+            <p class="product-explain">4大主营产品随意组合</p>
+            <div class="icon-group">
+              <figure class="icon-content">
+                <div class="icon-image icon-pastime"></div>
+                <figcaption class="icon-caption">休闲娱乐</figcaption>
+              </figure>
+              <figure class="icon-content">
+                <div class="icon-image icon-shop"></div>
+                <figcaption class="icon-caption">小马商城</figcaption>
+              </figure>
+              <figure class="icon-content">
+                <div class="icon-image icon-food"></div>
+                <figcaption class="icon-caption">自助点餐</figcaption>
+              </figure>
+              <figure class="icon-content">
+                <div class="icon-image icon-minisite"></div>
+                <figcaption class="icon-caption">自助建站</figcaption>
+              </figure>
+            </div>
+            <div class="discount-wrapper">
+              <button class="discount-tag">
+                9.5折
+              </button>
+              <button class="discount-tag disabled">
+                9折
+              </button>
+              <button class="discount-tag disabled">
+                8折
+              </button>
+            </div>
+            <button class="xm-button" id="btn-next">继续</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <nav class="tabnav">
+        <ul class="tabnav-items" id="tabnav-tab-controls">
+          <li class="tabnav-item">
+            <button class="tablist-link visible" tabindex="0">
+              选择产品
+            </button>
+          </li>
+
+          <li class="tabnav-item">
+            <button class="tablist-link disabled" tabindex="-1">
+              确认产品
+            </button>
+          </li>
+          <li class="tabnav-item">
+            <button class="tablist-link disabled" disabled="" tabindex="-1">
+              付款方式
+            </button>
+          </li>
+          <li
+            id="tabnav-tab-controls-line"
+            class="tablist-navline"
+            style="left: 330.734px;width: 71px;"
+          ></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>
+
+      </div>
+      <section class="section section-hero">
+        <div>
+          <!-- Place somewhere in the <body> of your page -->
+          <div class="flexslider-wrap">
+            <div class="flexslider">
+              <ul class="slides">
+                <li>
+                  <img src="../../src/img/applet_hero_pastime.png" />
+                </li>
+                <li>
+                  <img src="../../src/img/applet_hero_minisite.png" />
+                </li>
+                <li>
+                  <img src="../../src/img/applet_hero_food.png" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- 引入尾部组件 -->
+    <footer>
+  <div class="footer-wrap">
+    <div class="footer-content">
+      
+        <div id="ac-globalfooter">
+            <nav class="ac-gf-breadcrumbs">
+              <a href="/" class="home ac-gf-breadcrumbs-home"><span class="ac-gf-breadcrumbs-home-icon"></span></a>
+              <div class="ac-gf-breadcrumbs-path">
+                <ol class="ac-gf-breadcrumbs-list">
+                  
+                    
+                      <li class="ac-gf-breadcrumbs-item">
+                          
+                            <span>OEM工厂</span>
+                          
+                      </li>
+                    
+                  
+                </ol>
+              </div>
+            </nav>
+          </div>
+      
+      <div class="nav-wrap">
+        <nav>
+          <ul class="nav-group group-1">
+            <li class="headline"><a href="/applet.html">小程序</a></li>
+            <li><a href="/pastime/">休闲娱乐</a></li>
+            <li><a href="/shop/">小马商城</a></li>
+            <li><a href="/food/">自助点餐</a></li>
+            <li><a href="/minisite/">自助建站</a></li>
+            <li class="headline"><a href="http://192.168.31.139:8000/">购买</a></li>
+            <li><a href="http://192.168.31.139:8000/">选择商品</a></li>
+            <li><a href="/amortize.html">分期付款</a></li>
+          </ul>
+          <ul class="nav-group group-2">
+            <li class="headline"><a href="/smart.html#smart-header">SMART</a></li>
+            <li><a href="/smart.html#smart-header">MUI-视觉</a></li>
+            <li><a href="/smart.html#smart-header">卡片风格</a></li>
+            <li><a href="/smart.html#smart-header">交互理念</a></li>
+            <li><a href="/smart.html#smart-header">屏幕适配</a></li>
+            <li><a href="/smart.html#smart-header">产品体验</a></li>
+            <li><a href="/smart.html#smart-header">大数据</a></li>
+            <li><a href="/smart.html#smart-header">互联网营销</a></li>
+            <li><a href="/smart.html#smart-header">统计分析</a></li>
+            <li><a href="/smart.html#smart-header">智能推送</a></li>
+            <li><a href="/smart.html#smart-header">AI-Push 2.0</a></li>
+          </ul>
+          <ul class="nav-group group-3">
+            <li class="headline"><a href="/protect.html#protect-title">保驾护航</a></li>
+            <li><a href="/protect.html#protect-system">系统稳定</a></li>
+            <li><a href="/protect.html#protect-data">数据安全</a></li>
+            <li><a href="/protect.html#protect-virtual">虚拟机隔离</a></li>
+            <li><a href="/protect.html#protect-network">网络传输</a></li>
+            <li><a href="/protect.html#protect-backup">灾备措施</a></li>
+            <li><a href="/protect.html#protect-performance">系统性能</a></li>
+            <li class="headline" style="margin-top: 22px;"><a href="/oem.html">OEM工厂</a></li>
+            <li><a href="/oem.html">技术支持</a></li>
+            <li><a href="/oem.html">购买流程</a></li>
+          </ul>
+          <ul class="nav-group group-4">
+            <li class="headline"><a href="/contact.html#contact-header">联系我们</a></li>
+            <li><a href="/contact.html#contact-introduce">公司简介</a></li>
+            <li><a href="/contact.html#contact-culture">小马文化</a></li>
+            <li><a href="/contact.html#cul-group-1">小马精神</a></li>
+            <li><a href="/contact.html#cul-group-2">小马愿景</a></li>
+            <li><a href="/contact.html#cul-group-3">管理理念</a></li>
+            <li><a href="/contact.html#cul-group-4">发展体系</a></li>
+            <li><a href="/contact.html#contact-office">公司环境</a></li>
+            <li><a href="/contact.html#contact-contact">联系方式</a></li>
+          </ul>
+        </nav>
+        <div class="hot-phone">
+          <span>全国服务热线</span> <span>400-654-6993</span>
+          <span>周一至周日8:30-18:00</span>
+          <div class="service">
+              <button type="button" class="ant-btn ant-btn-primary ant-btn-background-ghost"><i aria-label="icon: message" class="anticon anticon-message"><svg viewBox="64 64 896 896" class="" data-icon="message" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M464 512a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm200 0a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm-400 0a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm661.2-173.6c-22.6-53.7-55-101.9-96.3-143.3a444.35 444.35 0 0 0-143.3-96.3C630.6 75.7 572.2 64 512 64h-2c-60.6.3-119.3 12.3-174.5 35.9a445.35 445.35 0 0 0-142 96.5c-40.9 41.3-73 89.3-95.2 142.8-23 55.4-34.6 114.3-34.3 174.9A449.4 449.4 0 0 0 112 714v152a46 46 0 0 0 46 46h152.1A449.4 449.4 0 0 0 510 960h2.1c59.9 0 118-11.6 172.7-34.3a444.48 444.48 0 0 0 142.8-95.2c41.3-40.9 73.8-88.7 96.5-142 23.6-55.2 35.6-113.9 35.9-174.5.3-60.9-11.5-120-34.8-175.6zm-151.1 438C704 845.8 611 884 512 884h-1.7c-60.3-.3-120.2-15.3-173.1-43.5l-8.4-4.5H188V695.2l-4.5-8.4C155.3 633.9 140.3 574 140 513.7c-.4-99.7 37.7-193.3 107.6-263.8 69.8-70.5 163.1-109.5 262.8-109.9h1.7c50 0 98.5 9.7 144.2 28.9 44.6 18.7 84.6 45.6 119 80 34.3 34.3 61.3 74.4 80 119 19.4 46.2 29.1 95.2 28.9 145.8-.6 99.6-39.7 192.9-110.1 262.7z"></path></svg></i><span>联系客服</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="company">
+        <div>
+          <span>Co,Ltd AII Rights Reserved.小马飞腾信息技术有限公司</span>
+        </div>
+        <div class="attention-wrap">
+          <div class="attention">关注我们：</div>
+          <div class="XM2weima" style="z-index: 100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script type="text/javascript" src="/js/vendor.a1c9788979bd0a8967d6.js"></script><script type="text/javascript" src="/js/buy.a1c9788979bd0a8967d6.js"></script></body>
+  <div class="modal user-form-modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="modal-box">
+        <div class="modal-form">
+          <h3 class="modal-headline">填写您的信息</h3>
+          <div class="columns">
+            <div class="column is-half">
+              <div class="field">
+                <div class="control">
+                  <input class="input" type="text" placeholder="姓名" />
+                </div>
+              </div>
+            </div>
+            <div class="column is-half">
+              <div class="field">
+                <div class="control">
+                  <input class="input" type="text" placeholder="名称" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <input class="input" type="text" placeholder="电话" />
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <input class="input" type="text" placeholder="电子邮箱" />
+            </div>
+          </div>
+          <div class="field bottom-button">
+            <div class="control center">
+              <button class="xm-button">确认信息</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <div class="modal scan-code-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">选择付款方式</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">支付号码：</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <input
+                  class="input is-static"
+                  type="email"
+                  value="17379187986"
+                  readonly
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">
+              支付金额：
+            </label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <input
+                  class="input is-static money"
+                  value="23,760元"
+                  readonly
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">
+              支付金额：
+            </label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <label class="radio">
+                  <input type="radio" name="answer" />
+                  扫码支付
+                </label>
+                <label class="radio">
+                  <input type="radio" name="answer" />
+                  汇款支付
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <h5 class="pay-tip">支付完成后将有客服联系您，请保持手机的畅通。</h5>
+      </section>
+    </div>
+  </div>
+</html>

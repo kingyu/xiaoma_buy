@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html
-  class="js no-touch svg no-ie8 progressive-image no-reduced-motion inline-video animated-hero no-static-interaction"
->
+<html class="css-mask">
   <head>
     <meta charset="utf-8" />
-    <title>UI内页</title>
-  <link href="/xiaomapage/css/shop/ui.min.css" rel="stylesheet"></head>
+    <title>小马飞腾 - 小马商城 - UI</title>
+  <link href="/css/shop/ui.min.css" rel="stylesheet"></head>
   <body class="theme-white page-overview">
     <!-- 引入头部组件 -->
     <nav class="xm-nav">
@@ -22,12 +20,17 @@
         </a>
       </div>
       <div class="xm-item">
-        <a class="xm-link" href="/smart.html">
+        <a class="xm-link" href="/amortize.html">
           <span class="xm-link-text">SMART</span>
         </a>
       </div>
       <div class="xm-item">
-        <a class="xm-link" href="#">
+        <a class="xm-link" href="/oem.html">
+          <span class="xm-link-text">OEM工厂</span>
+        </a>
+      </div>
+      <div class="xm-item">
+        <a class="xm-link" href="/protect.html">
           <span class="xm-link-text">保驾护航</span>
         </a>
       </div>
@@ -38,71 +41,42 @@
       </div>
     </div>
     <div class="xm-item xm-item-user">
-      <a class="xm-link xm-link-user" href="http://wxapp.xiaomafeiteng.com/login">
+      <a
+        class="xm-link xm-link-user"
+        href="http://wxapp.xiaomafeiteng.com/login"
+      >
         <span class="xm-link-text">用户中心</span>
       </a>
     </div>
   </div>
 </nav>
-<div id="xm-placeholder" class="ac-nav-placeholder"></div>
-<!-- 
-<nav id="chapternav" class="xm-chapter-nav">
-  <div class="xm-chapter-nav-wrapper">
-    <div class="xm-chapter-nav-items">
-      <div class="xm-chapter-nav-item">
-        <a class="xm-chapter-nav-link" href="/pastime/index.html">
-          <figure class="xm-chapter-nav-icon icon-pastime"></figure>
-          <span class="xm-chapter-nav-label">休闲娱乐</span>
-        </a>
-      </div>
-      <div class="xm-chapter-nav-item">
-        <a class="xm-chapter-nav-link" href="/shop/newIndex.html">
-          <figure class="xm-chapter-nav-icon icon-shop"></figure>
-          <span class="xm-chapter-nav-label">小马商城</span>
-        </a>
-      </div>
-      <div class="xm-chapter-nav-item">
-        <a class="xm-chapter-nav-link" href="/food/index.html">
-          <figure class="xm-chapter-nav-icon icon-food"></figure>
-          <span class="xm-chapter-nav-label">自助点餐</span>
-        </a>
-      </div>
-      <div class="xm-chapter-nav-item">
-        <a class="xm-chapter-nav-link" href="#">
-          <figure class="xm-chapter-nav-icon icon-minisite"></figure>
-          <span class="xm-chapter-nav-label">自助建站</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</nav> -->
- 
-    <nav id="xm-xy-localnav" class="xm-xy-localnav-scrim css-sticky">
-  <div class="xm-xy-wrapper">
-    <div class="xm-xy-background"></div>
-    <div class="xm-xy-content">
-      <div class="xm-xy-title">
+<div id="xm-placeholder" class="xm-nav-placeholder"></div>
+ <nav id="xm-localnav" class="xm-localnav-scrim css-sticky">
+  <div class="xm-localnav-wrapper">
+    <div class="xm-localnav-background"></div>
+    <div class="xm-localnav-content">
+      <div class="xm-localnav-title">
         <a href="/shop/">小马商城</a>
       </div>
-      <div class="xm-xy-menu">
-        <div class="xm-xy-menu-tray">
-          <div class="xm-xy-menu-items">
-            <div class="xm-xy-menu-item">
-              <span class="xm-xy-menu-link current">UI</span>
+      <div class="xm-localnav-menu">
+        <div class="xm-localnav-menu-tray">
+          <div class="xm-localnav-menu-items">
+            <div class="xm-localnav-menu-item">
+              <a href="/shop/index.html#section_ui" class="xm-localnav-menu-link">UI</a>
             </div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">大数据</a></div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">营销</a></div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">智能推送</a></div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">数据分析</a></div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">资产</a></div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">商家小程序</a></div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">服务范围</a></div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">物料</a></div>
+            <div class="xm-localnav-menu-item"><a href="/shop/index.html#section_big_data" class="xm-localnav-menu-link">大数据</a></div>
+            <div class="xm-localnav-menu-item"><a href="/shop/index.html#section_market" class="xm-localnav-menu-link">营销</a></div>
+            <div class="xm-localnav-menu-item"><a href="/shop/index.html#section_ai" class="xm-localnav-menu-link">智能推送</a></div>
+            <div class="xm-localnav-menu-item"><a href="/shop/index.html#section_analyze" class="xm-localnav-menu-link">数据分析</a></div>
+            <div class="xm-localnav-menu-item"><a href="/shop/index.html#section_statistics" class="xm-localnav-menu-link">资产</a></div>
+            <!-- <div class="xm-localnav-menu-item"><a href="#" class="xm-localnav-menu-link">商家小程序</a></div>
+            <div class="xm-localnav-menu-item"><a href="#" class="xm-localnav-menu-link">服务范围</a></div>
+            <div class="xm-localnav-menu-item"><a href="#" class="xm-localnav-menu-link">物料</a></div> -->
           </div>
         </div>
-        <div class="xm-xy-actions">
-          <div class="xm-xy-action xm-xy-action-button">
-            <a class="xm-xy-button" href="#">购买<span class="xm-xy-action-product"></span></a>
+        <div class="xm-localnav-actions">
+          <div class="xm-localnav-action xm-localnav-action-button">
+            <a class="xm-localnav-button" href="http://192.168.31.139:8000/">购买<span class="xm-localnav-action-product"></span></a>
           </div>
         </div>
       </div>
@@ -114,70 +88,35 @@
       <section class="section section-hero">
         <div class="section-content">
           <div class="hero-cluster">
-            <div class="image image-hero-image2 hero-cluster-center centered small-hide">
+            <div id="image-hero-center" class="image image-hero-image2 hero-cluster-center centered">
               <figure
+                id="image-hero-left"
                 class="image image-hero-image1 hero-cluster-left"
               ></figure>
               <figure
+                id="image-hero-right"
                 class="image image-hero-image3 hero-cluster-right"
               ></figure>
+              <div class="inline-video-container inline-video-hero" >
+                  <div class="inline-video-media">
+                    <video 
+                      id="hero-video"
+                      class="inline-video"  
+                      muted 
+                      playsinline 
+                      src="http://pn7gq6n0k.bkt.clouddn.com/shop_ui_video_4.mp4">
+                    </video>
+                    <div id="video-startframe" class="inline-video-startframe"></div>
+                  </div>
+                </div>
             </div>
-            <div class="hero-cluster-S centered large-hide small-show">
-                <div class="column column-1">
-                  <div class="image-hardware image-hardware-iphonex-hero" style="top: 0px; transform: translate(0px, 0px);">
-                    <div class="image-sharedhardware-iphonex-hardware-iphonex-hero">
-                      <figure class="image image-hero-image1"></figure>
-                    </div>
-                  </div>
-                  <div class="image-hardware image-hardware-iphone8-hero image-sharedhardware-iphone8-hardware-iphone8-hero" style="top: 0px; transform: translate(0px, 0px);">
-                    <figure class="image image-hero-small-only-hero-addeffects-static"></figure>
-                  </div>
-                  <div class="image-hardware image-hardware-iphonex-hero" style="top: 0px; transform: translate(0px, 0px);">
-                    <div class="image-sharedhardware-iphonex-hardware-iphonex-hero">
-                      <figure class="image image-hero-small-only-hero-animoji-static"></figure>
-                    </div>
-                  </div>
-                </div>
-                <div class="column column-2">
-                  <div class="image-hardware image-hardware-iphonex-hero" style="top: 0px; transform: translate(0px, 0px);">
-                    <div class="image-sharedhardware-iphonex-hardware-iphonex-hero">
-                      <figure class="image image-hero-image2"></figure>
-                    </div>
-                  </div>
-                  <div class="image-hardware image-hardware-iphone8-hero image-sharedhardware-iphone8-hardware-iphone8-hero" style="top: 0px; transform: translate(0px, 0px);">
-                    <figure class="image image-hero-small-only-hero-donotdisturb-static"></figure>
-                  </div>
-                  <div class="image-hardware image-hardware-iphonex-hero" style="top: 0px; transform: translate(0px, 0px);">
-                    <div class="image-sharedhardware-iphonex-hardware-iphonex-hero">
-                      <figure class="image image-hero-small-only-hero-facetime-static"></figure>
-                    </div>
-                  </div>
-                </div>
-                <div class="column column-3">
-                  <div class="image-hardware image-hardware-iphone8-hero image-sharedhardware-iphone8-hardware-iphone8-hero" style="top: 0px; transform: translate(0px, 0px);">
-                    <figure class="image image-hero-image3"></figure>
-                  </div>
-                  <div class="image-hardware image-hardware-iphonex-hero" style="top: 0px; transform: translate(0px, 0px);">
-                    <div class="image-sharedhardware-iphonex-hardware-iphonex-hero">
-                      <figure class="image image-hero-small-only-hero-sharephotos-static"></figure>
-                    </div>
-                  </div>
-                  <div class="image-hardware image-hardware-iphonex-hero" style="top: 0px; transform: translate(0px, 0px);">
-                    <div class="image-sharedhardware-iphonex-hardware-iphonex-hero">
-                      <figure class="image image-hero-small-only-hero-notifications-static"></figure>
-                    </div>
-                  </div>
-                </div>
-              </div>
           </div>
-          <div class="hero-text-wrap large-10 small-12 large-centered">
-            <h2 class="typography-section-eyebrow">UI</h2>
-            <h3 class="typography-section-headline">
-                精美绝伦的Mui。
-            </h3>
-            <p class="large-centered">
-              方便使用，简单易懂，零错误，能使最终目标实现的UI设计。
-            </p>
+          <div class="hero-text-wrap">
+            <hgroup class="headline">
+              <h1 class="xm-typography-eyebrow">UI</h1>
+              <h2 class="xm-typography-headline-elevated">精美绝伦的Mui。</h2>
+            </hgroup>
+            <p class="xm-typography-intro">方便使用，简单易懂，零错误，能使最终目标实现的UI设计。</p>
           </div>
         </div>
       </section>
@@ -190,15 +129,11 @@
                   <div
                     class="copy-wrapper medium-offset-0 large-6 medium-7 small-hide"
                   >
-                    <div class="large-11">
-                      <h2 class="typography-section-eyebrow">全新界面</h2>
-                      <h3 class="typography-section-headline">
-                        带给你不一样的视觉体验。
-                      </h3>
-                    </div>
-                    <p>
-                      小马商城UI为你进行了全面的优化和提升，无论是移动端首页界面还是我的界面，用起来都会更快速，更便捷。各种交互操作，都会使的比以往更流畅。
-                    </p>
+                    <hgroup class="headline">
+                      <h3 class="xm-typography-eyebrow">全新界面</h3>
+                      <h4 class="xm-typography-headline">带给你不一样的<br />视觉体验。</h4>
+                    </hgroup>
+                    <p class="xm-typography-intro">方小马商城UI为你进行了全面的优化和提升，无论是<br />移动端首页界面还是我的界面，用起来都会更快速，<br />更便捷。各种交互操作，都会使的比以往更流畅。</p>
                   </div>
                   <div
                     class="peaking-content wallpaper-wrapper image-wrapper image-wrapper-iphonex large-5 small-12"
@@ -207,8 +142,14 @@
                       <div
                         class="image-hardware image-hardware-iphonex image-sharedhardware-iphonex-hardware-iphonex"
                       >
-                      <figure class="image image-wallpaper"></figure>
-                    </div>
+                        <video
+                          id="video-1"
+                          class="image image-wallpaper video-1-trigger"
+                          muted
+                          playsinline
+                          src="http://pn7gq6n0k.bkt.clouddn.com/shop_ui_video_1.mp4"
+                        ></video>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -245,7 +186,9 @@
                       <figure class="badge badge-elevated">
                         <div class="badge-content">
                           <span class="badge-caption">体验提升</span>
-                          <span class="badge-value">2<span class="badge-unit">倍</span></span>
+                          <span class="badge-value"
+                            >2<span class="badge-unit">倍</span></span
+                          >
                           <span class="badge-caption">整体的交互体验</span>
                         </div>
                       </figure>
@@ -258,8 +201,15 @@
                       <div
                         class="image-hardware image-hardware-iphonese image-sharedhardware-iphonese-hardware-iphonese"
                       >
-                      <figure class="image image-camera"></figure>
-                    </div>
+                        <video
+                          id="video-4"
+                          class="image image-camera video-4-trigger"
+                          muted
+                          playsinline
+                          src="http://pn7gq6n0k.bkt.clouddn.com/shop_ui_video_5.mp4"
+                        >
+                      </video>
+                      </div>
                     </div>
                   </div>
                   <div
@@ -269,8 +219,15 @@
                       <div
                         class="image-hardware image-hardware-iphone6s image-sharedhardware-iphone6s-hardware-iphone6s"
                       >
-                      <figure class="image image-keyboard"></figure>
-                    </div>
+                      <video
+                          id="video-3"
+                          class="image image-keyboard video-3-trigger"
+                          muted
+                          playsinline
+                          src="http://pn7gq6n0k.bkt.clouddn.com/shop_ui_video_3.mp4"
+                        >
+                      </video>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -283,50 +240,32 @@
         <div class="sticky-container">
           <div class="sticky-content">
             <div class="section-content row-logical">
-              <div
-                class="medium-offset-0 large-7 medium-9 small-hide"
-              >
-                <h2 class="typography-section-eyebrow">自定义拖拽</h2>
-                <h3 class="typography-section-headline">
-                  随心搭建你想要的小程序<br />一切只需要1分钟。
-                </h3>
+              <div class="medium-offset-0 large-7 medium-9 small-hide">
+                  <hgroup class="headline">
+                      <h2 class="xm-typography-eyebrow">自定义拖拽</h2>
+                      <h3 class="xm-typography-headline">随心搭建你想要的小程序<br />一切只需要1分钟。</h3>
+                  </hgroup>
               </div>
             </div>
-            <div class="peaking-content overflow-container container-with-caption">
-              <div class="inline-video-container inline-video-ar">
+            <div
+              class="peaking-content overflow-container container-with-caption"
+            >
+              <div
+                class="inline-video-container inline-video-ar"
+              >
                 <div class="inline-video-center">
                   <div class="inline-video-media">
                     <video
-                      class="inline-video"
+                      class="inline-video video video-screen"
                       muted
                       playsinline
                       autoplay
-                      loop
-                      src="../src/img/bfc862dd-3579-4080-9ff1-ce5321490c03.mp4"
+                      src="http://pn7gq6n0k.bkt.clouddn.com/shop_ui_video_2.mp4"
                     ></video>
-                    <div
-                      class="inline-video-posterframe active static-show"
-                    ></div>
-                    <div class="inline-video-startframe static-hide"></div>
                   </div>
-                </div>
-                <div class="inline-video-controls">
-                  <div class="inline-video-graphic-loading">
-                    <span class="label">正在加载 增强现实示例</span>
+                  <div class="inline-video-control xm-video-anim anim-fadeIn">
+                    <a class="xm-replay-link" href="#">重播<i></i></a>
                   </div>
-                  <button
-                    class="inline-video-button-play active"
-                    data-analytics-title="play-augmented-reality-video"
-                    data-analytics-click="prop3:play-augmented-reality-video"
-                  >
-                    <span class="label">播放 增强现实示例</span></button
-                  ><button
-                    class="inline-video-button-pause"
-                    data-analytics-title="pause-augmented-reality-video"
-                    data-analytics-click="prop3:pause-augmented-reality-video"
-                  >
-                    <span class="label">暂停 增强现实示例</span>
-                  </button>
                 </div>
               </div>
             </div>
@@ -341,39 +280,96 @@
                 <div
                   class="headline-wrapper medium-offset-0 large-7 medium-10 small-hide"
                 >
-                  <h2 class="typography-section-eyebrow">全店风格任由你切换</h2>
-                  <h3 class="typography-section-headline">
-                    0.1秒精准设置<br />实现你的创意与想象
-                  </h3>
-                  <p class="large-10">
-                    风格多样模板任意选用，强大的编辑功能，所见即所得，一站式管理。
-                  </p>
+                  <hgroup class="headline">
+                    <h2 class="xm-typography-eyebrow">全店风格任由你切换</h2>
+                    <h3 class="xm-typography-headline">0.1秒精准设置实现<br />你的创意与想象</h3>
+                  </hgroup>
+                  <p class="xm-typography-intro">风格多样模板任意选用，强大的编辑功能，所见即<br />所得，一站式管理。</p>
                 </div>
               </div>
-              <div class="peaking-content overflow-container container-with-caption">
-                  <div class="inner-container">
-                  <div class="image-wrapper-combo large-12">
-                      <div
-                        class="image-wrapper image-wrapper-iphonex large-4 medium-5 small-12"
-                      >
-                        <div class="image-container image-container-iphonex">
-                          <div
-                            class="image-hardware image-hardware-iphonex image-sharedhardware-iphonex-hardware-iphonex"
-                          >
-                            <figure class="image image-screentime-image"></figure>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="peaking-content image-wrapper image-wrapper-ipad large-7 small-12"
-                      >
-                        <figure
-                          class="image image-screentime-ipad image-ipad"
-                        ></figure>
-                      </div>
+              <div class="peaking-content overflow-container">
+                <div class="inner-container">
+                  <div class="peaking-content image-wrapper image-wrapper-ipad">
+                    <div class="image-screentime-ipad">
+                      <figure
+                        id="image-screen-1"
+                        class="image image-1"
+                      ></figure>
+                      <figure
+                        id="image-screen-2"
+                        class="image image-2"
+                      ></figure>
+                      <figure
+                        id="image-screen-3"
+                        class="image image-3"
+                      ></figure>
+                      <figure
+                        id="image-screen-4"
+                        class="image image-4"
+                      ></figure>
+                      <figure
+                        id="image-screen-5"
+                        class="image image-5"
+                      ></figure>
+                      <figure
+                        id="image-screen-6"
+                        class="image image-6"
+                      ></figure>
                     </div>
                   </div>
-              </div>
+                  <div class="color-list">
+                    <ul class="color-ul">
+                      <li class="color-li">
+                        <a
+                          href="#"
+                          class="color-link current"
+                          data-trigger="image-screen-1"
+                          ><figure class="color-item color-1"></figure
+                        ></a>
+                      </li>
+                      <li class="color-li">
+                        <a
+                          href="#"
+                          class="color-link"
+                          data-trigger="image-screen-2"
+                          ><figure class="color-item color-2"></figure
+                        ></a>
+                      </li>
+                      <li class="color-li">
+                        <a
+                          href="#"
+                          class="color-link"
+                          data-trigger="image-screen-3"
+                          ><figure class="color-item color-3"></figure
+                        ></a>
+                      </li>
+                      <li class="color-li">
+                        <a
+                          href="#"
+                          class="color-link"
+                          data-trigger="image-screen-4"
+                          ><figure class="color-item color-4"></figure
+                        ></a>
+                      </li>
+                      <li class="color-li">
+                        <a
+                          href="#"
+                          class="color-link"
+                          data-trigger="image-screen-5"
+                          ><figure class="color-item color-5"></figure
+                        ></a>
+                      </li>
+                      <li class="color-li">
+                        <a
+                          href="#"
+                          class="color-link"
+                          data-trigger="image-screen-6"
+                          ><figure class="color-item color-6"></figure
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -383,7 +379,7 @@
         <div class="section-content">
           <h2
             id="headline"
-            class="typography-headline-elevated headline"
+            class="xm-typography-headline-elevated headline"
             style="transform: translate(0px, 0px);"
           >
             4大行业深度定制模板
@@ -430,12 +426,110 @@
       </section>
     </main>
     <!-- 引入尾部组件 -->
-    <footer class="footer">
-  <div class="content has-text-centered">
-    <p>
-      我是底部导航
-    </p>
+    <footer>
+  <div class="footer-wrap">
+    <div class="footer-content">
+      
+        <div id="ac-globalfooter">
+            <nav class="ac-gf-breadcrumbs">
+              <a href="/" class="home ac-gf-breadcrumbs-home"><span class="ac-gf-breadcrumbs-home-icon"></span></a>
+              <div class="ac-gf-breadcrumbs-path">
+                <ol class="ac-gf-breadcrumbs-list">
+                  
+                    
+                      <li class="ac-gf-breadcrumbs-item">
+                          
+                            <a class="ac-gf-breadcrumbs-link" href="/applet.html"><span>小程序</span></a>
+                          
+                      </li>
+                    
+                      <li class="ac-gf-breadcrumbs-item">
+                          
+                            <a class="ac-gf-breadcrumbs-link" href="/shop/"><span>商城</span></a>
+                          
+                      </li>
+                    
+                      <li class="ac-gf-breadcrumbs-item">
+                          
+                            <span>UI</span>
+                          
+                      </li>
+                    
+                  
+                </ol>
+              </div>
+            </nav>
+          </div>
+      
+      <div class="nav-wrap">
+        <nav>
+          <ul class="nav-group group-1">
+            <li class="headline"><a href="/applet.html">小程序</a></li>
+            <li><a href="/pastime/">休闲娱乐</a></li>
+            <li><a href="/shop/">小马商城</a></li>
+            <li><a href="/food/">自助点餐</a></li>
+            <li><a href="/minisite/">自助建站</a></li>
+            <li class="headline"><a href="http://192.168.31.139:8000/">购买</a></li>
+            <li><a href="http://192.168.31.139:8000/">选择商品</a></li>
+            <li><a href="/amortize.html">分期付款</a></li>
+          </ul>
+          <ul class="nav-group group-2">
+            <li class="headline"><a href="/smart.html#smart-header">SMART</a></li>
+            <li><a href="/smart.html#smart-header">MUI-视觉</a></li>
+            <li><a href="/smart.html#smart-header">卡片风格</a></li>
+            <li><a href="/smart.html#smart-header">交互理念</a></li>
+            <li><a href="/smart.html#smart-header">屏幕适配</a></li>
+            <li><a href="/smart.html#smart-header">产品体验</a></li>
+            <li><a href="/smart.html#smart-header">大数据</a></li>
+            <li><a href="/smart.html#smart-header">互联网营销</a></li>
+            <li><a href="/smart.html#smart-header">统计分析</a></li>
+            <li><a href="/smart.html#smart-header">智能推送</a></li>
+            <li><a href="/smart.html#smart-header">AI-Push 2.0</a></li>
+          </ul>
+          <ul class="nav-group group-3">
+            <li class="headline"><a href="/protect.html#protect-title">保驾护航</a></li>
+            <li><a href="/protect.html#protect-system">系统稳定</a></li>
+            <li><a href="/protect.html#protect-data">数据安全</a></li>
+            <li><a href="/protect.html#protect-virtual">虚拟机隔离</a></li>
+            <li><a href="/protect.html#protect-network">网络传输</a></li>
+            <li><a href="/protect.html#protect-backup">灾备措施</a></li>
+            <li><a href="/protect.html#protect-performance">系统性能</a></li>
+            <li class="headline" style="margin-top: 22px;"><a href="/oem.html">OEM工厂</a></li>
+            <li><a href="/oem.html">技术支持</a></li>
+            <li><a href="/oem.html">购买流程</a></li>
+          </ul>
+          <ul class="nav-group group-4">
+            <li class="headline"><a href="/contact.html#contact-header">联系我们</a></li>
+            <li><a href="/contact.html#contact-introduce">公司简介</a></li>
+            <li><a href="/contact.html#contact-culture">小马文化</a></li>
+            <li><a href="/contact.html#cul-group-1">小马精神</a></li>
+            <li><a href="/contact.html#cul-group-2">小马愿景</a></li>
+            <li><a href="/contact.html#cul-group-3">管理理念</a></li>
+            <li><a href="/contact.html#cul-group-4">发展体系</a></li>
+            <li><a href="/contact.html#contact-office">公司环境</a></li>
+            <li><a href="/contact.html#contact-contact">联系方式</a></li>
+          </ul>
+        </nav>
+        <div class="hot-phone">
+          <span>全国服务热线</span> <span>400-654-6993</span>
+          <span>周一至周日8:30-18:00</span>
+          <div class="service">
+              <button type="button" class="ant-btn ant-btn-primary ant-btn-background-ghost"><i aria-label="icon: message" class="anticon anticon-message"><svg viewBox="64 64 896 896" class="" data-icon="message" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M464 512a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm200 0a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm-400 0a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm661.2-173.6c-22.6-53.7-55-101.9-96.3-143.3a444.35 444.35 0 0 0-143.3-96.3C630.6 75.7 572.2 64 512 64h-2c-60.6.3-119.3 12.3-174.5 35.9a445.35 445.35 0 0 0-142 96.5c-40.9 41.3-73 89.3-95.2 142.8-23 55.4-34.6 114.3-34.3 174.9A449.4 449.4 0 0 0 112 714v152a46 46 0 0 0 46 46h152.1A449.4 449.4 0 0 0 510 960h2.1c59.9 0 118-11.6 172.7-34.3a444.48 444.48 0 0 0 142.8-95.2c41.3-40.9 73.8-88.7 96.5-142 23.6-55.2 35.6-113.9 35.9-174.5.3-60.9-11.5-120-34.8-175.6zm-151.1 438C704 845.8 611 884 512 884h-1.7c-60.3-.3-120.2-15.3-173.1-43.5l-8.4-4.5H188V695.2l-4.5-8.4C155.3 633.9 140.3 574 140 513.7c-.4-99.7 37.7-193.3 107.6-263.8 69.8-70.5 163.1-109.5 262.8-109.9h1.7c50 0 98.5 9.7 144.2 28.9 44.6 18.7 84.6 45.6 119 80 34.3 34.3 61.3 74.4 80 119 19.4 46.2 29.1 95.2 28.9 145.8-.6 99.6-39.7 192.9-110.1 262.7z"></path></svg></i><span>联系客服</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="company">
+        <div>
+          <span>Co,Ltd AII Rights Reserved.小马飞腾信息技术有限公司</span>
+        </div>
+        <div class="attention-wrap">
+          <div class="attention">关注我们：</div>
+          <div class="XM2weima" style="z-index: 100"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
-  <script type="text/javascript" src="/xiaomapage/js/vendor.be888ebd41a42c05d89a.js"></script><script type="text/javascript" src="/xiaomapage/js/shop/ui.be888ebd41a42c05d89a.js"></script></body>
+
+  <script type="text/javascript" src="/js/vendor.a1c9788979bd0a8967d6.js"></script><script type="text/javascript" src="/js/shop/ui.a1c9788979bd0a8967d6.js"></script></body>
 </html>

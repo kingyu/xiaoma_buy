@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html class="css-mask">
   <head>
-    <meta charset="utf-8">
-    <title>小马飞腾-商城</title>
-  <link href="/xiaomapage/css/shop/index.min.css" rel="stylesheet"></head>
+    <meta charset="utf-8" />
+    <title>小马飞腾 - 小马商城</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.bootcss.com/bulma/0.7.2/css/bulma.min.css"
+    />
+  <link href="/css/shop/index.min.css" rel="stylesheet"></head>
   <body class="theme-dark">
     <!-- 引入头部组件 -->
     <nav class="xm-nav">
@@ -20,12 +24,17 @@
         </a>
       </div>
       <div class="xm-item">
-        <a class="xm-link" href="/smart.html">
+        <a class="xm-link" href="/amortize.html">
           <span class="xm-link-text">SMART</span>
         </a>
       </div>
       <div class="xm-item">
-        <a class="xm-link" href="#">
+        <a class="xm-link" href="/oem.html">
+          <span class="xm-link-text">OEM工厂</span>
+        </a>
+      </div>
+      <div class="xm-item">
+        <a class="xm-link" href="/protect.html">
           <span class="xm-link-text">保驾护航</span>
         </a>
       </div>
@@ -36,71 +45,42 @@
       </div>
     </div>
     <div class="xm-item xm-item-user">
-      <a class="xm-link xm-link-user" href="http://wxapp.xiaomafeiteng.com/login">
+      <a
+        class="xm-link xm-link-user"
+        href="http://wxapp.xiaomafeiteng.com/login"
+      >
         <span class="xm-link-text">用户中心</span>
       </a>
     </div>
   </div>
 </nav>
-<div id="xm-placeholder" class="ac-nav-placeholder"></div>
-<!-- 
-<nav id="chapternav" class="xm-chapter-nav">
-  <div class="xm-chapter-nav-wrapper">
-    <div class="xm-chapter-nav-items">
-      <div class="xm-chapter-nav-item">
-        <a class="xm-chapter-nav-link" href="/pastime/index.html">
-          <figure class="xm-chapter-nav-icon icon-pastime"></figure>
-          <span class="xm-chapter-nav-label">休闲娱乐</span>
-        </a>
-      </div>
-      <div class="xm-chapter-nav-item">
-        <a class="xm-chapter-nav-link" href="/shop/newIndex.html">
-          <figure class="xm-chapter-nav-icon icon-shop"></figure>
-          <span class="xm-chapter-nav-label">小马商城</span>
-        </a>
-      </div>
-      <div class="xm-chapter-nav-item">
-        <a class="xm-chapter-nav-link" href="/food/index.html">
-          <figure class="xm-chapter-nav-icon icon-food"></figure>
-          <span class="xm-chapter-nav-label">自助点餐</span>
-        </a>
-      </div>
-      <div class="xm-chapter-nav-item">
-        <a class="xm-chapter-nav-link" href="#">
-          <figure class="xm-chapter-nav-icon icon-minisite"></figure>
-          <span class="xm-chapter-nav-label">自助建站</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</nav> -->
-
-    <nav id="xm-xy-localnav" class="xm-xy-localnav-scrim css-sticky">
-  <div class="xm-xy-wrapper">
-    <div class="xm-xy-background"></div>
-    <div class="xm-xy-content">
-      <div class="xm-xy-title">
+<div id="xm-placeholder" class="xm-nav-placeholder"></div>
+ <nav id="xm-localnav" class="xm-localnav-scrim css-sticky">
+  <div class="xm-localnav-wrapper">
+    <div class="xm-localnav-background"></div>
+    <div class="xm-localnav-content">
+      <div class="xm-localnav-title">
         <a href="/shop/">小马商城</a>
       </div>
-      <div class="xm-xy-menu">
-        <div class="xm-xy-menu-tray">
-          <div class="xm-xy-menu-items">
-            <div class="xm-xy-menu-item">
-              <span class="xm-xy-menu-link current">UI</span>
+      <div class="xm-localnav-menu">
+        <div class="xm-localnav-menu-tray">
+          <div class="xm-localnav-menu-items">
+            <div class="xm-localnav-menu-item">
+              <a href="/shop/index.html#section_ui" class="xm-localnav-menu-link">UI</a>
             </div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">大数据</a></div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">营销</a></div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">智能推送</a></div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">数据分析</a></div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">资产</a></div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">商家小程序</a></div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">服务范围</a></div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">物料</a></div>
+            <div class="xm-localnav-menu-item"><a href="/shop/index.html#section_big_data" class="xm-localnav-menu-link">大数据</a></div>
+            <div class="xm-localnav-menu-item"><a href="/shop/index.html#section_market" class="xm-localnav-menu-link">营销</a></div>
+            <div class="xm-localnav-menu-item"><a href="/shop/index.html#section_ai" class="xm-localnav-menu-link">智能推送</a></div>
+            <div class="xm-localnav-menu-item"><a href="/shop/index.html#section_analyze" class="xm-localnav-menu-link">数据分析</a></div>
+            <div class="xm-localnav-menu-item"><a href="/shop/index.html#section_statistics" class="xm-localnav-menu-link">资产</a></div>
+            <!-- <div class="xm-localnav-menu-item"><a href="#" class="xm-localnav-menu-link">商家小程序</a></div>
+            <div class="xm-localnav-menu-item"><a href="#" class="xm-localnav-menu-link">服务范围</a></div>
+            <div class="xm-localnav-menu-item"><a href="#" class="xm-localnav-menu-link">物料</a></div> -->
           </div>
         </div>
-        <div class="xm-xy-actions">
-          <div class="xm-xy-action xm-xy-action-button">
-            <a class="xm-xy-button" href="#">购买<span class="xm-xy-action-product"></span></a>
+        <div class="xm-localnav-actions">
+          <div class="xm-localnav-action xm-localnav-action-button">
+            <a class="xm-localnav-button" href="http://192.168.31.139:8000/">购买<span class="xm-localnav-action-product"></span></a>
           </div>
         </div>
       </div>
@@ -109,20 +89,44 @@
 </nav>
 
     <main class="main">
-        <section class="section section-hero">
-  <video src="../src/img/343.mp4" muted playsinline autoplay>
-  </video>
+      <section class="section section-hero">
+  <div class="container">
+    <div class="wrapper">
+      <hgroup class="headline">
+        <h1 class="xm-typography-eyebrow">小马商城</h1>
+        <h2 class="xm-typography-headline-elevated">
+          支持同城1小时<br />到店自提的o2o小程序商城
+        </h2>
+      </hgroup>
+    </div>
+    <div class="image-hero-wrap">
+      <div class="animation-canvas">
+        <figure class="image image-hero"></figure>
+        <figure class="icon-dot icon-dot-1">
+            <figcaption>18KM</figcaption>
+        </figure>
+        <figure class="icon-dot icon-dot-2">
+            <figcaption>14KM</figcaption>
+        </figure>
+        <figure class="icon-dot icon-dot-3">
+            <figcaption>16KM</figcaption>
+        </figure>
+        <figure class="icon-dot icon-dot-4">
+            <figcaption>12KM</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
 </section>
-
-        <section class="section section-ui" id="section_ui" data-delighter>
+ <section class="section section-ui xm-see" id="section_ui">
   <div class="container">
     <div class="ui-wrapper">
-      <div class="ui-head">
-        <h1 class="head-title">UI</h1>
-        <h2 class="head-subhead">精美绝伦的Mui。</h2>
-        <p class="head-caption">ui设计远不止好看这么简单。</p>
-      </div>
-      <a href="ui.html" class="icon-wrapper pill-button">
+      <hgroup class="headline">
+        <h2 class="xm-typography-eyebrow xm-anim anim-fadeInUp">UI</h2>
+        <h3 class="xm-typography-headline-elevated xm-anim anim-fadeInUp">精美绝伦的Mui。</h3>
+      </hgroup>
+      <p class="xm-typography-intro xm-anim anim-fadeInUp">ui设计远不止好看这么简单。</p>
+      <a href="/shop/ui.html" class="icon-wrapper pill-button xm-anim anim-fadeInUp">
         <span class="icon-copy">进一步了解</span>
       </a>
     </div>
@@ -134,9 +138,6 @@
           <div class="glass-reflection-container">
             <div class="glass-reflection"></div>
           </div>
-          <div class="logos-reflection-container">
-            <div class="logos-reflection"></div>
-          </div>
           <div class="darken"></div>
         </div>
         <div class="hero-animation-top">
@@ -146,176 +147,253 @@
           <div class="flare"><div class="gradient"></div></div>
         </div>
         <div class="hero-collective-masking-gradient"></div>
-        <div class="inline-video-media">
-          <div class="hero-animation-endframe"></div>
-        </div>
       </figure>
     </div>
   </div>
 </section>
-
-        <section class="section section-data" data-delighter>
+ <section class="section section-big-data" id="section_big_data">
   <div class="container">
-    <div class="data-container">
-      <div class="data-inner">
-        <div class="headline">
-          <h2 class="headline-subhead">精准，数据为证</h2>
-          <hr class="line" />
-          <p class="headline-caption">
-            大数据筛选目标用户，根据目标用户实现精准推送。看看数据的区分和定位你就知道了。
-          </p>
+    <div class="data-wrapper">
+      <div
+        class="animation-wrapper"
+        id="animation-wrapper"
+        style="height: 3000px;"
+      >
+        <div class="sticky-wrapper">
+          <div class="screen-wrapper" >
+            <figure class="image-chip bg-image-overview-screen-endframe"></figure>
+            <video
+              id="big_data_video"
+              class="video video-screen"
+              muted
+              playsinline
+              src="http://pn7gq6n0k.bkt.clouddn.com/shop_bigdata_video.mp4"
+            ></video>
+          </div>
         </div>
-        <div class="data-table">
-            <div class="progress-table">
-                <h4 class="graph-heading">根据用户群体，实现精准推送</h4>
-                <hr class="line" />
-                <div class="columns is-8">
-                    <div class="column is-7">
-                        <figure class="graph graph-horizontalbar" data-delighter>
-                            <div class="graph-unit unit-1">
-                                <div class="graph-data">
-                                <div class="progress-bar primary"></div>
-                                <div class="graph-caption">土豪：月均消费额3000元以上</div>
-                                </div>
-                            </div>
-                            <div class="graph-unit unit-2">
-                                <div class="graph-data">
-                                <div class="progress-bar secondary"></div>
-                                <div class="graph-caption">白领：月均消费额2000-3000元</div>
-                                </div>
-                            </div>
-                            <div class="graph-unit unit-3">
-                                <div class="graph-data">
-                                <div class="progress-bar"></div>
-                                <div class="graph-caption">普通：月均消费额1000-2000元</div>
-                                </div>
-                            </div>
-                            <div class="graph-unit unit-4">
-                                <div class="graph-data">
-                                <div class="progress-bar"></div>
-                                <div class="graph-caption">屌丝：月均消费额1-1000元</div>
-                                </div>
-                            </div>
-                            </figure>
-                    </div>
-                    <div class="column is-2"></div>
-                    <div class="column is-3">
-                        <figure class="badge graph-badge" data-delighter>
-                        <div class="badge-content">
-                            <span class="badge-caption graph-label">根据</span>
-                            <span class="badge-value">用户群体</span></span>
-                            <span class="badge-caption graph-label">精准推送</span>
-                        </div>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-            <div class="progress-table">
-                <h4 class="graph-heading">根据用户活跃度，实现精准推送</h4>
-                <hr class="line" />
-                <div class="columns is-8">
-                    <div class="column is-7">
-                        <figure class="graph graph-horizontalbar" data-delighter>
-                            <div class="graph-unit unit-1">
-                                <div class="graph-data">
-                                <div class="progress-bar primary"></div>
-                                <div class="graph-caption">超高活跃度：平均月订单30笔以上</div>
-                                </div>
-                            </div>
-                            <div class="graph-unit unit-2">
-                                <div class="graph-data">
-                                <div class="progress-bar secondary"></div>
-                                <div class="graph-caption">高活跃度：平均月订单20-30笔</div>
-                                </div>
-                            </div>
-                            <div class="graph-unit unit-3">
-                                <div class="graph-data">
-                                <div class="progress-bar"></div>
-                                <div class="graph-caption">一般活跃度：平均月订单10-20笔</div>
-                                </div>
-                            </div>
-                            <div class="graph-unit unit-4">
-                                <div class="graph-data">
-                                <div class="progress-bar"></div>
-                                <div class="graph-caption">低活跃度：平均月订单1-10笔</div>
-                                </div>
-                            </div>
-                            </figure>
-                    </div>
-                    <div class="column is-2"></div>
-                    <div class="column is-3">
-                        <figure class="badge graph-badge" data-delighter>
-                        <div class="badge-content">
-                            <span class="badge-caption graph-label">根据</span>
-                            <span class="badge-value">用户活跃度</span></span>
-                            <span class="badge-caption graph-label">精准推送</span>
-                        </div>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-            <div class="progress-table">
-                <h4 class="graph-heading">根据商品喜好，实现精准推送</h4>
-                <hr class="line" />
-                <div class="columns is-8">
-                    <div class="column is-7">
-                        <figure class="graph graph-horizontalbar" data-delighter>
-                            <div class="graph-unit unit-1">
-                                <div class="graph-data">
-                                <div class="progress-bar primary"></div>
-                                <div class="graph-caption">钟爱：平均月复购率10次以上</div>
-                                </div>
-                            </div>
-                            <div class="graph-unit unit-2">
-                                <div class="graph-data">
-                                <div class="progress-bar secondary"></div>
-                                <div class="graph-caption">喜欢：平均月复购率5-7次</div>
-                                </div>
-                            </div>
-                            <div class="graph-unit unit-3">
-                                <div class="graph-data">
-                                <div class="progress-bar"></div>
-                                <div class="graph-caption">一般：平均月复购率3-5次</div>
-                                </div>
-                            </div>
-                            <div class="graph-unit unit-4">
-                                <div class="graph-data">
-                                <div class="progress-bar"></div>
-                                <div class="graph-caption">冷淡：平均月复购率1-3次</div>
-                                </div>
-                            </div>
-                            </figure>
-                    </div>
-                    <div class="column is-2"></div>
-                    <div class="column is-3">
-                        <figure class="badge graph-badge" data-delighter>
-                        <div class="badge-content">
-                            <span class="badge-caption graph-label">根据</span>
-                            <span class="badge-value">商品喜好</span></span>
-                            <span class="badge-caption graph-label">精准推送</span>
-                        </div>
-                        </figure>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="section-content">
+        <div class="heading-wrapper" style="top: -3000px;">
+          <h2
+            class="hero-headline"
+            id="hero-headline"
+          >
+            <figure class="logo image-overview-logo-imac" ></figure>
+            <figure class="logo image-overview-logo-pro" ></figure>
+          </h2>
+        </div>
+        <div class="headline">
+          <h3 class="xm-typography-headline-elevated">
+            识别各种用户的<br />兴趣或特征。
+          </h3>
+          <p class="xm-typography-intro">
+            信息提供商比如电子商务网站，也希望能够根据用户的偏好，从海量的商<br />
+            品信息中为用户推荐感兴趣或者需要的商品资源。以某运营商的用户宽带<br />
+            访问记录为基础数据，通过对用户访问日志记录进行分析，挖掘出用户的<br />
+            兴趣爱好特征，从而实现商品信息的个性化推荐。
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-        <section class="section section-market">
+<section class="section section-data">
   <div class="container">
-    <div data-delighter="start:0.25;end:false">
+    <div class="data-container">
+      <div class="data-inner">
+        <div class="headline">
+          <h3 class="xm-typography-headline">精准，数据为证</h3>
+          <hr class="line" />
+          <p class="xm-typography-intro">
+            大数据筛选目标用户，根据目标用户实现精准推送。看看数据的区分和定位你就知道了。
+          </p>
+        </div>
+        <div class="data-table">
+          <div class="progress-table">
+            <h4 class="graph-heading">根据用户群体，实现精准推送</h4>
+            <div class="tile is-ancestor">
+              <div class="tile is-parent is-9">
+                <div class="tile is-child">
+                  <div class="graph-inner">
+                    <figure class="graph graph-horizontalbar xm-see">
+                      <div class="graph-unit unit-1">
+                        <div class="graph-data">
+                          <div class="progress-bar primary"></div>
+                          <div class="graph-caption">
+                            土豪：月均消费额3000元以上
+                          </div>
+                        </div>
+                      </div>
+                      <div class="graph-unit unit-2">
+                        <div class="graph-data">
+                          <div class="progress-bar secondary"></div>
+                          <div class="graph-caption">
+                            白领：月均消费额2000-3000元
+                          </div>
+                        </div>
+                      </div>
+                      <div class="graph-unit unit-3">
+                        <div class="graph-data">
+                          <div class="progress-bar"></div>
+                          <div class="graph-caption">
+                            普通：月均消费额1000-2000元
+                          </div>
+                        </div>
+                      </div>
+                      <div class="graph-unit unit-4">
+                        <div class="graph-data">
+                          <div class="progress-bar"></div>
+                          <div class="graph-caption">
+                            屌丝：月均消费额1-1000元
+                          </div>
+                        </div>
+                      </div>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="tile is-parent">
+                <div class="tile is-child">
+                  <figure class="badge graph-badge xm-see">
+                    <div class="badge-content">
+                      <span class="badge-caption graph-label">根据</span>
+                      <span class="badge-value">用户群体</span>
+                      <span class="badge-caption graph-label">精准推送</span>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="progress-table">
+            <h4 class="graph-heading">根据用户活跃度，实现精准推送</h4>
+            <div class="tile is-ancestor">
+              <div class="tile is-parent is-9">
+                <div class="tile is-child">
+                  <div class="graph-inner">
+                    <figure class="graph graph-horizontalbar xm-see">
+                      <div class="graph-unit unit-1">
+                        <div class="graph-data">
+                          <div class="progress-bar primary"></div>
+                          <div class="graph-caption">
+                            超高活跃度：平均月订单30笔以上
+                          </div>
+                        </div>
+                      </div>
+                      <div class="graph-unit unit-2">
+                        <div class="graph-data">
+                          <div class="progress-bar secondary"></div>
+                          <div class="graph-caption">
+                            高活跃度：平均月订单20-30笔
+                          </div>
+                        </div>
+                      </div>
+                      <div class="graph-unit unit-3">
+                        <div class="graph-data">
+                          <div class="progress-bar"></div>
+                          <div class="graph-caption">
+                            一般活跃度：平均月订单10-20笔
+                          </div>
+                        </div>
+                      </div>
+                      <div class="graph-unit unit-4">
+                        <div class="graph-data">
+                          <div class="progress-bar"></div>
+                          <div class="graph-caption">
+                            低活跃度：平均月订单1-10笔
+                          </div>
+                        </div>
+                      </div>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="tile is-parent">
+                <div class="tile is-child">
+                  <figure class="badge graph-badge xm-see">
+                    <div class="badge-content">
+                      <span class="badge-caption graph-label">根据</span>
+                      <span class="badge-value">用户活跃度</span>
+                      <span class="badge-caption graph-label">精准推送</span>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="progress-table">
+            <h4 class="graph-heading">根据商品喜好，实现精准推送</h4>
+            <div class="tile is-ancestor">
+              <div class="tile is-parent is-9">
+                <div class="tile is-child">
+                  <div class="graph-inner">
+                    <figure class="graph graph-horizontalbar xm-see">
+                      <div class="graph-unit unit-1">
+                        <div class="graph-data">
+                          <div class="progress-bar primary"></div>
+                          <div class="graph-caption">
+                            钟爱：平均月复购率10次以上
+                          </div>
+                        </div>
+                      </div>
+                      <div class="graph-unit unit-2">
+                        <div class="graph-data">
+                          <div class="progress-bar secondary"></div>
+                          <div class="graph-caption">
+                            喜欢：平均月复购率5-7次
+                          </div>
+                        </div>
+                      </div>
+                      <div class="graph-unit unit-3">
+                        <div class="graph-data">
+                          <div class="progress-bar"></div>
+                          <div class="graph-caption">
+                            一般：平均月复购率3-5次
+                          </div>
+                        </div>
+                      </div>
+                      <div class="graph-unit unit-4">
+                        <div class="graph-data">
+                          <div class="progress-bar"></div>
+                          <div class="graph-caption">
+                            冷淡：平均月复购率1-3次
+                          </div>
+                        </div>
+                      </div>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="tile is-parent">
+                <div class="tile is-child">
+                  <figure class="badge graph-badge xm-see">
+                    <div class="badge-content">
+                      <span class="badge-caption graph-label">根据</span>
+                      <span class="badge-value">商品喜好</span>
+                      <span class="badge-caption graph-label">精准推送</span>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="section section-market" id="section_market">
+  <div class="container">
+    <div class="xm-see">
       <div class="columns is-variable bd-klmn-columns">
         <div class="column is-11">
           <div class="market-container">
-            <div class="headline">
-              <h1 class="headline-title">营销</h1>
-              <h2 class="headline-subhead">营销应该循序渐进</h2>
-              <p class="headline-caption">如何把一个新客培育成铁杆粉丝</p>
-            </div>
-            <a href="market.html" class="icon-wrapper pill-button"
+            <hgroup class="headline">
+              <h2 class="xm-typography-eyebrow">营销</h2>
+              <h3 class="xm-typography-headline-elevated">营销应该循序渐进</h3>
+            </hgroup>
+            <p class="xm-typography-intro">如何把一个新客培育成铁杆粉丝</p>
+            <a href="/shop/market.html" class="icon-wrapper pill-button"
               ><span class="icon-copy">进一步了解</span></a
             >
           </div>
@@ -338,18 +416,15 @@
     </div>
   </div>
 </section>
-
-        <section class="section section-ai">
+ <section class="section section-ai" id="section_ai">
   <div class="container">
     <div class="headline-container">
-      <div class="headline">
-        <h1 class="headline-title">智能推送</h1>
-        <h2 class="headline-subhead">聪明绝顶的<br />Ai · Push</h2>
-        <p class="headline-caption">
-          什么是aipush? 识别各种用户的兴趣或特征，从而有针对性地向用户主动。
-        </p>
-      </div>
-      <a href="aipush.html" class="icon-wrapper pill-button"
+      <hgroup class="headline">
+        <h2 class="xm-typography-eyebrow">智能推送</h2>
+        <h3 class="xm-typography-headline-elevated">聪明绝顶的<br />Ai · Push</h3>
+      </hgroup>
+      <p class="xm-typography-intro">什么是aipush? 识别各种用户的兴趣或特征，从而有针对性地向用户主动。</p>
+      <a href="/shop/aipush.html" class="icon-wrapper pill-button"
         ><span class="icon-copy">进一步了解</span></a
       >
     </div>
@@ -359,95 +434,46 @@
           <div class="inline-video-container inline-video-ar">
             <div class="inline-video-center">
               <div class="inline-video-media">
-                <video
-                  class="inline-video"
-                  muted
-                  playsinline
-                  autoplay
-                  loop
-                  src="../src/img/bfc862dd-3579-4080-9ff1-ce5321490c04.mp4"
-                ></video>
-                <div class="inline-video-posterframe active static-show"></div>
-                <div class="inline-video-startframe static-hide"></div>
+                  <figure class="image"></figure>
               </div>
-            </div>
-            <div class="inline-video-controls">
-              <div class="inline-video-graphic-loading">
-                <span class="label">正在加载 增强现实示例</span>
-              </div>
-              <button class="inline-video-button-play active">
-                <span class="label">播放 增强现实示例</span></button
-              ><button class="inline-video-button-pause">
-                <span class="label">暂停 增强现实示例</span>
-              </button>
             </div>
           </div>
         </div>
       </div>
       <figure class="computer-glow" style="opacity: 1;"></figure>
     </div>
-    <!-- <div class="video-container">
-              <figure class="video-elm retina-video image-endframe"></figure>
-          </div> -->
   </div>
 </section>
-
-        <section class="section section-analyze">
+ <section class="section section-analyze" id="section_analyze">
   <div class="container">
     <div class="headline-container">
-      <div class="copy">
-        <div class="headline">
-          <h1 class="headline-title">数据分析</h1>
-          <h2 class="headline-subhead">多维度的数据分析。</h2>
-          <p class="headline-caption">
-            从多个角度即维度进行观察和分析，多维的分析操作是指通过对多维形式组织起来的数据进行切片、切块、聚合、钻取，、旋转等分析操作，以求剖析数据，使用户能够从多种维度、多个侧面、多种数据综合度查看数据，从而深入地了解包在数据中的信息和内涵。
-          </p>
-        </div>
-      </div>
+      <hgroup class="headline">
+        <h2 class="xm-typography-eyebrow">数据分析</h2>
+        <h3 class="xm-typography-headline-elevated">多维度的数据分析。</h3>
+      </hgroup>
+      <p class="xm-typography-intro">
+        从多个角度即维度进行观察和分析，多维的分析操作是指通过对多维形式组织起来的数据进行切<br />片、切块、聚合、钻取，、旋转等分析操作，以求剖析数据，使用户能够从多种维度、多个侧面<br />、多种数据综合度查看数据，从而深入地了解包在数据中的信息和内涵。
+      </p>
     </div>
-    <div class="gallery-wrap show-screen">
-      <div
-        id="performance-gallery-item-1"
-        class="performance-gallery-item ac-gallery-lastitem ac-gallery-previousitem"
-      >
-        <div class="performance-gallery-screen">
-          <figure
-            role="img"
-            class="configurator-gallery-image image-performance-gallery-photography"
-          ></figure>
+    <div class="gallery-wrap">
+      <div id="gallery-item-1" class="gallery-item" style="display: block;">
+        <div class="gallery-screen">
+          <figure class="gallery-image image-1"></figure>
         </div>
       </div>
-      <div
-        id="performance-gallery-item-2"
-        class="performance-gallery-item ac-gallery-currentitem"
-      >
-        <div class="performance-gallery-screen">
-          <figure
-            role="img"
-            class="configurator-gallery-image image-performance-gallery-coding"
-          ></figure>
+      <div id="gallery-item-2" class="gallery-item">
+        <div class="gallery-screen">
+          <figure class="gallery-image image-2"></figure>
         </div>
       </div>
-      <div
-        id="performance-gallery-item-3"
-        class="performance-gallery-item ac-gallery-currentitem"
-      >
-        <div class="performance-gallery-screen">
-          <figure
-            role="img"
-            class="configurator-gallery-image image-performance-gallery-video-editing"
-          ></figure>
+      <div id="gallery-item-3" class="gallery-item">
+        <div class="gallery-screen">
+          <figure class="gallery-image image-3"></figure>
         </div>
       </div>
-      <div
-        id="performance-gallery-item-4"
-        class="performance-gallery-item ac-gallery-nextitem"
-      >
-        <div class="performance-gallery-screen">
-          <figure
-            role="img"
-            class="configurator-gallery-image image-performance-gallery-graphics"
-          ></figure>
+      <div id="gallery-item-4" class="gallery-item">
+        <div class="gallery-screen">
+          <figure class="gallery-image image-4"></figure>
         </div>
       </div>
     </div>
@@ -455,185 +481,47 @@
       <div class="tabs is-medium">
         <ul>
           <li class="is-active">
-            <a
-              id="performance-gallery-item-1-trigger"
-              data-trigger="performance-gallery-item-1"
-              >店铺分析</a
-            >
+            <a class="tabs-link" data-trigger="gallery-item-1">店铺分析</a>
           </li>
           <li>
-            <a
-              id="performance-gallery-item-2-trigger"
-              data-trigger="performance-gallery-item-2"
-              >商品分析</a
-            >
+            <a class="tabs-link" data-trigger="gallery-item-2">商品分析</a>
           </li>
           <li>
-            <a
-              id="performance-gallery-item-3-trigger"
-              data-trigger="performance-gallery-item-3"
-              >交易分析</a
-            >
+            <a class="tabs-link" data-trigger="gallery-item-3">交易分析</a>
           </li>
           <li>
-            <a
-              id="performance-gallery-item-4-trigger"
-              data-trigger="performance-gallery-item-4"
-              >客户分析</a
-            >
+            <a class="tabs-link" data-trigger="gallery-item-4">客户分析</a>
           </li>
         </ul>
       </div>
     </div>
   </div>
 </section>
-
-        <section class="section section-statistics" data-delighter>
+ <section class="section section-statistics" id="section_statistics">
   <div class="container">
     <div class="table-wrap">
-      <!-- <div class="tile is-ancestor">
-        <div class="tile is-4">
-          <div class="headline">
-            <h1 class="headline-title">资产</h1>
-            <h2 class="headline-subhead">
-              每一笔交易都心中有数可支持对账单导出
-            </h2>
-          </div>
-        </div>
-        <div class="tile is-7">
-          <div class="data-container">
-            <div class="progress-table">
-              <h4 class="graph-heading">2019/1/7-2019/1/13 一周概况</h4>
-              <hr class="line" />
-              <div class="columns is-8">
-                <div class="column is-7">
-                  <figure class="graph graph-horizontalbar" data-delighter>
-                    <div class="graph-unit unit-1">
-                      <div class="graph-data">
-                        <div class="progress-bar primary"></div>
-                        <div class="graph-caption">总共 118 条记录</div>
-                      </div>
-                    </div>
-                    <div class="graph-unit unit-2">
-                      <div class="graph-data">
-                        <div class="progress-bar"></div>
-                        <div class="graph-caption">总共 82 条记录</div>
-                      </div>
-                    </div>
-                    <div class="graph-unit unit-3">
-                      <div class="graph-data">
-                        <div class="progress-bar primary"></div>
-                        <div class="graph-caption">总共 8 条记录</div>
-                      </div>
-                    </div>
-                    <div class="graph-unit unit-4">
-                      <div class="graph-data">
-                        <div class="progress-bar"></div>
-                        <div class="graph-caption">总共 12 条记录</div>
-                      </div>
-                    </div>
-                  </figure>
-                </div>
-                <div class="column is-2"></div>
-                <div class="column is-3">
-                  <figure class="badge graph-badge" data-delighter>
-                    <div class="badge-content">
-                      <span class="badge-caption graph-label"
-                        >本周全部收入</span
-                      >
-                      <span class="badge-value">收入</span>
-                    </div>
-                  </figure>
-                  <figure class="badge graph-badge" data-delighter>
-                    <div class="badge-content">
-                      <span class="badge-caption graph-label"
-                        >本周全部退款</span
-                      >
-                      <span class="badge-value">退款</span>
-                    </div>
-                  </figure>
-                </div>
-              </div>
-            </div>
-            <div class="progress-table">
-              <h4 class="graph-heading">2018/1/1-2018/12/31 一年概况</h4>
-              <hr class="line" />
-              <div class="columns is-8">
-                <div class="column is-7">
-                  <figure class="graph graph-horizontalbar" data-delighter>
-                    <div class="graph-unit unit-1">
-                      <div class="graph-data">
-                        <div class="progress-bar primary"></div>
-                        <div class="graph-caption">总共 13724 条记录</div>
-                      </div>
-                    </div>
-                    <div class="graph-unit unit-2">
-                      <div class="graph-data">
-                        <div class="progress-bar"></div>
-                        <div class="graph-caption">总共 10230 条记录</div>
-                      </div>
-                    </div>
-                    <div class="graph-unit unit-3">
-                      <div class="graph-data">
-                        <div class="progress-bar primary"></div>
-                        <div class="graph-caption">总共 118条记录</div>
-                      </div>
-                    </div>
-                    <div class="graph-unit unit-4">
-                      <div class="graph-data">
-                        <div class="progress-bar"></div>
-                        <div class="graph-caption">总共 189 条记录</div>
-                      </div>
-                    </div>
-                  </figure>
-                </div>
-                <div class="column is-2"></div>
-                <div class="column is-3">
-                  <figure class="badge graph-badge" data-delighter>
-                    <div class="badge-content">
-                      <span class="badge-caption graph-label"
-                        >2018全部收入</span
-                      >
-                      <span class="badge-value">收入</span>
-                    </div>
-                  </figure>
-                  <figure class="badge graph-badge" data-delighter>
-                    <div class="badge-content">
-                      <span class="badge-caption graph-label"
-                        >2018全部退款</span
-                      >
-                      <span class="badge-value">退款</span>
-                    </div>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
       <div class="tile is-ancestor">
         <div class="tile is-parent">
           <div class="tile is-child">
-            <div class="headline">
-              <h1 class="headline-title">资产</h1>
-              <h2 class="headline-subhead">
-                每一笔交易都心中有数可支持对账单导出
-              </h2>
-            </div>
+            <hgroup class="headline">
+              <h2 class="xm-typography-eyebrow">资产</h2>
+              <h3 class="xm-typography-headline-elevated">
+                每一笔交易都心中有数可支持对账单导出。
+              </h3>
+            </hgroup>
           </div>
         </div>
-        <div class="tile is-8 is-vertical is-parent">
+        <div class="tile is-7 is-vertical is-parent">
           <div class="tile is-child">
             <div class="tile">
               <div class="tile is-vertical">
                 <div class="tile is-child">
                   <h4 class="data-heading">2019/1/7-2019/1/13 一周概况</h4>
-                  <hr class="line" />
                 </div>
-                <div class="tile is-child">
-                  <div class="tile progress-table">
+                <div class="tile is-child progress-table purple">
+                  <div class="tile">
                     <div class="tile is-child">
-                      <figure class="graph graph-horizontalbar" data-delighter>
+                      <figure class="graph graph-horizontalbar xm-see">
                         <div class="graph-unit unit-1">
                           <div class="graph-data">
                             <div class="progress-bar primary"></div>
@@ -649,7 +537,7 @@
                       </figure>
                     </div>
                     <div class="tile is-child is-4">
-                      <figure class="badge" data-delighter>
+                      <figure class="badge xm-see">
                         <div class="badge-content">
                           <span class="badge-caption">本周全部收入</span>
                           <span class="badge-value">收入</span>
@@ -658,10 +546,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="tile is-child">
-                  <div class="tile progress-table">
+                <div class="tile is-child progress-table purple">
+                  <div class="tile">
                     <div class="tile is-child">
-                      <figure class="graph graph-horizontalbar" data-delighter>
+                      <figure class="graph graph-horizontalbar xm-see">
                         <div class="graph-unit unit-3">
                           <div class="graph-data">
                             <div class="progress-bar primary"></div>
@@ -677,12 +565,46 @@
                       </figure>
                     </div>
                     <div class="tile is-child is-4">
-                      <figure class="badge" data-delighter>
+                      <figure class="badge xm-see">
                         <div class="badge-content">
                           <span class="badge-caption">本周全部退款</span>
                           <span class="badge-value">退款</span>
                         </div>
                       </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="tile is-child">
+                  <div class="bottom-tip purple">
+                    <div class="b-tag tag-week">
+                      <span>本周</span>
+                      <div class="progress-table">
+                        <figure class="graph">
+                          <div class="graph-unit">
+                            <div class="graph-data">
+                              <div
+                                class="progress-bar primary"
+                                style="width:100%"
+                              ></div>
+                            </div>
+                          </div>
+                        </figure>
+                      </div>
+                    </div>
+                    <div class="b-tag tag-last-week">
+                      <span>下周</span>
+                      <div class="progress-table">
+                        <figure class="graph">
+                          <div class="graph-unit">
+                            <div class="graph-data">
+                              <div
+                                class="progress-bar"
+                                style="width:100%"
+                              ></div>
+                            </div>
+                          </div>
+                        </figure>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -694,12 +616,11 @@
               <div class="tile is-vertical">
                 <div class="tile is-child">
                   <h4 class="data-heading">2018/1/1-2018/12/31 一年概况</h4>
-                  <hr class="line" />
                 </div>
-                <div class="tile is-child">
-                  <div class="tile progress-table">
+                <div class="tile is-child progress-table">
+                  <div class="tile">
                     <div class="tile is-child">
-                      <figure class="graph graph-horizontalbar" data-delighter>
+                      <figure class="graph graph-horizontalbar xm-see">
                         <div class="graph-unit unit-1">
                           <div class="graph-data">
                             <div class="progress-bar primary"></div>
@@ -715,7 +636,7 @@
                       </figure>
                     </div>
                     <div class="tile is-child is-4">
-                      <figure class="badge" data-delighter>
+                      <figure class="badge xm-see">
                         <div class="badge-content">
                           <span class="badge-caption">2018全部收入</span>
                           <span class="badge-value">收入</span>
@@ -724,10 +645,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="tile is-child">
-                  <div class="tile progress-table">
+                <div class="tile is-child progress-table">
+                  <div class="tile">
                     <div class="tile is-child">
-                      <figure class="graph graph-horizontalbar" data-delighter>
+                      <figure class="graph graph-horizontalbar xm-see">
                         <div class="graph-unit unit-3">
                           <div class="graph-data">
                             <div class="progress-bar primary"></div>
@@ -743,12 +664,46 @@
                       </figure>
                     </div>
                     <div class="tile is-child is-4">
-                      <figure class="badge" data-delighter>
+                      <figure class="badge xm-see">
                         <div class="badge-content">
                           <span class="badge-caption">2018全部退款</span>
                           <span class="badge-value">退款</span>
                         </div>
                       </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="tile is-child">
+                  <div class="bottom-tip">
+                    <div class="b-tag tag-week">
+                      <span>2018</span>
+                      <div class="progress-table">
+                        <figure class="graph">
+                          <div class="graph-unit">
+                            <div class="graph-data">
+                              <div
+                                class="progress-bar primary"
+                                style="width:100%"
+                              ></div>
+                            </div>
+                          </div>
+                        </figure>
+                      </div>
+                    </div>
+                    <div class="b-tag tag-last-week">
+                      <span>2017</span>
+                      <div class="progress-table">
+                        <figure class="graph">
+                          <div class="graph-unit">
+                            <div class="graph-data">
+                              <div
+                                class="progress-bar"
+                                style="width:100%"
+                              ></div>
+                            </div>
+                          </div>
+                        </figure>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -760,8 +715,7 @@
     </div>
   </div>
 </section>
-
-        <section class="section section-components">
+ <section class="section section-components">
   <div class="container">
     <div class="sticky-container">
       <div class="sticky-item">
@@ -798,62 +752,171 @@
     </div>
     <div class="copy-container" id="copy-container">
       <div class="section-content">
-        <div class="component-set">
+        <div class="component-set" data-delighter="start:0.5;end:0.3">
           <div class="copy-wrapper">
-            <h2 class="subsection-h1">小马商城</h2>
-            <h3 class="subsection-headline">覆盖衣食住行。</h3>
-            <p class="subsection-copy">
-              小马的专业服务覆盖电商所需，为广大客户提供更优质、更满意的服务。以技术为驱动，以客户为宗旨，为各行各业客户提供专业且优质的移动电商产品。
+            <hgroup class="headline">
+              <h2 class="xm-typography-eyebrow">小马商城</h2>
+              <h3 class="xm-typography-headline-elevated">覆盖衣食住行。</h3>
+            </hgroup>
+            <p class="xm-typography-intro">
+              小马的专业服务覆盖电商所需， 为广大客户提供更<br />优质、更满意的服务。以技术为驱动，以客户为宗旨<br />，为各行各业客户提供专业且优质的移动电商产品。
             </p>
           </div>
         </div>
-        <div class="component-set">
+        <div class="component-set" data-delighter="start:0.5;end:0.3">
           <div class="copy-wrapper" id="clothes">
-            <h3 class="subsection-headline">衣</h3>
-            <p class="subsection-copy">
-              小马的专业服务覆盖电商所需，为广大客户提供更优质、更满意的服务。以技术为驱动，以客户为宗旨，为各行各业客户提供专业且优质的移动电商产品。
+            <h4 class="xm-typography-headline-elevated">衣</h4>
+            <p class="xm-typography-intro">
+                女装，上衣，裤子，裙子，美妆，母婴，男装，内衣，鞋<br />靴，童装，珠宝，眼镜，手表，箱包，饰品，运动户外等。
             </p>
           </div>
         </div>
-        <div class="component-set">
+        <div class="component-set" data-delighter="start:0.5;end:0.3">
           <div class="copy-wrapper" id="food">
-            <h3 class="subsection-headline">食</h3>
-            <p class="subsection-copy">
-              小马的专业服务覆盖电商所需，为广大客户提供更优质、更满意的服务。以技术为驱动，以客户为宗旨，为各行各业客户提供专业且优质的移动电商产品。
+            <h4 class="xm-typography-headline-elevated">食</h4>
+            <p class="xm-typography-intro">
+                休闲零食，小吃，特产，生鲜，精油调味， 水饮茗茶<br />，进口食品，
+                中外名酒，营养保健，奶粉，新鲜水果<br />，蔬菜蛋品，冷饮冻食等。    
             </p>
           </div>
         </div>
-        <div class="component-set">
+        <div class="component-set" data-delighter="start:0.5;end:0.3">
           <div class="copy-wrapper" id="reside">
-            <h3 class="subsection-headline">住</h3>
-            <p class="subsection-copy">
-              小马的专业服务覆盖电商所需，为广大客户提供更优质、更满意的服务。以技术为驱动，以客户为宗旨，为各行各业客户提供专业且优质的移动电商产品。
+            <h4 class="xm-typography-headline-elevated">住</h4>
+            <p class="xm-typography-intro">
+                租房，房子，二手房，家纺，生活日用，家装软饰，水<br />具酒具，厨
+                房配件，刀剪菜板，茶具，餐具， 厨房卫<br />浴，灯饰照明，家具，阳
+                台户外，商业办公等。
             </p>
           </div>
         </div>
-        <div class="component-set">
+        <div class="component-set" data-delighter="start:0.5;end:0;">
           <div class="copy-wrapper" id="move">
-            <h3 class="subsection-headline">行</h3>
-            <p class="subsection-copy">
-              小马的专业服务覆盖电商所需，为广大客户提供更优质、更满意的服务。以技术为驱动，以客户为宗旨，为各行各业客户提供专业且优质的移动电商产品。
+            <h4 class="xm-typography-headline">行</h4>
+            <p class="xm-typography-intro">
+                乘用车，二手车，车载电器，维修保养，美容清洗，汽<br />车装饰，汽
+                车服务，摩托车，自行车，电动车，平衡车<br />等。
             </p>
           </div>
         </div>
       </div>
-      <!--/section-content-->
     </div>
-    <!--/copy-container-->
+    <!-- <div class="section-sticky-nav">
+      <div class="sticky-nav-bg"></div>
+    </div> -->
   </div>
 </section>
 
     </main>
+    <div class="material-wrapper">
+      <div class="wrapper">
+        <hgroup class="headline">
+          <h2 class="xm-typography-eyebrow">物料</h2>
+          <h3 class="xm-typography-headline">物料支持，扫码体验。</h3>
+        </hgroup>
+        <p class="xm-typography-intro">桌码，收银台码，门码，店内指引牌码。</p>
+      </div>
+      <figure class="image-material"></figure>
+    </div>
     <!-- 引入尾部组件 -->
-    <footer class="footer">
-  <div class="content has-text-centered">
-    <p>
-      我是底部导航
-    </p>
+    <footer>
+  <div class="footer-wrap">
+    <div class="footer-content">
+      
+        <div id="ac-globalfooter">
+            <nav class="ac-gf-breadcrumbs">
+              <a href="/" class="home ac-gf-breadcrumbs-home"><span class="ac-gf-breadcrumbs-home-icon"></span></a>
+              <div class="ac-gf-breadcrumbs-path">
+                <ol class="ac-gf-breadcrumbs-list">
+                  
+                    
+                      <li class="ac-gf-breadcrumbs-item">
+                          
+                            <a class="ac-gf-breadcrumbs-link" href="/applet.html"><span>小程序</span></a>
+                          
+                      </li>
+                    
+                      <li class="ac-gf-breadcrumbs-item">
+                          
+                            <span>商城</span>
+                          
+                      </li>
+                    
+                  
+                </ol>
+              </div>
+            </nav>
+          </div>
+      
+      <div class="nav-wrap">
+        <nav>
+          <ul class="nav-group group-1">
+            <li class="headline"><a href="/applet.html">小程序</a></li>
+            <li><a href="/pastime/">休闲娱乐</a></li>
+            <li><a href="/shop/">小马商城</a></li>
+            <li><a href="/food/">自助点餐</a></li>
+            <li><a href="/minisite/">自助建站</a></li>
+            <li class="headline"><a href="http://192.168.31.139:8000/">购买</a></li>
+            <li><a href="http://192.168.31.139:8000/">选择商品</a></li>
+            <li><a href="/amortize.html">分期付款</a></li>
+          </ul>
+          <ul class="nav-group group-2">
+            <li class="headline"><a href="/smart.html#smart-header">SMART</a></li>
+            <li><a href="/smart.html#smart-header">MUI-视觉</a></li>
+            <li><a href="/smart.html#smart-header">卡片风格</a></li>
+            <li><a href="/smart.html#smart-header">交互理念</a></li>
+            <li><a href="/smart.html#smart-header">屏幕适配</a></li>
+            <li><a href="/smart.html#smart-header">产品体验</a></li>
+            <li><a href="/smart.html#smart-header">大数据</a></li>
+            <li><a href="/smart.html#smart-header">互联网营销</a></li>
+            <li><a href="/smart.html#smart-header">统计分析</a></li>
+            <li><a href="/smart.html#smart-header">智能推送</a></li>
+            <li><a href="/smart.html#smart-header">AI-Push 2.0</a></li>
+          </ul>
+          <ul class="nav-group group-3">
+            <li class="headline"><a href="/protect.html#protect-title">保驾护航</a></li>
+            <li><a href="/protect.html#protect-system">系统稳定</a></li>
+            <li><a href="/protect.html#protect-data">数据安全</a></li>
+            <li><a href="/protect.html#protect-virtual">虚拟机隔离</a></li>
+            <li><a href="/protect.html#protect-network">网络传输</a></li>
+            <li><a href="/protect.html#protect-backup">灾备措施</a></li>
+            <li><a href="/protect.html#protect-performance">系统性能</a></li>
+            <li class="headline" style="margin-top: 22px;"><a href="/oem.html">OEM工厂</a></li>
+            <li><a href="/oem.html">技术支持</a></li>
+            <li><a href="/oem.html">购买流程</a></li>
+          </ul>
+          <ul class="nav-group group-4">
+            <li class="headline"><a href="/contact.html#contact-header">联系我们</a></li>
+            <li><a href="/contact.html#contact-introduce">公司简介</a></li>
+            <li><a href="/contact.html#contact-culture">小马文化</a></li>
+            <li><a href="/contact.html#cul-group-1">小马精神</a></li>
+            <li><a href="/contact.html#cul-group-2">小马愿景</a></li>
+            <li><a href="/contact.html#cul-group-3">管理理念</a></li>
+            <li><a href="/contact.html#cul-group-4">发展体系</a></li>
+            <li><a href="/contact.html#contact-office">公司环境</a></li>
+            <li><a href="/contact.html#contact-contact">联系方式</a></li>
+          </ul>
+        </nav>
+        <div class="hot-phone">
+          <span>全国服务热线</span> <span>400-654-6993</span>
+          <span>周一至周日8:30-18:00</span>
+          <div class="service">
+              <button type="button" class="ant-btn ant-btn-primary ant-btn-background-ghost"><i aria-label="icon: message" class="anticon anticon-message"><svg viewBox="64 64 896 896" class="" data-icon="message" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M464 512a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm200 0a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm-400 0a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm661.2-173.6c-22.6-53.7-55-101.9-96.3-143.3a444.35 444.35 0 0 0-143.3-96.3C630.6 75.7 572.2 64 512 64h-2c-60.6.3-119.3 12.3-174.5 35.9a445.35 445.35 0 0 0-142 96.5c-40.9 41.3-73 89.3-95.2 142.8-23 55.4-34.6 114.3-34.3 174.9A449.4 449.4 0 0 0 112 714v152a46 46 0 0 0 46 46h152.1A449.4 449.4 0 0 0 510 960h2.1c59.9 0 118-11.6 172.7-34.3a444.48 444.48 0 0 0 142.8-95.2c41.3-40.9 73.8-88.7 96.5-142 23.6-55.2 35.6-113.9 35.9-174.5.3-60.9-11.5-120-34.8-175.6zm-151.1 438C704 845.8 611 884 512 884h-1.7c-60.3-.3-120.2-15.3-173.1-43.5l-8.4-4.5H188V695.2l-4.5-8.4C155.3 633.9 140.3 574 140 513.7c-.4-99.7 37.7-193.3 107.6-263.8 69.8-70.5 163.1-109.5 262.8-109.9h1.7c50 0 98.5 9.7 144.2 28.9 44.6 18.7 84.6 45.6 119 80 34.3 34.3 61.3 74.4 80 119 19.4 46.2 29.1 95.2 28.9 145.8-.6 99.6-39.7 192.9-110.1 262.7z"></path></svg></i><span>联系客服</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="company">
+        <div>
+          <span>Co,Ltd AII Rights Reserved.小马飞腾信息技术有限公司</span>
+        </div>
+        <div class="attention-wrap">
+          <div class="attention">关注我们：</div>
+          <div class="XM2weima" style="z-index: 100"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
-  <script type="text/javascript" src="/xiaomapage/js/vendor.be888ebd41a42c05d89a.js"></script><script type="text/javascript" src="/xiaomapage/js/shop/index.be888ebd41a42c05d89a.js"></script></body>
+
+  <script type="text/javascript" src="/js/vendor.a1c9788979bd0a8967d6.js"></script><script type="text/javascript" src="/js/shop/index.a1c9788979bd0a8967d6.js"></script></body>
 </html>

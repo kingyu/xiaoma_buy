@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html style="overflow:hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <title>小马飞腾 - 提供12个月分期</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.bootcss.com/bulma/0.7.2/css/bulma.min.css"
+    />
+  <link href="/css/amortize.min.css" rel="stylesheet"></head>
+  <body class="theme-dark">
+    <!-- 引入头部组件 -->
+    <nav class="xm-nav">
+  <div class="xm-content">
+    <div class="xm-item xm-item-logo">
+      <a class="xm-link xm-link-logo" href="/index.html">
+        <span class="xm-link-text">小马飞腾</span>
+      </a>
+    </div>
+    <div class="xm-list">
+      <div class="xm-item">
+        <a class="xm-link" href="/applet.html">
+          <span class="xm-link-text">小程序</span>
+        </a>
+      </div>
+      <div class="xm-item">
+        <a class="xm-link" href="/amortize.html">
+          <span class="xm-link-text">SMART</span>
+        </a>
+      </div>
+      <div class="xm-item">
+        <a class="xm-link" href="/oem.html">
+          <span class="xm-link-text">OEM工厂</span>
+        </a>
+      </div>
+      <div class="xm-item">
+        <a class="xm-link" href="/protect.html">
+          <span class="xm-link-text">保驾护航</span>
+        </a>
+      </div>
+      <div class="xm-item">
+        <a class="xm-link" href="/contact.html">
+          <span class="xm-link-text">联系我们</span>
+        </a>
+      </div>
+    </div>
+    <div class="xm-item xm-item-user">
+      <a
+        class="xm-link xm-link-user"
+        href="http://wxapp.xiaomafeiteng.com/login"
+      >
+        <span class="xm-link-text">用户中心</span>
+      </a>
+    </div>
+  </div>
+</nav>
+<div id="xm-placeholder" class="xm-nav-placeholder"></div>
+
+    <main class="main">
+      <section class="section section-hero">
+        <div class="zero-wrap">
+          <div class="smart-hero">
+            <div class="logo-anim">
+                <figure class="smart-logo"></figure>
+                <i class="light"></i>
+            </div>
+            <div class="smart-headline">
+                <hgroup>
+                  <h2 class="headline-title">MUI+AI·PUSH</h2>
+                  <h3 class="headline-explain">好看只是表面，智能才是核心</h3>
+                </hgroup>
+            </div>
+          </div>
+          <div class="smart-hero-ball">
+            <div class="ball-anim ball-anim-left-top0">
+                <figure class="ball-bg"></figure>
+            </div>
+            <div class="ball-anim ball-anim-left-top1">
+                <figure class="ball-bg"></figure>
+            </div>
+            <div class="ball-anim ball-anim-right-top-right">
+              <figure class="ball-bg"></figure>
+            </div>
+            <div class="ball-anim ball-anim-right-top">
+                <figure class="ball-bg"></figure>
+              </div>
+            <div class="ball-anim ball-anim-left-bottom">
+              <figure class="ball-bg"></figure>
+            </div>
+            <div class="ball-anim ball-anim-middle">
+              <figure class="ball-bg"></figure>
+            </div>
+            <div class="ball-anim ball-anim-right-bottom">
+              <figure class="ball-bg"></figure>
+            </div>
+          </div>
+          <div class="caret-scroll">
+            <p class="scroll-tip">滚动以继续</p>
+            <i class="icon-caret-down"></i>
+          </div>
+        </div>
+        <nav class="section-nav">
+          <ol class="nav-list">
+            <li title="MUI" class="btn-jump" data-step="1">
+              <span class="nav-label">MUI</span
+              ><span class="dot"><span class="inner"></span></span>
+            </li>
+            <li title="视觉与交互" class="btn-jump" data-step="2">
+              <span class="nav-label">视觉与交互</span
+              ><span class="dot"><span class="inner"></span></span>
+            </li>
+            <li title="卡片风格" class="btn-jump" data-step="3">
+              <span class="nav-label">卡片风格</span
+              ><span class="dot"><span class="inner"></span></span>
+            </li>
+            <li title="交互理念" class="btn-jump" data-step="4">
+              <span class="nav-label">交互理念</span
+              ><span class="dot"><span class="inner"></span></span>
+            </li>
+            <li title="全面屏适配" class="btn-jump" data-step="5">
+              <span class="nav-label">全面屏适配</span
+              ><span class="dot"><span class="inner"></span></span>
+            </li>
+            <li title="产品体验" class="btn-jump" data-step="6">
+              <span class="nav-label">产品体验</span
+              ><span class="dot"><span class="inner"></span></span>
+            </li>
+            <li title="AI·PUSH" class="btn-jump" data-step="7">
+              <span class="nav-label">AI·PUSH</span
+              ><span class="dot"><span class="inner"></span></span>
+            </li>
+            <li title="大数据" class="btn-jump" data-step="8">
+              <span class="nav-label">大数据</span
+              ><span class="dot"><span class="inner"></span></span>
+            </li>
+            <li title="互联网营销" class="btn-jump" data-step="9">
+              <span class="nav-label">互联网营销</span
+              ><span class="dot"><span class="inner"></span></span>
+            </li>
+            <li title="智能匹配" class="btn-jump" data-step="10">
+              <span class="nav-label">智能匹配</span
+              ><span class="dot"><span class="inner"></span></span>
+            </li>
+            <li title="了解更多" class="btn-jump" data-step="11">
+              <span class="nav-label">了解更多</span
+              ><span class="dot"><span class="inner"></span></span>
+            </li>
+          </ol>
+        </nav>
+        <div class="elem canvas-wrapper">
+          <div class="elem one-wrap">
+            <div class="elem headline-wrap">
+              <hgroup class="headline">
+                <h2 class="xm-typography-eyebrow">SMART</h2>
+                <h3 class="xm-typography-headline-elevated">
+                  好看只是表面 智能才是核心
+                </h3>
+              </hgroup>
+            </div>
+            <figure class="elem screen screen-face"></figure>
+            <figure class="elem screen screen-conceal conceal-2"></figure>
+            <figure class="elem screen screen-conceal conceal-3"></figure>
+            <figure class="elem screen screen-conceal conceal-4"></figure>
+          </div>
+          <div class="elem two-wrap">
+            <figure class="elem screen screen-face"></figure>
+            <figure class="elem screen screen-conceal conceal-1"></figure>
+            <figure class="elem screen screen-conceal conceal-2"></figure>
+            <figure class="elem screen screen-conceal conceal-3"></figure>
+            <figure class="elem screen screen-conceal conceal-4"></figure>
+            <div class="elem headline-wrap">
+              <hgroup class="headline">
+                <h2 class="xm-typography-eyebrow">MUI</h2>
+                <h3 class="xm-typography-headline">
+                  前沿的视觉与交互<br />良好的产品体验
+                </h3>
+              </hgroup>
+            </div>
+          </div>
+          <div class="elem three-wrap">
+            <div class="elem canvas-wrap">
+              <div class="elem canvas">
+                <figure class="elem screen-face"></figure>
+                <figure class="elem screen-card card-top"></figure>
+                <figure class="elem screen-card card-left"></figure>
+                <figure class="elem screen-card card-right"></figure>
+              </div>
+            </div>
+            <div class="elem note-wrap">
+              <div class="note note-left-top">
+                <div class="note-title">更好的</div>
+                <div class="note-headline">聚焦主次</div>
+                <p class="note-intro">更聚焦地浏览当前<br />卡片</p>
+              </div>
+              <div class="elem note note-left-bottom">
+                <div class="note-title">更好的</div>
+                <div class="note-headline">多态操作</div>
+                <p class="note-intro">可操作性十分强的<br />设计模式</p>
+              </div>
+              <div class="elem note note-right-top">
+                <div class="note-title">更好的</div>
+                <div class="note-headline">自由组合</div>
+                <p class="note-intro">用户视觉上的轻松<br />和自由</p>
+              </div>
+              <div class="elem note note-right-bottom">
+                <div class="note-title">更好的</div>
+                <div class="note-headline">视觉舒适</div>
+                <p class="note-intro">看上去会十分的有<br />质感和舒适感</p>
+              </div>
+            </div>
+            <div class="elem headline-wrap">
+              <hgroup class="headline">
+                <h2 class="xm-typography-eyebrow">MUI</h2>
+                <h3 class="xm-typography-headline">时尚卡片风格</h3>
+              </hgroup>
+              <p class="xm-typography-intro">
+                <strong class="highlight">卡片式是有创,造性的新设计</strong
+                >整齐划一的几何之美，看着就让入觉得赏<br />心悦目
+                。提高用户信息获取速度，减少用户思考时间。
+              </p>
+            </div>
+          </div>
+          <div class="elem four-wrap">
+            <div class="elem screen-hidden">
+              <figure class="elem screen-card card-left-top"></figure>
+              <figure class="elem screen-card card-middle-top"></figure>
+              <figure class="elem screen-card card-left-middle"></figure>
+              <figure class="elem screen-card card-middle-middle"></figure>
+              <figure class="elem screen-card card-right-top"></figure>
+              <figure class="elem screen-card card-left-bottom"></figure>
+              <figure class="elem screen-card card-middle-bottom"></figure>
+              <figure class="elem screen-card card-right-middle"></figure>
+              <figure class="elem screen-card card-right-bottom"></figure>
+              <svg
+                width="100%"
+                height="100%"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                class="elem svg-canvas"
+              >
+                <polyline
+                  class="elem line line-1"
+                  points="111,114 151,114 151,229 175,229"
+                />
+                <polyline
+                  class="elem line line-2"
+                  points="111,293 151,293 151,376 175,376"
+                />
+                <polyline class="elem line line-3" points="55.5,438 55.5,480" />
+                <polyline
+                  class="elem line line-4"
+                  points="240,68 240,90 350,90"
+                />
+                <polyline
+                  class="elem line line-5"
+                  points="286,465 318,465 318,340 351,340"
+                />
+              </svg>
+            </div>
+            <div class="elem note-wrap">
+              <div class="note note-left-top">
+                <div class="note-title">让画面</div>
+                <div class="note-headline">充满活力</div>
+                <p class="note-intro">
+                  让动态元素效果有<br />一种和用户在交流<br />的情感
+                </p>
+              </div>
+              <div class="elem note note-left-bottom">
+                <div class="note-title">提高</div>
+                <div class="note-headline">逻辑性</div>
+                <p class="note-intro">让用户能够知道最<br />后的结果。</p>
+              </div>
+              <div class="elem note note-right-top">
+                <div class="note-title">增加</div>
+                <div class="note-headline">容纳度</div>
+                <p class="note-intro">
+                  设计动效增加内容<br />的展示量，让用户<br />有更高操作体验。
+                </p>
+              </div>
+            </div>
+            <div class="elem headline-wrap">
+              <hgroup class="headline">
+                <h2 class="xm-typography-eyebrow">MUI</h2>
+                <h3 class="xm-typography-headline">易用的交互理念</h3>
+              </hgroup>
+              <p class="xm-typography-intro">
+                <strong class="highlight"
+                  >交互的目的就是如何让产品容易上手</strong
+                >
+                易用的交互理念目标可以从"可用<br />性"和"用户体验"两个层面上进行分析，关注以人为本的用户需求。
+              </p>
+            </div>
+          </div>
+          <div class="elem five-wrap">
+            <div class="retina-wrapper can-reveal">
+              <div class="retina-graph">
+                <div class="elem retina-graph-sd step-one"></div>
+                <div class="elem retina-graph-hd step-two"></div>
+                <div class="elem retina-graph-retina step-three"></div>
+              </div>
+              <div class="elem label label-gold label-sd-size step-one">
+                375X667
+              </div>
+              <div class="elem label label-gold label-hd-size step-two">
+                640X960
+              </div>
+              <div class="elem label label-gold label-retina-size step-three">
+                828X1792
+              </div>
+              <div class="elem label label-gold label-sd step-one">ios</div>
+              <div class="elem label label-gold label-hd step-two">Android</div>
+              <div class="elem label label-gold label-retina step-three">
+                ios
+              </div>
+            </div>
+            <div class="elem note-wrap">
+              <div class="elem note note-left-top">
+                <div class="note-title">适配</div>
+                <div class="note-headline">IOS</div>
+                <p class="note-intro">
+                  <span>6</span><span>6P</span><span>X</span><span>xsp</span>
+                </p>
+              </div>
+              <div class="elem note note-right-top">
+                <div class="note-title">适配</div>
+                <div class="note-headline">Android</div>
+                <p class="note-intro">
+                  <span>oppo</span><span>vivo</span><span>小米</span><br />
+                  <span>华为</span><span>全面屏</span><br /><span
+                    >非全面屏</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="elem headline-wrap">
+              <hgroup class="headline">
+                <h2 class="xm-typography-eyebrow">MUI</h2>
+                <h3 class="xm-typography-headline">全面屏适配</h3>
+              </hgroup>
+              <p class="xm-typography-intro">
+                <strong class="highlight">兼容市面上大部分手机屏幕尺寸,</strong>
+                为确保您的的布局能灵活的适应不同<br />
+                的屏幕尺寸，我们设计出根据你的屏幕配置提供合适的UI布局和代码。
+              </p>
+            </div>
+          </div>
+          <div class="elem six-wrap">
+            <div class="elem screen-hidden">
+              <div class="elem screen screen-left">
+                <div class="elem screen-inner">
+                  <i class="icon-figure"></i>
+                  <div class="progress-wrapper progress-1">
+                    <p class="progress-title">交互</p>
+                    <div class="progress-wrap">
+                      <div class="progress-bar bar-1"></div>
+                    </div>
+                    <p class="progress-title">功能</p>
+                    <div class="progress-wrap">
+                      <div class="progress-bar bar-2"></div>
+                    </div>
+                    <p class="progress-title">视觉</p>
+                    <div class="progress-wrap">
+                      <div class="progress-bar bar-3"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="elem screen screen-middle">
+                <div class="elem screen-inner">
+                  <i class="icon-figure"></i>
+                  <div class="progress-wrapper progress-2">
+                    <p class="progress-title">交互</p>
+                    <div class="progress-wrap">
+                      <div class="progress-bar bar-1"></div>
+                    </div>
+                    <p class="progress-title">功能</p>
+                    <div class="progress-wrap">
+                      <div class="progress-bar bar-2"></div>
+                    </div>
+                    <p class="progress-title">视觉</p>
+                    <div class="progress-wrap">
+                      <div class="progress-bar bar-3"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="elem screen screen-right">
+                <div class="elem screen-inner">
+                  <i class="icon-figure"></i>
+                  <div class="progress-wrapper progress-3">
+                    <p class="progress-title">交互</p>
+                    <div class="progress-wrap">
+                      <div class="progress-bar bar-1"></div>
+                    </div>
+                    <p class="progress-title">功能</p>
+                    <div class="progress-wrap">
+                      <div class="progress-bar bar-2"></div>
+                    </div>
+                    <p class="progress-title">视觉</p>
+                    <div class="progress-wrap">
+                      <div class="progress-bar bar-3"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="elem headline-wrap">
+              <hgroup class="headline">
+                <h2 class="xm-typography-eyebrow">MUI</h2>
+                <h3 class="xm-typography-headline">用户为中心的产品体验</h3>
+              </hgroup>
+              <p class="xm-typography-intro">
+                <strong class="highlight">
+                  能产生有价值的产品体验,
+                </strong>
+                明确正在建设什么，明确不需要建设什么，<br />
+                要求功能规格、功能需求与内.
+              </p>
+            </div>
+          </div>
+          <div class="elem seven-wrap">
+            <div class="elem screen-hidden">
+              <div class="elem screen screen-left"></div>
+              <div class="elem screen screen-middle">
+                <div class="elem screen-inner">
+                  <i class="icon-figure"></i>
+                  <h3 class="xm-typography-headline-elevated">AI·PUSH</h3>
+                </div>
+              </div>
+              <div class="elem screen screen-right"></div>
+            </div>
+            <div class="elem headline-wrap">
+              <h3 class="xm-typography-headline">智能时代</h3>
+              <p class="xm-typography-intro">
+                一千个客户，就有一千种不同的营销方案，<br />
+                系统自动根据客户不同的群体与喜好去针对营销。
+              </p>
+            </div>
+          </div>
+          <div class="elem eight-wrap">
+            <div class="elem screen-hidden">
+              <div class="elem screen screen-left">
+                <div class="elem screen-inner">
+                  <div class="progress-table">
+                    <h4 class="graph-heading">根据商品喜好，实现精准推送</h4>
+                    <div class="tile is-ancestor">
+                      <div class="tile is-parent is-9">
+                        <div class="tile is-child">
+                          <div class="graph-inner">
+                            <figure class="graph graph-horizontalbar">
+                              <div class="graph-unit unit-1">
+                                <div class="graph-data">
+                                  <div class="progress-bar primary"></div>
+                                  <div class="graph-caption">
+                                    钟爱：平均月复购率10次以上
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="graph-unit unit-2">
+                                <div class="graph-data">
+                                  <div class="progress-bar secondary"></div>
+                                  <div class="graph-caption">
+                                    喜欢：平均月复购率5-7次
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="graph-unit unit-3">
+                                <div class="graph-data">
+                                  <div class="progress-bar"></div>
+                                  <div class="graph-caption">
+                                    一般：平均月复购率3-5次
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="graph-unit unit-4">
+                                <div class="graph-data">
+                                  <div class="progress-bar"></div>
+                                  <div class="graph-caption">
+                                    冷淡：平均月复购率1-3次
+                                  </div>
+                                </div>
+                              </div>
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tile is-parent">
+                        <div class="tile is-child">
+                          <figure class="badge graph-badge">
+                            <div class="badge-content">
+                              <span class="badge-caption graph-label"
+                                >根据</span
+                              >
+                              <span class="badge-value">商品喜好</span>
+                              <span class="badge-caption graph-label"
+                                >精准推送</span
+                              >
+                            </div>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="elem screen screen-middle">
+                <div class="elem screen-inner">
+                  <div class="progress-table">
+                    <h4 class="graph-heading">根据用户群体，实现精准推送</h4>
+                    <div class="tile is-ancestor">
+                      <div class="tile is-parent is-9">
+                        <div class="tile is-child">
+                          <div class="graph-inner">
+                            <figure class="graph graph-horizontalbar">
+                              <div class="graph-unit unit-1">
+                                <div class="graph-data">
+                                  <div class="progress-bar primary"></div>
+                                  <div class="graph-caption">
+                                    土豪：月均消费额3000元以上
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="graph-unit unit-2">
+                                <div class="graph-data">
+                                  <div class="progress-bar secondary"></div>
+                                  <div class="graph-caption">
+                                    白领：月均消费额2000-3000元
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="graph-unit unit-3">
+                                <div class="graph-data">
+                                  <div class="progress-bar"></div>
+                                  <div class="graph-caption">
+                                    普通：月均消费额1000-2000元
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="graph-unit unit-4">
+                                <div class="graph-data">
+                                  <div class="progress-bar"></div>
+                                  <div class="graph-caption">
+                                    屌丝：月均消费额1-1000元
+                                  </div>
+                                </div>
+                              </div>
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tile is-parent">
+                        <div class="tile is-child">
+                          <figure class="badge graph-badge">
+                            <div class="badge-content">
+                              <span class="badge-caption graph-label"
+                                >根据</span
+                              >
+                              <span class="badge-value">用户群体</span>
+                              <span class="badge-caption graph-label"
+                                >精准推送</span
+                              >
+                            </div>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="elem tier-wrap">
+                <div class="elem screen screen-right">
+                  <div class="elem screen-inner">
+                    <div class="progress-table">
+                      <h4 class="graph-heading">
+                        根据用户活跃度，实现精准推送
+                      </h4>
+                      <div class="tile is-ancestor">
+                        <div class="tile is-parent is-9">
+                          <div class="tile is-child">
+                            <div class="graph-inner">
+                              <figure class="graph graph-horizontalbar">
+                                <div class="graph-unit unit-1">
+                                  <div class="graph-data">
+                                    <div class="progress-bar primary"></div>
+                                    <div class="graph-caption">
+                                      超高活跃度：平均月订单30笔以上
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="graph-unit unit-2">
+                                  <div class="graph-data">
+                                    <div class="progress-bar secondary"></div>
+                                    <div class="graph-caption">
+                                      高活跃度：平均月订单20-30笔
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="graph-unit unit-3">
+                                  <div class="graph-data">
+                                    <div class="progress-bar"></div>
+                                    <div class="graph-caption">
+                                      一般活跃度：平均月订单10-20笔
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="graph-unit unit-4">
+                                  <div class="graph-data">
+                                    <div class="progress-bar"></div>
+                                    <div class="graph-caption">
+                                      低活跃度：平均月订单1-10笔
+                                    </div>
+                                  </div>
+                                </div>
+                              </figure>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tile is-parent">
+                          <div class="tile is-child">
+                            <figure class="badge graph-badge">
+                              <div class="badge-content">
+                                <span class="badge-caption graph-label"
+                                  >根据</span
+                                >
+                                <span class="badge-value">用户活跃度</span>
+                                <span class="badge-caption graph-label"
+                                  >精准推送</span
+                                >
+                              </div>
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="elem headline-wrap">
+              <hgroup class="headline">
+                <h2 class="xm-typography-eyebrow">AI.PUSH</h2>
+                <h3 class="xm-typography-headline">大数据筛选目标用户</h3>
+              </hgroup>
+              <p class="xm-typography-intro">
+                <strong class="highlight">
+                  识别各种用户的兴趣或特征。
+                </strong>
+                信息提供商比如电子商务网站，也希望能<br />
+                够根据用户的偏好，从海量的商品信息中为用户推荐感兴趣或者需要的<br />
+                商品资源。
+              </p>
+            </div>
+          </div>
+          <div class="elem nine-wrap">
+            <div class="elem screen-hidden">
+              <div class="elem tier-wrap tier-wrap-1">
+                <figure class="elem tier"></figure>
+              </div>
+              <div class="elem tier-wrap tier-wrap-2 action">
+                <figure class="elem tier"></figure>
+              </div>
+              <div class="elem tier-wrap tier-wrap-3 action">
+                <figure class="elem tier"></figure>
+              </div>
+              <div class="elem tier-wrap tier-wrap-4 action">
+                <figure class="elem tier"></figure>
+              </div>
+              <div class="elem tier-screen-wrap">
+                <div class="elem tier-screen tier-screen-1">
+                  <i class="icon-figure"></i>
+                  <div class="headline">
+                    拉新类营销<br />
+                    等于<br />
+                    无门槛券 秒杀 体验价
+                  </div>
+                </div>
+                <div class="elem tier-screen tier-screen-2">
+                  <i class="icon-figure"></i>
+                  <div class="headline">
+                    促销类营销<br />
+                    等于<br />
+                    拼团 限时折扣
+                  </div>
+                </div>
+                <div class="elem tier-screen tier-screen-3">
+                  <i class="icon-figure"></i>
+                  <div class="headline">
+                    留存类营销<br />
+                    等于<br />
+                    满减卷
+                  </div>
+                </div>
+                <div class="elem tier-screen tier-screen-4">
+                  <i class="icon-figure"></i>
+                  <div class="headline">
+                    转化类营销<br />
+                    等于<br />
+                    会员卡
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="elem headline-wrap">
+              <hgroup class="headline">
+                <h2 class="xm-typography-eyebrow">AI·PUSH</h2>
+                <h3 class="xm-typography-headline">互联网营销</h3>
+              </hgroup>
+              <p class="xm-typography-intro">
+                <strong class="highlight">
+                  营销应该循序渐进。
+                </strong>
+                营销活动，思考你从事行业的层级，需要从哪个维<br />
+                度做活动。根据活动类型，活动目的，抓住关键点，做好内容匹配，<br />
+                促使消费者行动。
+              </p>
+            </div>
+          </div>
+          <div class="elem ten-wrap">
+            <div class="elem screen-hidden">
+              <div class="elem screen-wrap screen-wrap-left">
+                <div class="elem screen"></div>
+              </div>
+              <div class="elem screen-wrap screen-wrap-right">
+                <div class="elem screen"></div>
+              </div>
+            </div>
+            <div class="elem headline-wrap">
+              <hgroup class="headline">
+                <h2 class="xm-typography-eyebrow">AI·PUSH</h2>
+                <h3 class="xm-typography-headline">智能匹配</h3>
+              </hgroup>
+              <p class="xm-typography-intro">
+                <strong class="highlight">
+                  聪明绝顶的AI·PUSH。
+                </strong>
+                什么是AI·PUSH? 识别各种用户的兴趣或特征，从<br />
+                而有针对性地向用户主动。根据用户分类匹配营销。<br />
+              </p>
+            </div>
+          </div>
+          <div class="elem more-wrap">
+            <div class="elem one-headline">
+              <hgroup class="headline">
+                <h2 class="xm-typography-eyebrow">AI·PUSH 1.0</h2>
+                <h3 class="xm-typography-headline-elevated">
+                  我们的故事还只是开始
+                </h3>
+              </hgroup>
+            </div>
+            <div class="elem two-headline">
+              <h3 class="xm-typography-headline-elevated">
+                AI·PUSH 2.0
+              </h3>
+              <p class="xm-typography-intro">
+                如何把新客培育成忠实用户（拉新--促活--留存--转化），你需要有一套系统的理念与打法，<br />
+                未来AI.PUSH
+                2.0可实现系统全自动培育，他或许会涉及各种算法以及系统的自我学习(系统的自我学习
+                <br />
+                即
+                根据用户的数据自我创建目标用户与营销类型实现智能推送）千人千面营销方式：一千个客户，<br />
+                就有一千种不同的营销方案，系统自动根据客户不同的群体与喜好去针对营销。
+              </p>
+              <p class="xm-typography-intro weak">
+                  Smart 即智慧商业系统，他是我们的核心竞争力也是我们的核心技术。我们所有产品都会<br />
+                  内置Smart系统  他分Mui（外表的界面）与AI·Push（内在的功能）2部分  这也是我们Smart2.0  Smart3.0  Smart4.0更新的核心方向与前进方向。 
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- 引入尾部组件 -->
+    <footer>
+  <div class="footer-wrap">
+    <div class="footer-content">
+      
+        <div id="ac-globalfooter">
+            <nav class="ac-gf-breadcrumbs">
+              <a href="/" class="home ac-gf-breadcrumbs-home"><span class="ac-gf-breadcrumbs-home-icon"></span></a>
+              <div class="ac-gf-breadcrumbs-path">
+                <ol class="ac-gf-breadcrumbs-list">
+                  
+                    
+                      <li class="ac-gf-breadcrumbs-item">
+                          
+                            <span>SMART</span>
+                          
+                      </li>
+                    
+                  
+                </ol>
+              </div>
+            </nav>
+          </div>
+      
+      <div class="nav-wrap">
+        <nav>
+          <ul class="nav-group group-1">
+            <li class="headline"><a href="/applet.html">小程序</a></li>
+            <li><a href="/pastime/">休闲娱乐</a></li>
+            <li><a href="/shop/">小马商城</a></li>
+            <li><a href="/food/">自助点餐</a></li>
+            <li><a href="/minisite/">自助建站</a></li>
+            <li class="headline"><a href="http://192.168.31.139:8000/">购买</a></li>
+            <li><a href="http://192.168.31.139:8000/">选择商品</a></li>
+            <li><a href="/amortize.html">分期付款</a></li>
+          </ul>
+          <ul class="nav-group group-2">
+            <li class="headline"><a href="/smart.html#smart-header">SMART</a></li>
+            <li><a href="/smart.html#smart-header">MUI-视觉</a></li>
+            <li><a href="/smart.html#smart-header">卡片风格</a></li>
+            <li><a href="/smart.html#smart-header">交互理念</a></li>
+            <li><a href="/smart.html#smart-header">屏幕适配</a></li>
+            <li><a href="/smart.html#smart-header">产品体验</a></li>
+            <li><a href="/smart.html#smart-header">大数据</a></li>
+            <li><a href="/smart.html#smart-header">互联网营销</a></li>
+            <li><a href="/smart.html#smart-header">统计分析</a></li>
+            <li><a href="/smart.html#smart-header">智能推送</a></li>
+            <li><a href="/smart.html#smart-header">AI-Push 2.0</a></li>
+          </ul>
+          <ul class="nav-group group-3">
+            <li class="headline"><a href="/protect.html#protect-title">保驾护航</a></li>
+            <li><a href="/protect.html#protect-system">系统稳定</a></li>
+            <li><a href="/protect.html#protect-data">数据安全</a></li>
+            <li><a href="/protect.html#protect-virtual">虚拟机隔离</a></li>
+            <li><a href="/protect.html#protect-network">网络传输</a></li>
+            <li><a href="/protect.html#protect-backup">灾备措施</a></li>
+            <li><a href="/protect.html#protect-performance">系统性能</a></li>
+            <li class="headline" style="margin-top: 22px;"><a href="/oem.html">OEM工厂</a></li>
+            <li><a href="/oem.html">技术支持</a></li>
+            <li><a href="/oem.html">购买流程</a></li>
+          </ul>
+          <ul class="nav-group group-4">
+            <li class="headline"><a href="/contact.html#contact-header">联系我们</a></li>
+            <li><a href="/contact.html#contact-introduce">公司简介</a></li>
+            <li><a href="/contact.html#contact-culture">小马文化</a></li>
+            <li><a href="/contact.html#cul-group-1">小马精神</a></li>
+            <li><a href="/contact.html#cul-group-2">小马愿景</a></li>
+            <li><a href="/contact.html#cul-group-3">管理理念</a></li>
+            <li><a href="/contact.html#cul-group-4">发展体系</a></li>
+            <li><a href="/contact.html#contact-office">公司环境</a></li>
+            <li><a href="/contact.html#contact-contact">联系方式</a></li>
+          </ul>
+        </nav>
+        <div class="hot-phone">
+          <span>全国服务热线</span> <span>400-654-6993</span>
+          <span>周一至周日8:30-18:00</span>
+          <div class="service">
+              <button type="button" class="ant-btn ant-btn-primary ant-btn-background-ghost"><i aria-label="icon: message" class="anticon anticon-message"><svg viewBox="64 64 896 896" class="" data-icon="message" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M464 512a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm200 0a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm-400 0a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm661.2-173.6c-22.6-53.7-55-101.9-96.3-143.3a444.35 444.35 0 0 0-143.3-96.3C630.6 75.7 572.2 64 512 64h-2c-60.6.3-119.3 12.3-174.5 35.9a445.35 445.35 0 0 0-142 96.5c-40.9 41.3-73 89.3-95.2 142.8-23 55.4-34.6 114.3-34.3 174.9A449.4 449.4 0 0 0 112 714v152a46 46 0 0 0 46 46h152.1A449.4 449.4 0 0 0 510 960h2.1c59.9 0 118-11.6 172.7-34.3a444.48 444.48 0 0 0 142.8-95.2c41.3-40.9 73.8-88.7 96.5-142 23.6-55.2 35.6-113.9 35.9-174.5.3-60.9-11.5-120-34.8-175.6zm-151.1 438C704 845.8 611 884 512 884h-1.7c-60.3-.3-120.2-15.3-173.1-43.5l-8.4-4.5H188V695.2l-4.5-8.4C155.3 633.9 140.3 574 140 513.7c-.4-99.7 37.7-193.3 107.6-263.8 69.8-70.5 163.1-109.5 262.8-109.9h1.7c50 0 98.5 9.7 144.2 28.9 44.6 18.7 84.6 45.6 119 80 34.3 34.3 61.3 74.4 80 119 19.4 46.2 29.1 95.2 28.9 145.8-.6 99.6-39.7 192.9-110.1 262.7z"></path></svg></i><span>联系客服</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="company">
+        <div>
+          <span>Co,Ltd AII Rights Reserved.小马飞腾信息技术有限公司</span>
+        </div>
+        <div class="attention-wrap">
+          <div class="attention">关注我们：</div>
+          <div class="XM2weima" style="z-index: 100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script type="text/javascript" src="/js/vendor.a1c9788979bd0a8967d6.js"></script><script type="text/javascript" src="/js/amortize.a1c9788979bd0a8967d6.js"></script></body>
+</html>

@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>小马飞腾-自助点餐</title>
-  <link href="/xiaomapage/css/food/index.min.css" rel="stylesheet"></head>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bulma/0.7.2/css/bulma.min.css">
+  <link href="/css/food/index.min.css" rel="stylesheet"></head>
   <body class="theme-white">
     <nav class="xm-nav">
   <div class="xm-content">
@@ -20,12 +20,17 @@
         </a>
       </div>
       <div class="xm-item">
-        <a class="xm-link" href="/smart.html">
+        <a class="xm-link" href="/amortize.html">
           <span class="xm-link-text">SMART</span>
         </a>
       </div>
       <div class="xm-item">
-        <a class="xm-link" href="#">
+        <a class="xm-link" href="/oem.html">
+          <span class="xm-link-text">OEM工厂</span>
+        </a>
+      </div>
+      <div class="xm-item">
+        <a class="xm-link" href="/protect.html">
           <span class="xm-link-text">保驾护航</span>
         </a>
       </div>
@@ -36,81 +41,50 @@
       </div>
     </div>
     <div class="xm-item xm-item-user">
-      <a class="xm-link xm-link-user" href="http://wxapp.xiaomafeiteng.com/login">
+      <a
+        class="xm-link xm-link-user"
+        href="http://wxapp.xiaomafeiteng.com/login"
+      >
         <span class="xm-link-text">用户中心</span>
       </a>
     </div>
   </div>
 </nav>
-<div id="xm-placeholder" class="ac-nav-placeholder"></div>
-<!-- 
-<nav id="chapternav" class="xm-chapter-nav">
-  <div class="xm-chapter-nav-wrapper">
-    <div class="xm-chapter-nav-items">
-      <div class="xm-chapter-nav-item">
-        <a class="xm-chapter-nav-link" href="/pastime/index.html">
-          <figure class="xm-chapter-nav-icon icon-pastime"></figure>
-          <span class="xm-chapter-nav-label">休闲娱乐</span>
-        </a>
-      </div>
-      <div class="xm-chapter-nav-item">
-        <a class="xm-chapter-nav-link" href="/shop/newIndex.html">
-          <figure class="xm-chapter-nav-icon icon-shop"></figure>
-          <span class="xm-chapter-nav-label">小马商城</span>
-        </a>
-      </div>
-      <div class="xm-chapter-nav-item">
-        <a class="xm-chapter-nav-link" href="/food/index.html">
-          <figure class="xm-chapter-nav-icon icon-food"></figure>
-          <span class="xm-chapter-nav-label">自助点餐</span>
-        </a>
-      </div>
-      <div class="xm-chapter-nav-item">
-        <a class="xm-chapter-nav-link" href="#">
-          <figure class="xm-chapter-nav-icon icon-minisite"></figure>
-          <span class="xm-chapter-nav-label">自助建站</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</nav> -->
+<div id="xm-placeholder" class="xm-nav-placeholder"></div>
 
-    <nav id="xm-dc-localnav" class="xm-dc-localnav-scrim css-sticky">
-  <div class="xm-dc-wrapper">
-    <div class="xm-dc-background"></div>
-    <div class="xm-dc-content">
-      <div class="xm-dc-title">
-        <a href="#">自助点餐</a>
+    <nav id="xm-localnav" class="xm-localnav-scrim css-sticky">
+  <div class="xm-localnav-wrapper">
+    <div class="xm-localnav-background"></div>
+    <div class="xm-localnav-content">
+      <div class="xm-localnav-title">
+        <a href="/food/">自助点餐</a>
       </div>
-      <div class="xm-dc-menu">
-        <div class="xm-dc-menu-tray">
-          <div class="xm-dc-menu-items">
-            <div class="xm-dc-menu-item">
-              <span class="xm-dc-menu-link current">经营体系</span>
-            </div>
-            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">风格自定义</a></div>
-            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">点餐模式</a></div>
-            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">套餐组合</a></div>
-            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">智能推送</a></div>
-            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">营销</a></div>
-            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">客户与标签</a></div>
-            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">订单与分组</a></div>
-            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">数据分析</a></div>
-            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">资产</a></div>
-            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">适用范围</a></div>
-            <div class="xm-dc-menu-item"><a href="#" class="xm-dc-menu-link">物料</a></div>
+      <div class="xm-localnav-menu">
+        <div class="xm-localnav-menu-tray">
+          <div class="xm-localnav-menu-items">
+              <div class="xm-localnav-menu-item"><a href="#" class="xm-localnav-menu-link" data-module="1">经营体系</a></div>
+              <div class="xm-localnav-menu-item"><a href="#" class="xm-localnav-menu-link" data-module="2">风格自定义</a></div>
+              <div class="xm-localnav-menu-item"><a href="#" class="xm-localnav-menu-link" data-module="3">点餐模式</a></div>
+              <div class="xm-localnav-menu-item"><a href="#" class="xm-localnav-menu-link" data-module="4">套餐组合</a></div>
+              <div class="xm-localnav-menu-item"><a href="#" class="xm-localnav-menu-link" data-module="5">智能推送</a></div>
+              <div class="xm-localnav-menu-item"><a href="#" class="xm-localnav-menu-link" data-module="6">营销</a></div>
+              <div class="xm-localnav-menu-item"><a href="#" class="xm-localnav-menu-link" data-module="7">客户与标签</a></div>
+              <div class="xm-localnav-menu-item"><a href="#" class="xm-localnav-menu-link" data-module="8">订单与分组</a></div>
+              <!-- <div class="xm-localnav-menu-item"><a href="#" class="xm-localnav-menu-link" data-module="9">数据分析</a></div> -->
+              <!-- <div class="xm-localnav-menu-item"><a href="#" class="xm-localnav-menu-link" data-module="10">资产</a></div> -->
+              <!-- <div class="xm-localnav-menu-item"><a href="#" class="xm-localnav-menu-link" data-module="11">适用范围</a></div> -->
+              <!-- <div class="xm-localnav-menu-item"><a href="#" class="xm-localnav-menu-link" data-module="12">物料</a></div> -->
           </div>
         </div>
-        <div class="xm-dc-actions">
-          <div class="xm-dc-action xm-dc-action-button">
-            <a class="xm-dc-button" href="#">购买<span class="xm-dc-action-product"></span></a>
+        <div class="xm-localnav-actions">
+          <div class="xm-localnav-action xm-localnav-action-button">
+            <a class="xm-localnav-button" href="http://192.168.31.139:8000/">购买<span class="xm-localnav-action-product"></span></a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </nav>
-
     <div class="scroll-container-vertical">
       <div class="scroll-container-horizontal">
         <div
@@ -118,37 +92,29 @@
           class="scroll-content"
           style="transform: translateX(0px);"
         >
-          <main id="main" class="main" role="main" data-page-type="overview">
-                <section class="section section-hero visible">
+          <main id="main" class="main">
+                <section class="section section-hero visible" id="section-hero">
   <div class="section-content">
     <div class="hero-wrap">
       <div class="headline">
         <h2 class="headline-subhead">小马自助点餐</h2>
         <p class="headline-caption">
-          融合堂食，自助点单，外卖于一体，提前下单，无需排队。
+          融合自助点单，外卖，预约于一体，提前下单，无需排队。
         </p>
       </div>
-      <div class="figure-container">
-        <figure class="image-hero-air-text js-hero-hardware-translate"></figure>
-        <figure class="image-hero-resolved js-hero-hardware-translate"></figure>
-        <figure
-          class="image-hero-reflection image-hero-reflect-top image-hero-reflect-top-a js-full-scale"
-        ></figure>
-        <figure
-          class="image-hero-reflection image-hero-reflect-top image-hero-reflect-top-i js-full-scale"
-        ></figure>
-        <figure
-          class="image-hero-reflection image-hero-reflect-top image-hero-reflect-top-r js-full-scale"
-        ></figure>
-        <figure
-          class="image-hero-reflection image-hero-reflect-bottom js-full-scale"
-        ></figure>
-      </div>
+      <div class="image-hero-wrap">
+          <div class="animation-canvas">
+            <figure class="image-hero image-food"></figure>
+            <figure class="image-tier image-left"></figure>
+            <figure class="image-tier image-centerd"></figure>
+            <figure class="image-tier image-right"></figure>
+          </div>
+        </div>
     </div>
   </div>
 </section>
 
-                <section class="section section-system visible">
+                <section class="section section-system xm-anim anim-fadeIn" id="section-system">
   <div class="section-content">
     <div class="image-group">
       <figure class="image-item image-2"></figure>
@@ -157,7 +123,7 @@
     </div>
     <div class="headline-wrap">
       <div class="headline">
-        <h2 class="headline-subhead">
+        <h2 class="headline-subhead xm-anim anim-fadeInRight">
           三大经营体系。<span class="weak">更丰富，更全面，满足不同场景的各种需求。</span>
         </h2>
       </div>
@@ -165,27 +131,33 @@
   </div>
 </section>
 
-                <section class="section section-blendent visible">
+                <section class="section section-blendent xm-anim anim-fadeIn" id="section-blendent">
   <div class="section-content">
     <div class="wrap">
-      <div class="image-wrap screen">
-        <figure class="image-screen image-wallet"></figure>
-        <figure class="image-iphonex"></figure>
+      <div class="image-container image-container-iphonex">
+        <div class="image-hardware image-iphonex">
+            <figure id="image-screen-orange" class="image image-screen-orange"></figure>
+            <figure id="image-screen-rose" class="image image-screen-rose"></figure>
+            <figure id="image-screen-green" class="image image-screen-green"></figure>
+            <figure id="image-screen-yellow" class="image image-screen-yellow"></figure>
+            <figure id="image-screen-red" class="image image-screen-red"></figure>
+            <figure id="image-screen-blue" class="image image-screen-blue"></figure>
+        </div>
       </div>
       <div class="color-list">
         <ul class="color-ul">
-          <li class="color-li"><figure class="color-item color-rose"></figure></li>
-          <li class="color-li"><figure class="color-item color-green"></figure></li>
-          <li class="color-li"><figure class="color-item color-yellow"></figure></li>
-          <li class="color-li"><figure class="color-item color-red"></figure></li>
-          <li class="color-li"><figure class="color-item color-blue"></figure></li>
-          <li class="color-li"><figure class="color-item color-orange"></figure></li>
+          <li class="color-li"><a href="#" class="color-link current" data-trigger="image-screen-orange"><figure class="color-item color-orange"></figure></a></li>
+          <li class="color-li"><a href="#" class="color-link" data-trigger="image-screen-rose"><figure class="color-item color-rose"></figure></a></li>
+          <li class="color-li"><a href="#" class="color-link" data-trigger="image-screen-green"><figure class="color-item color-green"></figure></a></li>
+          <li class="color-li"><a href="#" class="color-link" data-trigger="image-screen-yellow"><figure class="color-item color-yellow"></figure></a></li>
+          <li class="color-li"><a href="#" class="color-link" data-trigger="image-screen-red"><figure class="color-item color-red"></figure></a></li>
+          <li class="color-li"><a href="#" class="color-link" data-trigger="image-screen-blue"><figure class="color-item color-blue"></figure></a></li>
         </ul>
       </div>
     </div>
     <div class="headline-wrap">
       <div class="headline">
-        <h2 class="headline-subhead">
+        <h2 class="headline-subhead xm-anim anim-fadeInRight">
           店铺配色风格自定义。<span class="weak"
             >你想要的幸运色，这里都有。</span
           >
@@ -195,36 +167,47 @@
   </div>
 </section>
 
-                <section class="section section-card visible">
+                <section class="section section-card xm-anim anim-fadeIn" id="section-card">
   <div class="section-content">
-    <div class="watch-container">
-      <div class="image-container">
-        <figure class="image-watch"></figure>
-        <figure
-          class="image-watch-screen"
-          style="transform: translate(134.6px, 0px); opacity: 0;"
-        ></figure>
-        <figure class="image-watch-mask"></figure>
-        <figure
-          class="image-s4"
-          style="transform: translate(0px, 0px); opacity: 1;"
-        ></figure>
-        <figure
-          class="image-cpu-chip"
-          style="transform: translate(0px, 0px); transition: opacity 0.4s linear 0s; opacity: 1;"
-        ></figure>
+      <div class="left-content">
+        <div class="animation-canvas">
+            <figure class="screen-face"></figure>
+            <figure class="screen-card card-top"></figure>
+            <figure class="screen-card card-left"></figure>
+            <figure class="screen-card card-right"></figure>
+        </div>
+        <figure class="graph graph-first-image">
+          <div class="graph-unit unit-1">
+              <span class="graph-caption">商品</span>
+              <div class="progress-bar"></div>
+          </div>
+          <div class="graph-unit unit-2">
+              <span class="graph-caption">菜单</span>
+              <div class="progress-bar"></div>
+          </div>
+        </figure>
       </div>
-    </div>
+    <!-- <div class="watch-container">
+      <div class="image-container">
+          <video
+            id="card-video"
+            class="inline-video"
+            muted
+            playsinline
+            src="http://pn7gq6n0k.bkt.clouddn.com/food_video_1.mp4"
+            style="height: 700px;"
+        ></video>
+      </div>
+    </div> -->
     <div class="headline-wrap">
       <div class="headline">
-        <h2 class="headline-subhead">
+        <h2 class="headline-subhead xm-anim anim-fadeInRight">
           经典点餐模式。<span class="weak"
             >左菜单，右商品，界面更简洁，信息更明了。</span
           >
         </h2>
         <p
-          class="headline-caption will-change"
-          style="transform: translate(0px, 0px);"
+          class="headline-caption xm-anim anim-fadeInRight"
         >
           亲眼看一看，亲手试一试， 你就知道了。
         </p>
@@ -233,24 +216,27 @@
   </div>
 </section>
 
-                <section class="section section-stack visible">
+                <section class="section section-stack xm-anim anim-fadeIn" id="section-stack">
   <div class="section-content">
-    <div class="started">
-      <figure class="image-internals-hero can-reveal">
-        <div class="internals-layer image-internals-one"></div>
-        <div class="internals-layer image-internals-two"></div>
-        <div class="internals-layer image-internals-three"></div>
-        <div class="internals-layer image-internals-four"></div>
+    <div id="can-reveal">
+      <figure class="image-internals-hero">
+        <div class="internals-layer image-anim image-internals-one">
+            <div class="image-anim image-internals-food"></div>
+            <div class="image-anim image-internals-food all-food"></div>
+        </div>
+        <div class="internals-layer image-anim image-internals-two"></div>
+        <div class="internals-layer image-anim image-internals-three"></div>
+        <div class="internals-layer image-anim image-internals-four"></div>
       </figure>
     </div>
     <div class="headline-wrap">
       <div class="headline">
-        <h2 class="headline-subhead">
+        <h2 class="headline-subhead xm-anim anim-fadeInRight">
           套餐随意组合，标签丰富多彩。<span class="weak"
             >别具一格，丰富多彩。</span
           >
         </h2>
-        <p class="headline-caption will-change" style="transform: translate(0px, 0px);">
+        <p class="headline-caption xm-anim anim-fadeInRight">
             商品可任意组合成套餐，自定义标签--推荐  热卖。
         </p>
       </div>
@@ -258,44 +244,62 @@
   </div>
 </section>
 
-                <section class="section section-aipush visible">
+                <section class="section section-aipush xm-anim anim-fadeIn" id="section-aipush">
   <div class="section-content">
     <div class="left-content">
-      <div class="icon-group">
-        <figure class="icon-content icon-content-3">
-          <div class="icon-image icon-3"></div>
-          <figcaption class="icon-caption">偏好</figcaption>
-        </figure>
-        <figure class="icon-content icon-content-4">
-          <div class="icon-image icon-4"></div>
-          <figcaption class="icon-caption">用户人群</figcaption>
-        </figure>
-        <figure class="icon-content icon-content-5">
-          <div class="icon-image icon-5"></div>
-          <figcaption class="icon-caption">活跃度</figcaption>
-        </figure>
-      </div>
-      <div class="image-wrap">
-        <figure class="image-screen image-wallet"></figure>
-        <figure class="image-iphonex"></figure>
+      <div class="animation-canvas">
+        <div class="image-wrap no-frame anim">
+          <figure class="image-box box-arrow"></figure>
+        </div>
+        <div class="image-wrap anim">
+          <figure class="image-box box-1"></figure>
+        </div>
+        <div class="image-wrap image-face-wrap">
+          <figure class="image-box box-2"></figure>
+        </div>
+        <div class="image-wrap anim">
+          <figure class="image-box box-3"></figure>
+        </div>
+        <div class="image-wrap image-bottom-wrap">
+            <figure class="image-box box-4"></figure>
+        </div>
+        <div class="image-iphone-wrap">
+            <figure class="image-iphone-box"></figure>
+            <figure class="image-iphone-face"></figure>
+        </div>
       </div>
     </div>
     <div class="headline-wrap">
       <div class="headline">
-        <h2 class="headline-subhead">
+        <h2 class="headline-subhead xm-anim anim-fadeInRight">
           智能推送。<span class="weak">识别各种用户的兴趣或特征。</span>
         </h2>
-        <p class="headline-caption will-change" style="transform: translate(0px, 0px);">从而有针对性地向用户主动推送所需信息。</p>
+        <p class="headline-caption xm-anim anim-fadeInRight">
+          从而有针对性地向用户主动推送所需信息。
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-                <section class="section section-market visible">
+                <section class="section section-market xm-anim anim-fadeIn" id="section-market">
   <div class="section-content">
+    <div class="left-content">
+      <div class="animation-canvas">
+        <div class="screen-wrap screen-face-wrap">
+          <figure class="image-screen screen-face"></figure>
+        </div>
+        <div class="screen-wrap screen-wrap-1">
+          <figure class="image-screen"></figure>
+        </div>
+        <div class="screen-wrap screen-wrap-2">
+          <figure class="image-screen"></figure>
+        </div>
+      </div>
+    </div>
     <div class="headline-wrap">
       <div class="headline">
-        <h2 class="headline-subhead">
+        <h2 class="headline-subhead xm-anim anim-fadeInRight">
           营销。<span class="weak">多种优惠券，可应对各种场景。</span>
         </h2>
       </div>
@@ -303,37 +307,143 @@
   </div>
 </section>
 
-                <section class="section section-label visible">
+                <section class="section section-label xm-anim anim-fadeIn" id="section-label">
   <div class="section-content">
-    <div class="image-tag-grid will-change">
-      <div>
-        <div class="image-tag-row row-1">
-          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
-          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
-          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
+    <!-- <div class="left-content">
+      <video
+        id="label-video"
+        class="inline-video"
+        muted
+        playsinline
+        src="http://pn7gq6n0k.bkt.clouddn.com/food_label_video.mp4"
+      ></video>
+    </div> -->
+    <div class="left-content">
+      <div class="animation-canvas">
+        <div class="image-wrap anim">
+          <figure class="image-box box-left"></figure>
         </div>
-        <div class="image-tag-row row-2">
-          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
-          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
-          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
+        <div class="image-wrap image-face-wrap">
+          <figure class="image-box box-middle"></figure>
+          <figure class="image-box box-love"></figure>
         </div>
-        <div class="image-tag-row row-3">
-          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
-          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
-          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
+        <div class="image-wrap anim">
+          <figure class="image-box box-right"></figure>
         </div>
-        <div class="image-tag-row row-4">
-          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
-          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
-          <div class="image-tag"><figure class="image-bands"><div></div></figure></div>
+        <div class="screen-hidden">
+            <div class="screen-card card-left-top">
+                <figure class="image-card-love"></figure>
+            </div>
+            <div class="screen-card card-middle-top"></div>
+            <div class="screen-card card-left-middle"></div>
+            <div class="screen-card card-middle-middle">
+                <figure class="image-card-love"></figure>
+            </div>
+            <div class="screen-card card-right-top">
+                <figure class="image-card-love"></figure>
+            </div>
+            <div class="screen-card card-left-bottom"></div>
+            <div class="screen-card card-middle-bottom"></div>
+            <div class="screen-card card-right-middle">
+                <figure class="image-card-love"></figure>
+            </div>
+            <div class="screen-card card-right-bottom"></div>
         </div>
       </div>
     </div>
     <div class="headline-wrap">
       <div class="headline">
-        <h2 class="headline-subhead">
-          客户与标签。<span class="weak"
-            >根据组成标签 条件的类型，自动为客户打标签，管理更高效。</span
+        <h2 class="headline-subhead xm-anim anim-fadeInRight">
+          客户与标签。<span class="weak">根据组成标签<br />条件的类型，自动为客户打<br />标签，管理更高效。</span>
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+                <section class="section section-order xm-anim anim-fadeIn" id="section-order">
+  <div class="section-content">
+    <div class="left-content">
+      <div class="animation-canvas">
+        <div class="image-tag-row row-1">
+          <div class="image-tag">
+            <div class="image-wrap">
+              <figure><i class="icon-order"></i></figure>
+            </div>
+          </div>
+          <div class="image-tag">
+            <div class="image-wrap">
+              <figure><i class="icon-order"></i></figure>
+            </div>
+          </div>
+          <div class="image-tag">
+            <div class="image-wrap">
+              <figure><i class="icon-order"></i></figure>
+            </div>
+          </div>
+        </div>
+        <div class="image-tag-row row-2">
+          <div class="image-tag amin">
+            <div class="image-wrap">
+              <figure><i class="icon-order"></i></figure>
+            </div>
+          </div>
+          <div class="image-tag image-face">
+            <div class="image-wrap">
+              <figure>
+                <i class="icon-order"></i>
+                <i class="icon-eat-in"></i>
+                <figcaption>堂食</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="image-tag image-take">
+            <div class="image-wrap">
+              <figure>
+                <i class="icon-take-out"></i>
+                <figcaption>外卖</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="image-tag amin">
+            <div class="image-wrap">
+              <figure><i class="icon-order"></i></figure>
+            </div>
+          </div>
+        </div>
+        <div class="image-tag-row row-3">
+          <div class="image-tag">
+            <div class="image-wrap">
+              <figure><i class="icon-order"></i></figure>
+            </div>
+          </div>
+          <div class="image-tag">
+            <div class="image-wrap">
+              <figure><i class="icon-order"></i></figure>
+            </div>
+          </div>
+          <div class="image-tag">
+            <div class="image-wrap">
+              <figure><i class="icon-order"></i></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="left-content">
+      <video
+        id="order-video"
+        class="inline-video"
+        muted
+        playsinline
+        src="http://pn7gq6n0k.bkt.clouddn.com/food_order_video.mp4"
+      ></video>
+    </div> -->
+    <div class="headline-wrap">
+      <div class="headline">
+        <h2 class="headline-subhead xm-anim anim-fadeInRight">
+          订单与分组。<span class="weak"
+            >根据每笔订单信<br />息分组归类，提高工作效率。</span
           >
         </h2>
       </div>
@@ -341,60 +451,12 @@
   </div>
 </section>
 
-                <section class="section section-order visible">
+                <section
+  class="section section-analyze xm-anim anim-fadeIn"
+  id="section-analyze"
+>
   <div class="section-content">
-    <div class="image-tag-grid will-change">
-      <div>
-        <div class="image-tag-row row-1">
-          <div class="image-tag">
-            <figure class="image-bands"><div></div></figure>
-          </div>
-          <div class="image-tag">
-            <figure class="image-bands"><div></div></figure>
-          </div>
-          <div class="image-tag">
-            <figure class="image-bands"><div></div></figure>
-          </div>
-        </div>
-        <div class="image-tag-row row-2">
-          <div class="image-tag">
-            <figure class="image-bands"><div></div></figure>
-          </div>
-          <div class="image-tag">
-            <figure class="image-bands"><div></div></figure>
-          </div>
-          <div class="image-tag">
-            <figure class="image-bands"><div></div></figure>
-          </div>
-        </div>
-        <div class="image-tag-row row-3">
-          <div class="image-tag">
-            <figure class="image-bands"><div></div></figure>
-          </div>
-          <div class="image-tag">
-            <figure class="image-bands"><div></div></figure>
-          </div>
-          <div class="image-tag">
-            <figure class="image-bands"><div></div></figure>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="headline-wrap">
-      <div class="headline">
-        <h2 class="headline-subhead">
-          订单与分组。<span class="weak">
-            根据每笔订单信息分组归类，提高工作效率。</span
-          >
-        </h2>
-      </div>
-    </div>
-  </div>
-</section>
-
-                <section class="section section-analyze visible">
-  <div class="section-content">
-    <div class="figure-background">
+    <!-- <div class="figure-background">
       <div class="image-wrap"><figure class="image-bg"></figure></div>
       <div class="figure-max-width labels-max-width">
         <div class="label-container electrical-label-container">
@@ -420,10 +482,44 @@
           </div>
         </div>
       </div>
+    </div> -->
+    <div>
+      <div class="gallery-wrap">
+        <div id="gallery-item-1" class="gallery-item" style="display: block;">
+          <div class="gallery-screen">
+            <figure class="gallery-image image-1"></figure>
+          </div>
+        </div>
+        <div id="gallery-item-2" class="gallery-item">
+          <div class="gallery-screen">
+            <figure class="gallery-image image-2"></figure>
+          </div>
+        </div>
+        <div id="gallery-item-3" class="gallery-item">
+          <div class="gallery-screen">
+            <figure class="gallery-image image-3"></figure>
+          </div>
+        </div>
+      </div>
+      <div class="tab-container">
+        <div class="tabs is-medium">
+          <ul>
+            <li class="is-active">
+              <a class="tabs-link" data-trigger="gallery-item-1">门店分析</a>
+            </li>
+            <li>
+              <a class="tabs-link" data-trigger="gallery-item-2">商品分析</a>
+            </li>
+            <li>
+              <a class="tabs-link" data-trigger="gallery-item-3">客户分析</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="headline-wrap">
       <div class="headline">
-        <h2 class="headline-subhead">
+        <h2 class="headline-subhead xm-anim anim-fadeInRight">
           数据分析。<span class="weak"
             >全方面数据分析，辅助你进行战略调整。</span
           >
@@ -433,7 +529,7 @@
   </div>
 </section>
 
-                <section class="section section-statistics visible">
+                <section class="section section-statistics xm-anim anim-fadeIn" id="section-statistics">
   <div class="section-content">
     <div class="data-table">
       <div class="progress-table">
@@ -582,7 +678,7 @@
     </div>
     <div class="headline-wrap">
       <div class="headline">
-        <h2 class="headline-subhead">
+        <h2 class="headline-subhead xm-anim anim-fadeInRight">
           资产。<span class="weak">
             告别糊涂账，每一笔 订单资金一目了然。
           </span>
@@ -592,35 +688,171 @@
   </div>
 </section>
 
-                <section class="section section-scope visible">
+                <section class="section section-scope xm-anim anim-fadeIn" id="section-scope">
   <div class="section-content">
     <div class="headline-wrap">
       <hgroup class="headline">
-        <h1 class="headline-title">适用范围</h1>
-        <h2 class="headline-subhead">快餐、饮品等<br />热门行业。</h2>
+        <h2 class="headline-title xm-anim anim-fadeInRight">适用范围</h2>
+        <h3 class="headline-subhead xm-anim anim-fadeInRight delay-025s">快餐、饮品等<br />热门行业。</h3>
       </hgroup>
       <div class="icon-group">
-        <figure class="icon-content icon-content-3">
+        <figure class="icon-content icon-content-3 xm-anim anim-fadeInRight delay-05s">
           <div class="icon-image icon-3"></div>
           <figcaption class="icon-caption">快餐</figcaption>
         </figure>
-        <figure class="icon-content icon-content-4">
+        <figure class="icon-content icon-content-4 xm-anim anim-fadeInRight delay-075s">
           <div class="icon-image icon-4"></div>
           <figcaption class="icon-caption">饮品</figcaption>
         </figure>
+        <figure class="icon-content icon-content-5 xm-anim anim-fadeInRight delay-1s">
+          <div class="icon-image icon-5"></div>
+          <figcaption class="icon-caption">小吃</figcaption>
+        </figure>
       </div>
     </div>
-    <div class="image-wrap"><figure class="image-bg"></figure></div>
+    <div class="scan-code-wrap">
+      <div class="inner">
+        <div class="image-box">
+          <div class="left-area disabled" data-trigger="left">
+            <em class="arrow left-arrow"></em>
+          </div>
+          <div class="image-wrap">
+            <div class="image-inner">
+              <figure class="image-bg image-scan-code code-1"></figure>
+              <figure class="image-bg image-scan-code code-2"></figure>
+              <figure class="image-bg image-scan-code code-3"></figure>
+            </div>
+          </div>
+          <div class="right-area" data-trigger="right">
+            <em class="arrow right-arrow"></em>
+          </div>
+          <div class="dot-wrap">
+              <a class="dot active" data-trigger="1"><span class="dot-inner"></span></a>
+              <a class="dot" data-trigger="2"><span class="dot-inner"></span></a>
+              <a class="dot" data-trigger="3"><span class="dot-inner"></span></a>
+          </div>
+        </div>
+        <div class="scan-text">手机扫一扫立即体验</div>
+      </div>
+    </div>
   </div>
 </section>
 
           </main>
-          <section id="footer" class="section section-footer visible" style="transform: translateY(0px);">
-     1111111111111111111
-</section>
+          <div id="footer">
+  <div class="material-wrapper">
+    <div class="wrapper">
+      <hgroup class="headline">
+        <h2 class="xm-typography-eyebrow">物料</h2>
+        <h3 class="xm-typography-headline">物料支持，扫码体验。</h3>
+      </hgroup>
+      <p class="xm-typography-intro">桌码，收银台码，门码，店内指引牌码。</p>
+    </div>
+    <figure class="image-material"></figure>
+  </div>
+  <footer>
+  <div class="footer-wrap">
+    <div class="footer-content">
       
+        <div id="ac-globalfooter">
+            <nav class="ac-gf-breadcrumbs">
+              <a href="/" class="home ac-gf-breadcrumbs-home"><span class="ac-gf-breadcrumbs-home-icon"></span></a>
+              <div class="ac-gf-breadcrumbs-path">
+                <ol class="ac-gf-breadcrumbs-list">
+                  
+                    
+                      <li class="ac-gf-breadcrumbs-item">
+                          
+                            <a class="ac-gf-breadcrumbs-link" href="/applet.html"><span>小程序</span></a>
+                          
+                      </li>
+                    
+                      <li class="ac-gf-breadcrumbs-item">
+                          
+                            <span>自助点餐</span>
+                          
+                      </li>
+                    
+                  
+                </ol>
+              </div>
+            </nav>
+          </div>
+      
+      <div class="nav-wrap">
+        <nav>
+          <ul class="nav-group group-1">
+            <li class="headline"><a href="/applet.html">小程序</a></li>
+            <li><a href="/pastime/">休闲娱乐</a></li>
+            <li><a href="/shop/">小马商城</a></li>
+            <li><a href="/food/">自助点餐</a></li>
+            <li><a href="/minisite/">自助建站</a></li>
+            <li class="headline"><a href="http://192.168.31.139:8000/">购买</a></li>
+            <li><a href="http://192.168.31.139:8000/">选择商品</a></li>
+            <li><a href="/amortize.html">分期付款</a></li>
+          </ul>
+          <ul class="nav-group group-2">
+            <li class="headline"><a href="/smart.html#smart-header">SMART</a></li>
+            <li><a href="/smart.html#smart-header">MUI-视觉</a></li>
+            <li><a href="/smart.html#smart-header">卡片风格</a></li>
+            <li><a href="/smart.html#smart-header">交互理念</a></li>
+            <li><a href="/smart.html#smart-header">屏幕适配</a></li>
+            <li><a href="/smart.html#smart-header">产品体验</a></li>
+            <li><a href="/smart.html#smart-header">大数据</a></li>
+            <li><a href="/smart.html#smart-header">互联网营销</a></li>
+            <li><a href="/smart.html#smart-header">统计分析</a></li>
+            <li><a href="/smart.html#smart-header">智能推送</a></li>
+            <li><a href="/smart.html#smart-header">AI-Push 2.0</a></li>
+          </ul>
+          <ul class="nav-group group-3">
+            <li class="headline"><a href="/protect.html#protect-title">保驾护航</a></li>
+            <li><a href="/protect.html#protect-system">系统稳定</a></li>
+            <li><a href="/protect.html#protect-data">数据安全</a></li>
+            <li><a href="/protect.html#protect-virtual">虚拟机隔离</a></li>
+            <li><a href="/protect.html#protect-network">网络传输</a></li>
+            <li><a href="/protect.html#protect-backup">灾备措施</a></li>
+            <li><a href="/protect.html#protect-performance">系统性能</a></li>
+            <li class="headline" style="margin-top: 22px;"><a href="/oem.html">OEM工厂</a></li>
+            <li><a href="/oem.html">技术支持</a></li>
+            <li><a href="/oem.html">购买流程</a></li>
+          </ul>
+          <ul class="nav-group group-4">
+            <li class="headline"><a href="/contact.html#contact-header">联系我们</a></li>
+            <li><a href="/contact.html#contact-introduce">公司简介</a></li>
+            <li><a href="/contact.html#contact-culture">小马文化</a></li>
+            <li><a href="/contact.html#cul-group-1">小马精神</a></li>
+            <li><a href="/contact.html#cul-group-2">小马愿景</a></li>
+            <li><a href="/contact.html#cul-group-3">管理理念</a></li>
+            <li><a href="/contact.html#cul-group-4">发展体系</a></li>
+            <li><a href="/contact.html#contact-office">公司环境</a></li>
+            <li><a href="/contact.html#contact-contact">联系方式</a></li>
+          </ul>
+        </nav>
+        <div class="hot-phone">
+          <span>全国服务热线</span> <span>400-654-6993</span>
+          <span>周一至周日8:30-18:00</span>
+          <div class="service">
+              <button type="button" class="ant-btn ant-btn-primary ant-btn-background-ghost"><i aria-label="icon: message" class="anticon anticon-message"><svg viewBox="64 64 896 896" class="" data-icon="message" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M464 512a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm200 0a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm-400 0a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm661.2-173.6c-22.6-53.7-55-101.9-96.3-143.3a444.35 444.35 0 0 0-143.3-96.3C630.6 75.7 572.2 64 512 64h-2c-60.6.3-119.3 12.3-174.5 35.9a445.35 445.35 0 0 0-142 96.5c-40.9 41.3-73 89.3-95.2 142.8-23 55.4-34.6 114.3-34.3 174.9A449.4 449.4 0 0 0 112 714v152a46 46 0 0 0 46 46h152.1A449.4 449.4 0 0 0 510 960h2.1c59.9 0 118-11.6 172.7-34.3a444.48 444.48 0 0 0 142.8-95.2c41.3-40.9 73.8-88.7 96.5-142 23.6-55.2 35.6-113.9 35.9-174.5.3-60.9-11.5-120-34.8-175.6zm-151.1 438C704 845.8 611 884 512 884h-1.7c-60.3-.3-120.2-15.3-173.1-43.5l-8.4-4.5H188V695.2l-4.5-8.4C155.3 633.9 140.3 574 140 513.7c-.4-99.7 37.7-193.3 107.6-263.8 69.8-70.5 163.1-109.5 262.8-109.9h1.7c50 0 98.5 9.7 144.2 28.9 44.6 18.7 84.6 45.6 119 80 34.3 34.3 61.3 74.4 80 119 19.4 46.2 29.1 95.2 28.9 145.8-.6 99.6-39.7 192.9-110.1 262.7z"></path></svg></i><span>联系客服</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="company">
+        <div>
+          <span>Co,Ltd AII Rights Reserved.小马飞腾信息技术有限公司</span>
+        </div>
+        <div class="attention-wrap">
+          <div class="attention">关注我们：</div>
+          <div class="XM2weima" style="z-index: 100"></div>
         </div>
       </div>
     </div>
-  <script type="text/javascript" src="/xiaomapage/js/vendor.be888ebd41a42c05d89a.js"></script><script type="text/javascript" src="/xiaomapage/js/food/index.be888ebd41a42c05d89a.js"></script></body>
+  </div>
+</footer>
+
+</div>
+
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="/js/vendor.a1c9788979bd0a8967d6.js"></script><script type="text/javascript" src="/js/food/index.a1c9788979bd0a8967d6.js"></script></body>
 </html>

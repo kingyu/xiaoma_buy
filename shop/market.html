@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html
-  class="js no-touch progressive-image no-backdrop-filter css-mask faceid-enhanced inline-video materials-enhanced chip-enhanced no-reduced-motion no-static-interaction sticky webgl sprite-sheet-player"
->
+<html class="css-mask">
   <head>
-    <meta charset="UTF-8" />
-    <title>pageA</title>
-  <link href="/xiaomapage/css/shop/market.min.css" rel="stylesheet"></head>
-  <body>
+    <meta charset="utf-8" />
+    <title>小马飞腾 - 小马商城 - 营销</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.bootcss.com/bulma/0.7.2/css/bulma.min.css"
+    />
+  <link href="/css/shop/market.min.css" rel="stylesheet"></head>
+  <body class="theme-white page-overview">
     <!-- 引入头部组件 -->
     <nav class="xm-nav">
   <div class="xm-content">
@@ -22,12 +24,17 @@
         </a>
       </div>
       <div class="xm-item">
-        <a class="xm-link" href="/smart.html">
+        <a class="xm-link" href="/amortize.html">
           <span class="xm-link-text">SMART</span>
         </a>
       </div>
       <div class="xm-item">
-        <a class="xm-link" href="#">
+        <a class="xm-link" href="/oem.html">
+          <span class="xm-link-text">OEM工厂</span>
+        </a>
+      </div>
+      <div class="xm-item">
+        <a class="xm-link" href="/protect.html">
           <span class="xm-link-text">保驾护航</span>
         </a>
       </div>
@@ -38,71 +45,42 @@
       </div>
     </div>
     <div class="xm-item xm-item-user">
-      <a class="xm-link xm-link-user" href="http://wxapp.xiaomafeiteng.com/login">
+      <a
+        class="xm-link xm-link-user"
+        href="http://wxapp.xiaomafeiteng.com/login"
+      >
         <span class="xm-link-text">用户中心</span>
       </a>
     </div>
   </div>
 </nav>
-<div id="xm-placeholder" class="ac-nav-placeholder"></div>
-<!-- 
-<nav id="chapternav" class="xm-chapter-nav">
-  <div class="xm-chapter-nav-wrapper">
-    <div class="xm-chapter-nav-items">
-      <div class="xm-chapter-nav-item">
-        <a class="xm-chapter-nav-link" href="/pastime/index.html">
-          <figure class="xm-chapter-nav-icon icon-pastime"></figure>
-          <span class="xm-chapter-nav-label">休闲娱乐</span>
-        </a>
-      </div>
-      <div class="xm-chapter-nav-item">
-        <a class="xm-chapter-nav-link" href="/shop/newIndex.html">
-          <figure class="xm-chapter-nav-icon icon-shop"></figure>
-          <span class="xm-chapter-nav-label">小马商城</span>
-        </a>
-      </div>
-      <div class="xm-chapter-nav-item">
-        <a class="xm-chapter-nav-link" href="/food/index.html">
-          <figure class="xm-chapter-nav-icon icon-food"></figure>
-          <span class="xm-chapter-nav-label">自助点餐</span>
-        </a>
-      </div>
-      <div class="xm-chapter-nav-item">
-        <a class="xm-chapter-nav-link" href="#">
-          <figure class="xm-chapter-nav-icon icon-minisite"></figure>
-          <span class="xm-chapter-nav-label">自助建站</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</nav> -->
- 
-    <nav id="xm-xy-localnav" class="xm-xy-localnav-scrim css-sticky">
-  <div class="xm-xy-wrapper">
-    <div class="xm-xy-background"></div>
-    <div class="xm-xy-content">
-      <div class="xm-xy-title">
+<div id="xm-placeholder" class="xm-nav-placeholder"></div>
+ <nav id="xm-localnav" class="xm-localnav-scrim css-sticky">
+  <div class="xm-localnav-wrapper">
+    <div class="xm-localnav-background"></div>
+    <div class="xm-localnav-content">
+      <div class="xm-localnav-title">
         <a href="/shop/">小马商城</a>
       </div>
-      <div class="xm-xy-menu">
-        <div class="xm-xy-menu-tray">
-          <div class="xm-xy-menu-items">
-            <div class="xm-xy-menu-item">
-              <span class="xm-xy-menu-link current">UI</span>
+      <div class="xm-localnav-menu">
+        <div class="xm-localnav-menu-tray">
+          <div class="xm-localnav-menu-items">
+            <div class="xm-localnav-menu-item">
+              <a href="/shop/index.html#section_ui" class="xm-localnav-menu-link">UI</a>
             </div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">大数据</a></div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">营销</a></div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">智能推送</a></div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">数据分析</a></div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">资产</a></div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">商家小程序</a></div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">服务范围</a></div>
-            <div class="xm-xy-menu-item"><a href="#" class="xm-xy-menu-link">物料</a></div>
+            <div class="xm-localnav-menu-item"><a href="/shop/index.html#section_big_data" class="xm-localnav-menu-link">大数据</a></div>
+            <div class="xm-localnav-menu-item"><a href="/shop/index.html#section_market" class="xm-localnav-menu-link">营销</a></div>
+            <div class="xm-localnav-menu-item"><a href="/shop/index.html#section_ai" class="xm-localnav-menu-link">智能推送</a></div>
+            <div class="xm-localnav-menu-item"><a href="/shop/index.html#section_analyze" class="xm-localnav-menu-link">数据分析</a></div>
+            <div class="xm-localnav-menu-item"><a href="/shop/index.html#section_statistics" class="xm-localnav-menu-link">资产</a></div>
+            <!-- <div class="xm-localnav-menu-item"><a href="#" class="xm-localnav-menu-link">商家小程序</a></div>
+            <div class="xm-localnav-menu-item"><a href="#" class="xm-localnav-menu-link">服务范围</a></div>
+            <div class="xm-localnav-menu-item"><a href="#" class="xm-localnav-menu-link">物料</a></div> -->
           </div>
         </div>
-        <div class="xm-xy-actions">
-          <div class="xm-xy-action xm-xy-action-button">
-            <a class="xm-xy-button" href="#">购买<span class="xm-xy-action-product"></span></a>
+        <div class="xm-localnav-actions">
+          <div class="xm-localnav-action xm-localnav-action-button">
+            <a class="xm-localnav-button" href="http://192.168.31.139:8000/">购买<span class="xm-localnav-action-product"></span></a>
           </div>
         </div>
       </div>
@@ -111,47 +89,50 @@
 </nav>
 
     <main id="main" class="main">
+      <h1 class="visuallyhidden">商城营销</h1>
       <section class="section section-computation">
         <div class="section-content">
           <div class="computation-images gallery-container sticky-container">
             <div class="sticky-item flex-item">
               <div class="operations-gallery-copy">
                 <div class="gallery-title">
-                  <h3
-                    class="subsection-headline typography-subpage-body-elevated"
-                  >
-                    营销应该循序渐进
-                  </h3>
-                  <p
-                    class="subsection-copy typography-overview-intro-elevated large-show-inline"
-                  >
-                    如何把一个新客培育成铁杆粉丝
-                  </p>
+                  <hgroup class="headline">
+                    <h2 class="xm-typography-eyebrow">
+                      营销应该循序渐进
+                    </h2>
+                    <h3 class="xm-typography-headline-elevated">
+                      如何把一个新客培育成铁杆粉丝
+                    </h3>
+                  </hgroup>
                 </div>
                 <div class="gallery-wrap">
                   <div class="gallery-item activity" id="item-1">
-                    <h3 class="subsection-headline">拉新类营销</h3>
-                    <h3 class="subsection-copy">等于</h3>
-                    <h3 class="subsection-headline">
+                    <div class="xm-typography-eyebrow">拉新类营销</div>
+                    <div class="xm-typography-headline">等于</div>
+                    <div class="xm-typography-eyebrow">
                       <span>无门槛卷</span><span>秒杀</span><span>体验价</span>
-                    </h3>
+                    </div>
                   </div>
                   <div class="gallery-item" id="item-2">
-                    <h3 class="subsection-headline">促活类营销</h3>
-                    <h3 class="subsection-copy">等于</h3>
-                    <h3 class="subsection-headline">
+                    <div class="xm-typography-eyebrow">促活类营销</div>
+                    <div class="xm-typography-headline">等于</div>
+                    <div class="xm-typography-eyebrow">
                       <span>拼团</span><span>限时折扣</span>
-                    </h3>
+                    </div>
                   </div>
                   <div class="gallery-item" id="item-3">
-                    <h3 class="subsection-headline">留存类营销</h3>
-                    <h3 class="subsection-copy">等于</h3>
-                    <h3 class="subsection-headline"><span>满减卷</span></h3>
+                    <div class="xm-typography-eyebrow">留存类营销</div>
+                    <div class="xm-typography-headline">等于</div>
+                    <div class="xm-typography-eyebrow">
+                      <span>满减卷</span>
+                    </div>
                   </div>
                   <div class="gallery-item" id="item-4">
-                    <h3 class="subsection-headline">转化类营销</h3>
-                    <h3 class="subsection-copy">等于</h3>
-                    <h3 class="subsection-headline"><span>会员卡</span></h3>
+                    <div class="xm-typography-eyebrow">转化类营销</div>
+                    <div class="xm-typography-headline">等于</div>
+                    <div class="xm-typography-eyebrow">
+                      <span>会员卡</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -160,19 +141,19 @@
                 style="transform: translate(0px, 0px) rotateX(-15deg);"
               >
                 <figure
-                  class="image-computation image-computation-5"
+                  class="image-computation image-hero-1"
                   id="image-1"
                 ></figure>
                 <figure
-                  class="image-computation image-computation-4"
+                  class="image-computation image-hero-2"
                   id="image-2"
                 ></figure>
                 <figure
-                  class="image-computation image-computation-3"
+                  class="image-computation image-hero-3"
                   id="image-3"
                 ></figure>
                 <figure
-                  class="image-computation image-computation-2"
+                  class="image-computation image-hero-4"
                   id="image-4"
                 ></figure>
               </div>
@@ -190,115 +171,177 @@
           </div>
         </div>
       </section>
-      <section class="section section-marketing gradient-background">
+      <section class="section section-marketing background">
         <div class="container">
           <div class="tile is-ancestor">
             <div class="tile is-parent">
-              <article class="tile is-child box phone-box">
+              <article class="tile is-child box phone-box is-4 large-offset-1">
                 <div class="image-container image-container-iphonex">
-                  <div class="image-hardware image-iphonex-bg">
-                    <figure class="image image-donotdisturb-image"></figure>
-                  </div>
+                    <div class="image-hardware image-iphonex">
+                      <video
+                        class="video video-screen"
+                        muted
+                        playsinline
+                        autoplay
+                        src="http://pn7gq6n0k.bkt.clouddn.com/shop_market_video_1.mp4"
+                      ></video>
+                    </div>
+                    <div class="inline-video-control xm-video-anim anim-fadeIn">
+                      <a class="xm-replay-link" href="#">重播<i></i></a>
+                    </div>
                 </div>
               </article>
-              <article class="tile is-child box title-box">
-                <div class="headline">
-                  <h1 class="title is-spaced">拉新类营销</h1>
-                  <h2 class="subtitle">
-                    限时秒杀,<span class="nowrap">限时限量。</span>
-                  </h2>
-                  <div class="content">
-                    <p>
-                      商家可通过该款促销工具，在特定时间内设置某款服务以超低价格售卖，营造紧张的气氛，拉动人气，并引买家买更多的东西，从而带动店铺的整体销售。
-                    </p>
-                  </div>
-                  <div class="icon-content"></div>
+              <article class="tile is-child box title-box is-6 large-offset-1">
+                <hgroup class="headline">
+                  <h2 class="xm-typography-eyebrow">拉新类营销</h2>
+                  <h3 class="xm-typography-headline">
+                    限时秒杀,<br />限时限量。
+                  </h3>
+                </hgroup>
+                <p class="xm-typography-intro">
+                  商家可通过该款促销工具，在特定时间内设置某<br />款服务以超低价格售卖，
+                  营造紧张的气氛， 拉动<br />人气， 并引买家买更多的东西，
+                  从而带动店铺的<br />整体销售。
+                </p>
+                <div class="icon-group">
+                  <figure class="icon-content">
+                    <div class="icon-image icon-1"></div>
+                    <figcaption class="icon-caption">无门槛卷</figcaption>
+                  </figure>
+                  <figure class="icon-content">
+                    <div class="icon-image icon-2"></div>
+                    <figcaption class="icon-caption">秒杀</figcaption>
+                  </figure>
+                  <figure class="icon-content">
+                    <div class="icon-image icon-3"></div>
+                    <figcaption class="icon-caption">体验价</figcaption>
+                  </figure>
                 </div>
               </article>
             </div>
           </div>
         </div>
       </section>
-      <section class="section section-marketing gradient-background">
+      <section class="section section-marketing background">
         <div class="container">
           <div class="tile is-ancestor">
             <div class="tile is-parent">
-              <article class="tile is-child box title-box">
-                <div class="headline">
-                  <h1 class="title is-spaced">促活类营销</h1>
-                  <h2 class="subtitle">
-                    我的商城我的团，<span class="nowrap">拼团实惠看得见</span>
-                  </h2>
-                  <div class="content">
-                    <p>
-                      由商家针对特定服务，在约定时间内，以成团人数为条件，用优惠价格出售服务的营销活动。
-                    </p>
-                  </div>
-                  <div class="icon-content"></div>
+              <article class="tile is-child box title-box is-5 large-offset-1">
+                <hgroup class="headline">
+                  <h2 class="xm-typography-eyebrow">促活类营销</h2>
+                  <h3 class="xm-typography-headline">
+                    我的商城我的团<br />拼团实惠看得见
+                  </h3>
+                </hgroup>
+                <p class="xm-typography-intro">
+                  由商家针对特定服务，在约定时间内，以成团人数为条件，用优惠价格出售服务的营销活动。
+                </p>
+                <div class="icon-group">
+                  <figure class="icon-content">
+                    <div class="icon-image icon-4"></div>
+                    <figcaption class="icon-caption">限时折扣</figcaption>
+                  </figure>
+                  <figure class="icon-content">
+                    <div class="icon-image icon-5"></div>
+                    <figcaption class="icon-caption">拼团</figcaption>
+                  </figure>
                 </div>
               </article>
-              <article class="tile is-child box phone-box">
+              <article class="tile is-child box phone-box is-4">
                 <div class="image-container image-container-iphonex inverted">
-                  <div class="image-hardware image-iphonex-bg">
-                    <figure class="image image-donotdisturb-image"></figure>
-                  </div>
+                    <div class="image-hardware image-iphonex">
+                      <video
+                        class="video video-screen"
+                        muted
+                        playsinline
+                        autoplay
+                        src="http://pn7gq6n0k.bkt.clouddn.com/shop_market_video_2.mp4"
+                      ></video>
+                    </div>
+                    <div class="inline-video-control xm-video-anim anim-fadeIn">
+                      <a class="xm-replay-link" href="#">重播<i></i></a>
+                    </div>
                 </div>
               </article>
             </div>
           </div>
         </div>
       </section>
-      <section class="section section-marketing gradient-background">
+      <section class="section section-marketing background">
         <div class="container">
           <div class="tile is-ancestor">
             <div class="tile is-parent">
-              <article class="tile is-child box phone-box">
+              <article class="tile is-child box phone-box is-4 large-offset-1">
                 <div class="image-container image-container-iphonex">
-                  <div class="image-hardware image-iphonex-bg">
-                    <figure class="image image-donotdisturb-image"></figure>
+                  <div class="image-hardware image-iphonex">
+                    <video
+                      class="video video-screen"
+                      muted
+                      playsinline
+                      autoplay
+                      src="http://pn7gq6n0k.bkt.clouddn.com/shop_market_video_3.mp4"
+                    ></video>
+                  </div>
+                  <div class="inline-video-control xm-video-anim anim-fadeIn">
+                    <a class="xm-replay-link" href="#">重播<i></i></a>
                   </div>
                 </div>
               </article>
-              <article class="tile is-child box title-box">
-                <div class="headline">
-                  <h1 class="title is-spaced">留存类营销</h1>
-                  <h2 class="subtitle">
-                    满减卷,<span class="nowrap">玩法灵活多变。</span>
-                  </h2>
-                  <div class="content">
-                    <p>
-                      设置无门槛优惠券，满减券，指定商品可用，指定日期可用，支付送券，新客送券，吸引顾客到店消费。
-                    </p>
-                  </div>
-                  <div class="icon-content"></div>
+              <article class="tile is-child box title-box is-6 large-offset-1">
+                <hgroup class="headline">
+                  <h2 class="xm-typography-eyebrow">留存类营销</h2>
+                  <h3 class="xm-typography-headline">
+                    满减卷,<br />玩法灵活多变。
+                  </h3>
+                </hgroup>
+                <p class="xm-typography-intro">
+                  设置无门槛优惠券，满减券，指定商品可用，指<br />定日期可用，支付送券，新客送券，吸引顾客到<br />店消费。
+                </p>
+                <div class="icon-group">
+                  <figure class="icon-content">
+                    <div class="icon-image icon-6"></div>
+                    <figcaption class="icon-caption">满减卷</figcaption>
+                  </figure>
                 </div>
               </article>
             </div>
           </div>
         </div>
       </section>
-      <section class="section section-marketing gradient-background">
+      <section class="section section-marketing background">
         <div class="container">
           <div class="tile is-ancestor">
             <div class="tile is-parent">
-              <article class="tile is-child box title-box">
-                <div class="headline">
-                  <h1 class="title is-spaced">转化类营销</h1>
-                  <h2 class="subtitle">
-                    每天新生活，<span class="nowrap">刻录在卡中。</span>
-                  </h2>
-                  <div class="content">
-                    <p>
-                      专享客服优先通道，无需等待，VIP客服为您快速处理问题。定制专属于自己的个性化商城。
-                    </p>
-                  </div>
-                  <div class="icon-content"></div>
+              <article class="tile is-child box title-box is-5 large-offset-1">
+                <hgroup class="headline">
+                  <h2 class="xm-typography-eyebrow">转化类营销</h2>
+                  <h3 class="xm-typography-headline">
+                    每天新生活，<br />刻录在卡中。
+                  </h3>
+                </hgroup>
+                <p class="xm-typography-intro">
+                  专享客服优先通道，无需等待，VIP客服为您快速处理问题。定制专属于自己的个性化商城。
+                </p>
+                <div class="icon-group">
+                  <figure class="icon-content">
+                    <div class="icon-image icon-7"></div>
+                    <figcaption class="icon-caption">会员卡</figcaption>
+                  </figure>
                 </div>
               </article>
-              <article class="tile is-child box phone-box">
+              <article class="tile is-child box phone-box is-4">
                 <div class="image-container image-container-iphonex inverted">
-                  <div class="image-hardware image-iphonex-bg">
-                    <figure class="image image-donotdisturb-image"></figure>
+                  <div class="image-hardware image-iphonex">
+                    <!-- <video
+                      class="video video-screen"
+                      muted
+                      playsinline
+                      autoplay
+                      src="http://pn7gq6n0k.bkt.clouddn.com/pastime_market_phone_video_4.mp4"
+                    ></video> -->
+                  </div>
+                  <div class="inline-video-control xm-video-anim anim-fadeIn">
+                    <a class="xm-replay-link" href="#">重播<i></i></a>
                   </div>
                 </div>
               </article>
@@ -308,12 +351,110 @@
       </section>
     </main>
     <!-- 引入尾部组件 -->
-    <footer class="footer">
-  <div class="content has-text-centered">
-    <p>
-      我是底部导航
-    </p>
+    <footer>
+  <div class="footer-wrap">
+    <div class="footer-content">
+      
+        <div id="ac-globalfooter">
+            <nav class="ac-gf-breadcrumbs">
+              <a href="/" class="home ac-gf-breadcrumbs-home"><span class="ac-gf-breadcrumbs-home-icon"></span></a>
+              <div class="ac-gf-breadcrumbs-path">
+                <ol class="ac-gf-breadcrumbs-list">
+                  
+                    
+                      <li class="ac-gf-breadcrumbs-item">
+                          
+                            <a class="ac-gf-breadcrumbs-link" href="/applet.html"><span>小程序</span></a>
+                          
+                      </li>
+                    
+                      <li class="ac-gf-breadcrumbs-item">
+                          
+                            <a class="ac-gf-breadcrumbs-link" href="/shop/"><span>商城</span></a>
+                          
+                      </li>
+                    
+                      <li class="ac-gf-breadcrumbs-item">
+                          
+                            <span>营销</span>
+                          
+                      </li>
+                    
+                  
+                </ol>
+              </div>
+            </nav>
+          </div>
+      
+      <div class="nav-wrap">
+        <nav>
+          <ul class="nav-group group-1">
+            <li class="headline"><a href="/applet.html">小程序</a></li>
+            <li><a href="/pastime/">休闲娱乐</a></li>
+            <li><a href="/shop/">小马商城</a></li>
+            <li><a href="/food/">自助点餐</a></li>
+            <li><a href="/minisite/">自助建站</a></li>
+            <li class="headline"><a href="http://192.168.31.139:8000/">购买</a></li>
+            <li><a href="http://192.168.31.139:8000/">选择商品</a></li>
+            <li><a href="/amortize.html">分期付款</a></li>
+          </ul>
+          <ul class="nav-group group-2">
+            <li class="headline"><a href="/smart.html#smart-header">SMART</a></li>
+            <li><a href="/smart.html#smart-header">MUI-视觉</a></li>
+            <li><a href="/smart.html#smart-header">卡片风格</a></li>
+            <li><a href="/smart.html#smart-header">交互理念</a></li>
+            <li><a href="/smart.html#smart-header">屏幕适配</a></li>
+            <li><a href="/smart.html#smart-header">产品体验</a></li>
+            <li><a href="/smart.html#smart-header">大数据</a></li>
+            <li><a href="/smart.html#smart-header">互联网营销</a></li>
+            <li><a href="/smart.html#smart-header">统计分析</a></li>
+            <li><a href="/smart.html#smart-header">智能推送</a></li>
+            <li><a href="/smart.html#smart-header">AI-Push 2.0</a></li>
+          </ul>
+          <ul class="nav-group group-3">
+            <li class="headline"><a href="/protect.html#protect-title">保驾护航</a></li>
+            <li><a href="/protect.html#protect-system">系统稳定</a></li>
+            <li><a href="/protect.html#protect-data">数据安全</a></li>
+            <li><a href="/protect.html#protect-virtual">虚拟机隔离</a></li>
+            <li><a href="/protect.html#protect-network">网络传输</a></li>
+            <li><a href="/protect.html#protect-backup">灾备措施</a></li>
+            <li><a href="/protect.html#protect-performance">系统性能</a></li>
+            <li class="headline" style="margin-top: 22px;"><a href="/oem.html">OEM工厂</a></li>
+            <li><a href="/oem.html">技术支持</a></li>
+            <li><a href="/oem.html">购买流程</a></li>
+          </ul>
+          <ul class="nav-group group-4">
+            <li class="headline"><a href="/contact.html#contact-header">联系我们</a></li>
+            <li><a href="/contact.html#contact-introduce">公司简介</a></li>
+            <li><a href="/contact.html#contact-culture">小马文化</a></li>
+            <li><a href="/contact.html#cul-group-1">小马精神</a></li>
+            <li><a href="/contact.html#cul-group-2">小马愿景</a></li>
+            <li><a href="/contact.html#cul-group-3">管理理念</a></li>
+            <li><a href="/contact.html#cul-group-4">发展体系</a></li>
+            <li><a href="/contact.html#contact-office">公司环境</a></li>
+            <li><a href="/contact.html#contact-contact">联系方式</a></li>
+          </ul>
+        </nav>
+        <div class="hot-phone">
+          <span>全国服务热线</span> <span>400-654-6993</span>
+          <span>周一至周日8:30-18:00</span>
+          <div class="service">
+              <button type="button" class="ant-btn ant-btn-primary ant-btn-background-ghost"><i aria-label="icon: message" class="anticon anticon-message"><svg viewBox="64 64 896 896" class="" data-icon="message" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M464 512a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm200 0a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm-400 0a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm661.2-173.6c-22.6-53.7-55-101.9-96.3-143.3a444.35 444.35 0 0 0-143.3-96.3C630.6 75.7 572.2 64 512 64h-2c-60.6.3-119.3 12.3-174.5 35.9a445.35 445.35 0 0 0-142 96.5c-40.9 41.3-73 89.3-95.2 142.8-23 55.4-34.6 114.3-34.3 174.9A449.4 449.4 0 0 0 112 714v152a46 46 0 0 0 46 46h152.1A449.4 449.4 0 0 0 510 960h2.1c59.9 0 118-11.6 172.7-34.3a444.48 444.48 0 0 0 142.8-95.2c41.3-40.9 73.8-88.7 96.5-142 23.6-55.2 35.6-113.9 35.9-174.5.3-60.9-11.5-120-34.8-175.6zm-151.1 438C704 845.8 611 884 512 884h-1.7c-60.3-.3-120.2-15.3-173.1-43.5l-8.4-4.5H188V695.2l-4.5-8.4C155.3 633.9 140.3 574 140 513.7c-.4-99.7 37.7-193.3 107.6-263.8 69.8-70.5 163.1-109.5 262.8-109.9h1.7c50 0 98.5 9.7 144.2 28.9 44.6 18.7 84.6 45.6 119 80 34.3 34.3 61.3 74.4 80 119 19.4 46.2 29.1 95.2 28.9 145.8-.6 99.6-39.7 192.9-110.1 262.7z"></path></svg></i><span>联系客服</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="company">
+        <div>
+          <span>Co,Ltd AII Rights Reserved.小马飞腾信息技术有限公司</span>
+        </div>
+        <div class="attention-wrap">
+          <div class="attention">关注我们：</div>
+          <div class="XM2weima" style="z-index: 100"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
-  <script type="text/javascript" src="/xiaomapage/js/vendor.be888ebd41a42c05d89a.js"></script><script type="text/javascript" src="/xiaomapage/js/shop/market.be888ebd41a42c05d89a.js"></script></body>
+
+  <script type="text/javascript" src="/js/vendor.a1c9788979bd0a8967d6.js"></script><script type="text/javascript" src="/js/shop/market.a1c9788979bd0a8967d6.js"></script></body>
 </html>
