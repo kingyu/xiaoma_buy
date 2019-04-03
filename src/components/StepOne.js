@@ -91,8 +91,6 @@ class StepOneComponet extends React.Component {
             <span className="interval">2个产品9.5折</span>
             <span className="interval">3个产品9折</span>
             <span className="interval">全套尊享7<Badge count={"限时14天"}><span className="discount">折</span></Badge></span>
-            <br />
-            全年子账号不限量
           </h3>
         </div>
         <div className="product-wrapper">

@@ -72,9 +72,9 @@ class Nav extends React.Component {
                 <div className="xm-localnav-menu-tray">
                   <div className="xm-localnav-menu-items">
                     <div className="xm-localnav-menu-item">
-                      <a href="#" className="xm-localnav-menu-link">
+                      <div className="xm-localnav-menu-link">
                         购买产品
-                      </a>
+                      </div>
                     </div>
                   </div>
                 </div>
