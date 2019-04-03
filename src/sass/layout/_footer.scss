@@ -1,0 +1,268 @@
+.footer-wrap {
+  width: 100%;
+  background: #f2f2f2;
+  padding-top: 40px;
+  font-size: 13px;
+  font-weight: 400;
+  .nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    nav {
+      flex: 1;
+      display: flex;
+      margin-bottom: 50px;
+      ul.nav-group {
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+        flex: 1;
+        list-style: none;
+        li {
+          margin-bottom: 11px;
+          a {
+            color: #555555;
+            text-decoration: none;
+          }
+          a:hover {
+            color: #333;
+            text-decoration: underline;
+          }
+        }
+        li.headline {
+          margin: 14px 0;
+          > a {
+            font-weight: 500;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .hot-phone {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      span:nth-of-type(2) {
+        font-size: 20px;
+        margin-bottom: 9px;
+        letter-spacing: 0.02em;
+        border-bottom: 1px solid #dcdcdc;
+      }
+    }
+    .service {
+      text-align: center;
+      margin-top: 40px;
+      .ant-btn {
+        height: 30px;
+        padding: 0 20px;
+        &.ant-btn-background-ghost.ant-btn-primary {
+          color: #0573cc;
+          border-color: #0573cc;
+        }
+      }
+    }
+  }
+  .company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    border-top: 1px solid #dcdcdc;
+    color: #222222;
+    .attention {
+      color: #0070c9;
+      padding-right: 27px;
+      margin-right: 3px;
+      background: url('#{$img-prefix-deep}pro-weixin.png') no-repeat right center;
+      background-size: 17px 14px;
+      padding: 5px 20px;
+    }
+  }
+}
+.footer-content {
+  margin: 0 auto;
+  max-width: 1000px;
+  border-top: 1px solid #dcdcdc;
+  padding-top: 22px;
+}
+.attention-wrap {
+  position: relative;
+  .XM2weima {
+    position: absolute;
+    bottom: 25px;
+    left: -8px;
+    /* margin-left: -90px; */
+    width: 180px;
+    height: 200px;
+    opacity: 0;
+    visibility: hidden;
+    background: url('#{$img-prefix-deep}WX2weima.png');
+    background-size: 100% 100%;
+    will-change: opacity;
+    -webkit-transition: 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) opacity;
+    transition: 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) opacity;
+  }
+  &:hover {
+    .XM2weima {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+#ac-globalfooter,
+#ac-globalfooter:before,
+#ac-globalfooter:after,
+#ac-globalfooter *,
+#ac-globalfooter *:before,
+#ac-globalfooter *:after {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  pointer-events: auto;
+  letter-spacing: normal;
+}
+
+#ac-globalfooter .ac-gf-breadcrumbs {
+  padding: 0 0 22px 0;
+  position: relative;
+  z-index: 1;
+  color: #222222;
+}
+#ac-globalfooter .ac-gf-breadcrumbs::before,
+#ac-globalfooter .ac-gf-breadcrumbs::after {
+  content: ' ';
+  display: table;
+}
+#ac-globalfooter .ac-gf-breadcrumbs::after {
+  clear: both;
+}
+#ac-globalfooter a {
+  color: #222222;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+#ac-globalfooter .ac-gf-breadcrumbs-home {
+  left: 0;
+  position: absolute;
+  z-index: 2;
+  top: 2px;
+  &:hover {
+    text-decoration: none;
+  }
+  &:hover .ac-gf-breadcrumbs-home-icon {
+    background-position-y: 100%;
+  }
+}
+
+#ac-globalfooter .ac-gf-breadcrumbs-home-icon {
+  width: 20px;
+  background-size: 20px 40px;
+  background-repeat: no-repeat;
+  background-image: url('#{$img-prefix-deep}breadcrumbs_logo.svg');
+  height: 20px;
+  display: block;
+  position: relative;
+  z-index: 2;
+  color: transparent;
+}
+.ac-theme-dark #ac-globalfooter a,
+#ac-globalfooter.ac-globalfooter-dark a {
+  color: #999;
+}
+#ac-globalfooter .ac-gf-breadcrumbs-path {
+  line-height: 1.33341;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  position: relative;
+  z-index: 1;
+  &::before,
+  &::after {
+    content: ' ';
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}
+#ac-globalfooter .ac-gf-breadcrumbs-list {
+  max-height: 9999px;
+  padding-left: 25px;
+  direction: ltr;
+  list-style: none;
+}
+#ac-globalfooter .ac-gf-breadcrumbs-item {
+  margin-right: 7px;
+  float: left;
+  padding: 3px 4px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  &:before {
+    width: 8px;
+    height: 18px;
+    background-size: 8px 18px;
+    background-repeat: no-repeat;
+    background-image: url('#{$img-prefix-deep}icon_dark_large.svg');
+    margin-right: 11px;
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+  }
+}
+.theme-black,
+.theme-dark {
+  .footer-wrap {
+    background: #121212;
+    .nav-wrap {
+      ul.nav-group li a {
+        color: #999999;
+        &:hover {
+          color: #cccccc;
+        }
+      }
+      ul.nav-group li.headline a {
+        color: #ffffff;
+        font-weight: 100;
+      }
+    }
+    .hot-phone {
+      color: #999;
+      span:nth-of-type(2) {
+        color: #ffffff;
+        border-bottom: 1px solid rgb(68, 68, 68);
+      }
+    }
+  }
+  .footer-content {
+    border-top-color: #444444;
+  }
+  .company {
+    border-top: 1px solid rgb(68, 68, 68);
+    color: #888888;
+    .attention {
+      background: url('#{$img-prefix-deep}weixin-black.png') no-repeat right center;
+    }
+  }
+  #ac-globalfooter .ac-gf-breadcrumbs-home-icon {
+    background-image: url('#{$img-prefix-deep}breadcrumbs_logo_w.svg');
+  }
+  #ac-globalfooter .ac-gf-breadcrumbs {
+    color: #999;
+  }
+  #ac-globalfooter a {
+    color: #999;
+    &:hover {
+      color: #cccccc;
+    }
+  }
+  .company {
+    .attention {
+      color: #6bf;
+    }
+  }
+}

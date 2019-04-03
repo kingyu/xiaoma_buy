@@ -1,0 +1,212 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 106.25%;
+}
+
+body {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: 'SF Pro Text', 'PingFangSC', 'Helvetica Neue', Helvetica,
+    'Nimbus Sans L', Arial, 'Liberation Sans', 'Hiragino Sans GB',
+    'Source Han Sans CN Normal', 'Microsoft YaHei', 'Wenquanyi Micro Hei',
+    'WenQuanYi Zen Hei', 'ST Heiti', SimHei, 'WenQuanYi Zen Hei Sharp',
+    sans-serif;
+  background-color: #fff;
+  color: #333;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  *font-family: 'Arial', 'Microsoft yahei', '微软雅黑', 'PingFangSC',
+    'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', sans-serif;
+}
+
+section {
+  position: relative;
+}
+
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+p,
+blockquote,
+figure,
+form,
+fieldset,
+input,
+legend,
+pre,
+abbr,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+pre,
+code,
+address,
+caption,
+th,
+figcaption {
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+}
+
+fieldset,
+iframe,
+img {
+  border: 0;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+main,
+section,
+summary,
+details,
+hgroup,
+figure,
+figcaption {
+  display: block;
+}
+
+audio,
+canvas,
+video,
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+button {
+  background: none;
+  border: 0;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  line-height: inherit;
+  overflow: visible;
+  vertical-align: inherit;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+:focus[data-focus-method='mouse']:not(input):not(textarea):not(select),
+:focus[data-focus-method='touch']:not(input):not(textarea):not(select) {
+  outline: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font-synthesis: none;
+  -moz-font-feature-settings: 'kern';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: ltr;
+  text-align: left;
+}
+
+a {
+  color: #0070c9;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+p + a {
+  display: inline-block;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+em,
+i,
+cite,
+dfn {
+  font-style: italic;
+}
+
+sup {
+  font-size: 0.6em;
+  vertical-align: top;
+  position: relative;
+  bottom: -0.2em;
+}
+
+h1 sup,
+h2 sup,
+h3 sup {
+  font-size: 0.4em;
+}
+
+sup a {
+  vertical-align: inherit;
+  color: inherit;
+}
+
+sup a:hover {
+  color: #0070c9;
+  text-decoration: none;
+}
+
+sub {
+  line-height: 1;
+}
+
+abbr {
+  border: 0;
+}

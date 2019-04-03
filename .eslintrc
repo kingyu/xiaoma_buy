@@ -1,0 +1,14 @@
+{
+  "extends": "eslint-config-umi",
+  "rules": {
+    "eqeqeq": "off",
+    "no-unused-expressions": "off",
+    "require-yield": 0,
+    "no-extend-native": 0,
+    "no-unused-vars": 0,
+    "no-redeclare": 0,
+    "jsx-a11y/href-no-hash": 0,
+    "react/no-deprecated": "off",
+    "no-undef": "off"
+  }
+}

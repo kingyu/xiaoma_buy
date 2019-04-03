@@ -1,0 +1,106 @@
+@import '../sass/main.scss';
+
+.nowrap {
+  display: inline-block;
+  text-decoration: inherit;
+  white-space: nowrap;
+}
+.clear {
+  clear: both;
+}
+.pill-button {
+  font-size: 16px;
+  font-weight: 600;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 46px;
+  margin-top: 30px;
+  padding: 0 25px;
+  border-radius: 50px;
+  border: 2px solid #ffffff;
+  -webkit-transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+  transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+  .icon-copy {
+    color: #ffffff;
+    -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+    transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+  }
+}
+a.pill-button:hover,
+button.pill-button:hover {
+  background: #ffffff;
+  -webkit-transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+  transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+  .icon-copy {
+    color: #000;
+    text-decoration: none;
+    -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+    transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+  }
+}
+.xm-button {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  background-color: #0070c9;
+  background: linear-gradient(#42a1ec, #0070c9);
+  border-color: #07c;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  min-width: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: center;
+  white-space: nowrap;
+  &:hover {
+    background-color: #147bcd;
+    background: linear-gradient(#51a9ee, #147bcd);
+    border-color: #1482d0;
+    text-decoration: none;
+    color: white;
+  }
+  &:focus {
+    box-shadow: 0 0 0 3px rgba(131, 192, 253, 0.5);
+    outline: none;
+  }
+  &:active {
+    background-color: #0067b9;
+    background: linear-gradient(#3d94d9, #0067b9);
+    border-color: #006dbc;
+    outline: none;
+    color: white;
+  }
+}
+.theme-dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.theme-white {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.visuallyhidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
+}

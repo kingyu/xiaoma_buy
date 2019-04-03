@@ -1,0 +1,43 @@
+.xm-typography-eyebrow {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.14286;
+  letter-spacing: 0.02em;
+  color: #888888;
+}
+%xm-typography-headline {
+  font-size: 54px;
+  line-height: 1.0625;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  color: #222222;
+}
+.xm-typography-headline {
+  @extend %xm-typography-headline;
+  &-elevated {
+    @extend %xm-typography-headline;
+    font-size: 70px;
+    line-height: 1.1;
+  }
+}
+.xm-typography-intro {
+  font-size: 20px;
+  color: #888888;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.theme-dark {
+  .xm-typography-eyebrow {
+    color: #666666;
+  }
+  .xm-typography-headline {
+    color: #fbfcfd;
+    &-elevated {
+      color: #fbfcfd;
+    }
+  }
+  .xm-typography-intro {
+    color: #676767;
+  }
+}

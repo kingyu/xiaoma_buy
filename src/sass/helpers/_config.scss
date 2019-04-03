@@ -1,0 +1,58 @@
+/*** Parameters ***/
+// Colors
+$color-primary: #666;
+$color-secondary: #888;
+$color-light: #e0e0e0;
+$color-lightest: #efefef;
+$color-brand: #239bf6;
+// Brand color
+$color-facebook: #3b5998;
+$color-feedly: #2bb24c;
+$color-github: #333;
+$color-google: #dc4e41;
+$color-instagram: #3f729b;
+$color-linkedin: #0077b5;
+$color-medium: #00ab6b;
+$color-messenger: #0084ff;
+$color-rss: #f26522;
+$color-spotify: #2ebd59;
+$color-twitter: #55acee;
+// Borders
+$border-light: solid 1px rgba(0, 0, 0, 0.05);
+// Font Size
+$font-size-biggest: 2.8rem;
+$font-size-largest: 2.3rem;
+$font-size-large: 1.2rem;
+$font-size-base: 1rem;
+$font-size-small: 0.9rem;
+$font-size-smallest: 0.75rem;
+// Spacing
+$spacing-small: 0.75rem;
+$spacing-single: 1rem;
+$spacing-double: 2rem;
+$spacing-triple: 3rem;
+$spacing-big: 6rem;
+// Media queries
+// The container horizontal gap, which acts as the offset for breakpoints
+$gap: 64px !default;
+// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+$tablet: 769px !default;
+// 960px container + 4rem
+$desktop: 960px + (2 * $gap) !default;
+// 1152px container + 4rem
+$widescreen: 1152px + (2 * $gap) !default;
+$widescreen-enabled: true !default;
+// 1344px container + 4rem
+$fullhd: 1344px + (2 * $gap) !default;
+$fullhd-enabled: true !default;
+// Font Family
+$sans-serif: 'Roboto', sans-serif;
+$serif: 'Playfair Display', serif;
+// Animation
+$anime-in: 0.4s;
+$anime-out: 0.5s;
+
+//url Prefix
+$img-prefix: 'https://upload.xiaomafeiteng.com/xm/wxapp/website/img/';
+$img-prefix-deep: 'https://upload.xiaomafeiteng.com/xm/wxapp/website/img/';
+$font-prefix: 'https://upload.xiaomafeiteng.com/xm/wxapp/website/fonts/';
