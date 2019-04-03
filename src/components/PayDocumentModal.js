@@ -61,7 +61,7 @@ class PayDocumentModal extends React.Component {
           <Form.Item {...formItemLayout} label="付款时间:">
             {getFieldDecorator('remit_time', {
               rules: [{ required: true, message: '请选择日期!' }],
-            })(<DatePicker placeholder="请选择日期" style={{ width: '100%' }} />)}
+            })(<DatePicker locale="zh_CN" placeholder="请选择日期" style={{ width: '100%' }} />)}
           </Form.Item>
           <Form.Item style={{ textAlign: 'right', marginTop: 40, marginRight: 10 }}>
             <Button type="primary" htmlType="submit" className="xm-button">

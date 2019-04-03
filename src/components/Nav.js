@@ -1,5 +1,6 @@
 import React from 'react';
 import { static_domain } from 'utils/config';
+import { Badge } from 'antd';
 import './styles.scss';
 
 class Nav extends React.Component {
@@ -7,11 +8,11 @@ class Nav extends React.Component {
     isRibbon: false,
   };
   componentDidMount() {
-    setTimeout(()=>{
+    setTimeout(() => {
       this.setState({
-        isRibbon:true
-      })
-    },1000)
+        isRibbon: true,
+      });
+    }, 1000);
   }
   render() {
     return (
@@ -36,7 +37,9 @@ class Nav extends React.Component {
               </div>
               <div className="xm-item">
                 <a className="xm-link" href={`${static_domain}oem.html`}>
-                  <span className="xm-link-text">OEM工厂</span>
+                  <Badge count={'HOT'}>
+                    <span className="xm-link-text">源码工厂</span>
+                  </Badge>
                 </a>
               </div>
               <div className="xm-item">
@@ -79,10 +82,10 @@ class Nav extends React.Component {
             </div>
           </div>
         </nav>
-        <div className={`ribbon ${!this.state.isRibbon?'ribbon-hide':''}`}>
+        <div className={`ribbon ${!this.state.isRibbon ? 'ribbon-hide' : ''}`}>
           <div className="ribbon-wrapper">
             <div className="ribbon-content typography-body-reduced">
-              <p>在小马飞腾四大产品中，自助建站因为某某原因（不告诉你的原因）于2019年4月30日上线</p>
+              <p>小马飞腾小程序四大产品全套源码7折出售，全国同步上市，限时14天恢复原价。</p>
             </div>
           </div>
         </div>

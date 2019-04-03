@@ -3,7 +3,7 @@ import { toMoney } from 'utils/utils';
 import { static_domain } from 'utils/config';
 import Animate from 'rc-animate';
 import QueueAnim from 'rc-queue-anim';
-import { Alert } from 'antd';
+import { Alert,Badge } from 'antd';
 import './styles.scss';
 
 class StepOneComponet extends React.Component {
@@ -90,7 +90,7 @@ class StepOneComponet extends React.Component {
           <h3 className="xm-typography-eyebrow">
             <span className="interval">2个产品9.5折</span>
             <span className="interval">3个产品9折</span>
-            <span className="interval">全套尊享8折</span>
+            <span className="interval">全套尊享7<Badge count={"限时14天"}><span className="discount">折</span></Badge></span>
             <br />
             全年子账号不限量
           </h3>
@@ -121,7 +121,9 @@ class StepOneComponet extends React.Component {
             {productArray.indexOf('minisite') > -1 ? (
               <React.Fragment>
                 <figure className="product-draw product-minisite">
-                  <figcaption className="tip">4月30日上线</figcaption>
+                  <figcaption className="tip">
+                    自助建站于<br />2019年4月30日上线
+                  </figcaption>
                   <figcaption>{toMoney(prdouctPrice.minisite)}</figcaption>
                 </figure>
               </React.Fragment>
@@ -153,7 +155,7 @@ class StepOneComponet extends React.Component {
             <button id="btn-pay" className="xm-button" onClick={() => this.jumpSteps(3)}>
               付款
             </button>
-            <div className="product-price">{toMoney(pageData.data.discountPrice)}/年</div>
+            <div className="product-price">{toMoney(pageData.data.discountPrice)}</div>
           </div>
         </div>
       </div>
@@ -162,16 +164,14 @@ class StepOneComponet extends React.Component {
       <div className="unit-wrapper" key="chooseProduct">
         <div className="unit-copy-wrapper">
           <h2 className="xm-typography-headline">
-            OEM工厂
+            源码工厂
             <br />
-            让你拥有自己的品牌
+            一次买断，永久使用。
           </h2>
           <h3 className="xm-typography-eyebrow">
             <span className="interval">2个产品9.5折</span>
             <span className="interval">3个产品9折</span>
-            <span className="interval">全套尊享8折</span>
-            <br />
-            全年子账号不限量
+            <span className="interval">全套尊享7<Badge count={"限时14天"}><span className="discount">折</span></Badge></span>
           </h3>
         </div>
         <div className="product-wrapper">
@@ -205,7 +205,7 @@ class StepOneComponet extends React.Component {
                 className={`product-draw product-minisite${productArray.indexOf('minisite') > -1 ? ' selected-figure' : ''}`}
                 onClick={() => this.onSelectedProduct('minisite')}
               >
-                <figcaption className="tip">4月30日上线</figcaption>
+                <figcaption className="tip">自助建站于<br />2019年4月30日上线</figcaption>
                 <figcaption>{toMoney(prdouctPrice.minisite)}</figcaption>
               </figure>
             </div>
@@ -250,7 +250,12 @@ class StepOneComponet extends React.Component {
             <div className="discount-wrapper">
               <button className={`discount-tag ${productNum != 2 ? 'disabled' : ''}`}>9.5折</button>
               <button className={`discount-tag ${productNum != 3 ? 'disabled' : ''}`}>9折</button>
-              <button className={`discount-tag ${productNum != 4 ? 'disabled' : ''}`}>8折</button>
+              {
+                productNum != 4 ?
+                <button className={`discount-tag disabled`}>7折</button>
+                :
+                <Badge count={"限时14天"}><button className={`discount-tag no-margin`}>7折</button></Badge>
+              }
             </div>
             <button className="xm-button" onClick={() => this.jumpSteps(2)}>
               继续

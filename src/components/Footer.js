@@ -27,7 +27,7 @@ export default function() {
                   <a href={`${static_domain}minisite/`}>自助建站</a>
                 </li>
                 <li className="headline">
-                  <a href={`${static_domain}oem.html`}>OEM工厂</a>
+                  <a href={`${static_domain}oem.html`}>源码工厂</a>
                 </li>
                 <li>
                   <a href={`${static_domain}oem.html`}>技术支持</a>

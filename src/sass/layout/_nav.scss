@@ -1,26 +1,17 @@
-.xm-nav,
-.xm-nav:before,
-.xm-nav:after,
-.xm-nav *,
-.xm-nav *:before,
-.xm-nav *:after {
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-  margin: 0;
-  padding: 0;
-  pointer-events: auto;
-  letter-spacing: normal;
-}
+// .xm-nav,
+// .xm-nav:before,
+// .xm-nav:after,
+// .xm-nav *,
+// .xm-nav *:before,
+// .xm-nav *:after {
+//   -webkit-box-sizing: content-box;
+//   box-sizing: content-box;
+//   margin: 0;
+//   padding: 0;
+//   pointer-events: auto;
+//   letter-spacing: normal;
+// }
 
-.xm-nav *,
-.xm-nav *:before,
-.xm-nav *:after {
-  font-size: 1em;
-  font-family: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  text-align: inherit;
-}
 
 .xm-nav {
   position: absolute;
@@ -154,6 +145,20 @@
       top: 0;
     }
   }
+  .ant-badge-count{
+    padding: 0px 8px;
+    height: 18px;
+    line-height: 18px;
+    font-family: Arial;
+    box-shadow: none;
+    right: -28px;
+    top: -5px;
+    transform: scale(0.7);
+  }
+  .ant-badge-zoom-appear, .ant-badge-zoom-enter{
+    animation:none;
+  }
+  // ant-scroll-number ant-badge-count ant-badge-multiple-words ant-badge-zoom-appear ant-badge-zoom-appear-active
 }
 .xm-nav-placeholder {
   height: 44px;

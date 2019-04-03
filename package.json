@@ -8,8 +8,8 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "antd": "^3.16.1",
     "dva": "^2.5.0-beta.2",
-    "antd": "^3.12.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
@@ -23,6 +23,7 @@
     "eslint-plugin-react": "^7.11.1",
     "husky": "^0.14.3",
     "lint-staged": "^7.2.2",
+    "moment": "^2.24.0",
     "node-sass": "^4.11.0",
     "numeral": "^2.0.6",
     "rc-animate": "^2.6.0",
