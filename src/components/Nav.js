@@ -44,7 +44,7 @@ class Nav extends React.Component {
               </div>
               <div className="xm-item">
                 <a className="xm-link" href={`${static_domain}protect.html`}>
-                  <span className="xm-link-text">保驾护航</span>
+                  <span className="xm-link-text">增值服务</span>
                 </a>
               </div>
               <div className="xm-item">

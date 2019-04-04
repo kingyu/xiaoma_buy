@@ -26,63 +26,61 @@ export default function() {
                 <li>
                   <a href={`${static_domain}minisite/`}>自助建站</a>
                 </li>
-                <li className="headline">
-                  <a href={`${static_domain}oem.html`}>源码工厂</a>
-                </li>
-                <li>
-                  <a href={`${static_domain}oem.html`}>技术支持</a>
-                </li>
-                <li>
-                  <a href={`${static_domain}oem.html`}>购买流程</a>
-                </li>
+                <li class="headline"><a href={`${static_domain}oem.html`}>源码工厂</a></li>
+                <li><a href={`${static_domain}oem.html#section_vip`}>尊享服务</a></li>
+                <li><a href={`${static_domain}oem.html#section_dev`}>支持二次开发</a></li>
+                <li><a href={`${static_domain}oem.html#section_brand`}>自主品牌支持</a></li>
+                <li><a href={`${static_domain}oem.html#section_case`}>案例支持</a></li>
+                <li><a href={`${static_domain}oem.html#section_supplies`}>物料支持</a></li>
               </ul>
               <ul className="nav-group group-2">
                 <li className="headline">
-                  <a href={`${static_domain}smart.html#smart-header`}>SMART</a>
+                  <a href={`${static_domain}smart.html`}>SMART</a>
                 </li>
                 <li>
-                  <a href={`${static_domain}smart.html#smart-header`}>MUI-视觉</a>
+                  <a href={`${static_domain}smart.html`}>MUI-视觉</a>
                 </li>
                 <li>
-                  <a href={`${static_domain}smart.html#smart-header`}>卡片风格</a>
+                  <a href={`${static_domain}smart.html`}>卡片风格</a>
                 </li>
                 <li>
-                  <a href={`${static_domain}smart.html#smart-header`}>交互理念</a>
+                  <a href={`${static_domain}smart.html`}>交互理念</a>
                 </li>
                 <li>
-                  <a href={`${static_domain}smart.html#smart-header`}>屏幕适配</a>
+                  <a href={`${static_domain}smart.html`}>屏幕适配</a>
                 </li>
                 <li>
-                  <a href={`${static_domain}smart.html#smart-header`}>产品体验</a>
+                  <a href={`${static_domain}smart.html`}>产品体验</a>
                 </li>
                 <li>
-                  <a href={`${static_domain}smart.html#smart-header`}>大数据</a>
+                  <a href={`${static_domain}smart.html`}>AI·Push</a>
                 </li>
                 <li>
-                  <a href={`${static_domain}smart.html#smart-header`}>互联网营销</a>
+                  <a href={`${static_domain}smart.html`}>大数据筛选</a>
                 </li>
                 <li>
-                  <a href={`${static_domain}smart.html#smart-header`}>统计分析</a>
+                  <a href={`${static_domain}smart.html`}>互联网营销</a>
                 </li>
                 <li>
-                  <a href={`${static_domain}smart.html#smart-header`}>智能推送</a>
+                  <a href={`${static_domain}smart.html`}>营销方式</a>
                 </li>
                 <li>
-                  <a href={`${static_domain}smart.html#smart-header`}>AI-Push 2.0</a>
+                  <a href={`${static_domain}smart.html`}>智能推送</a>
                 </li>
+           
               </ul>
               <ul className="nav-group group-3">
                 <li className="headline">
-                  <a href={`${static_domain}protect.html#protect-title`}>保驾护航</a>
+                  <a href={`${static_domain}protect.html`}>增值服务</a>
                 </li>
                 <li>
                   <a href={`${static_domain}protect.html#protect-system`}>系统稳定</a>
                 </li>
                 <li>
-                  <a href={`${static_domain}protect.html#protect-data`}>数据安全</a>
+                  <a href={`${static_domain}protect.html#protect-test`}>产品测试</a>
                 </li>
                 <li>
-                  <a href={`${static_domain}protect.html#protect-virtual`}>虚拟机隔离</a>
+                  <a href={`${static_domain}protect.html#protect-data`}>数据安全</a>
                 </li>
                 <li>
                   <a href={`${static_domain}protect.html#protect-network`}>网络传输</a>
@@ -91,7 +89,7 @@ export default function() {
                   <a href={`${static_domain}protect.html#protect-backup`}>灾备措施</a>
                 </li>
                 <li>
-                  <a href={`${static_domain}protect.html#protect-performance`}>系统性能</a>
+                  <a href={`${static_domain}protect.html#protect-suggest`}>产品反馈</a>
                 </li>
               </ul>
               <ul className="nav-group group-4">
