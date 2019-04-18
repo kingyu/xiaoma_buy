@@ -28,7 +28,6 @@ export default function() {
                 </li>
                 <li class="headline"><a href={`${static_domain}oem.html`}>源码工厂</a></li>
                 <li><a href={`${static_domain}oem.html#section_vip`}>尊享服务</a></li>
-                <li><a href={`${static_domain}oem.html#section_dev`}>支持二次开发</a></li>
                 <li><a href={`${static_domain}oem.html#section_brand`}>自主品牌支持</a></li>
                 <li><a href={`${static_domain}oem.html#section_case`}>案例支持</a></li>
                 <li><a href={`${static_domain}oem.html#section_supplies`}>物料支持</a></li>

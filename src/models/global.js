@@ -103,7 +103,7 @@ export default {
         } else if (productNum == 3) {
           discount = 0.9;
         } else if (productNum == 4) {
-          discount = 0.7;
+          discount = 0.8;
         }
         total = total * discount;
         newPayload.discount = discount;

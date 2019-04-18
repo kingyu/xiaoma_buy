@@ -85,7 +85,7 @@ class Nav extends React.Component {
         <div className={`ribbon ${!this.state.isRibbon ? 'ribbon-hide' : ''}`}>
           <div className="ribbon-wrapper">
             <div className="ribbon-content typography-body-reduced">
-              <p>小马飞腾小程序四大产品全套源码7折出售，全国同步上市，限时14天恢复原价。</p>
+              <p>在小马飞腾四大产品中，自助建站因为某某原因（不告诉你的原因）于2019年4月30日上线</p>
             </div>
           </div>
         </div>

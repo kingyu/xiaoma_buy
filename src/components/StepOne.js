@@ -3,7 +3,7 @@ import { toMoney } from 'utils/utils';
 import { static_domain } from 'utils/config';
 import Animate from 'rc-animate';
 import QueueAnim from 'rc-queue-anim';
-import { Alert,Badge } from 'antd';
+import { Alert } from 'antd';
 import './styles.scss';
 
 class StepOneComponet extends React.Component {
@@ -90,7 +90,7 @@ class StepOneComponet extends React.Component {
           <h3 className="xm-typography-eyebrow">
             <span className="interval">2个产品9.5折</span>
             <span className="interval">3个产品9折</span>
-            <span className="interval">全套尊享7<Badge count={"限时14天"}><span className="discount">折</span></Badge></span>
+            <span className="interval">全套尊享8折</span>
           </h3>
         </div>
         <div className="product-wrapper">
@@ -169,7 +169,7 @@ class StepOneComponet extends React.Component {
           <h3 className="xm-typography-eyebrow">
             <span className="interval">2个产品9.5折</span>
             <span className="interval">3个产品9折</span>
-            <span className="interval">全套尊享7<Badge count={"限时14天"}><span className="discount">折</span></Badge></span>
+            <span className="interval">全套尊享8折</span>
           </h3>
         </div>
         <div className="product-wrapper">
@@ -248,12 +248,7 @@ class StepOneComponet extends React.Component {
             <div className="discount-wrapper">
               <button className={`discount-tag ${productNum != 2 ? 'disabled' : ''}`}>9.5折</button>
               <button className={`discount-tag ${productNum != 3 ? 'disabled' : ''}`}>9折</button>
-              {
-                productNum != 4 ?
-                <button className={`discount-tag disabled`}>7折</button>
-                :
-                <Badge count={"限时14天"}><button className={`discount-tag no-margin`}>7折</button></Badge>
-              }
+              <button className={`discount-tag ${productNum != 4 ? 'disabled' : ''}`}>8折</button>
             </div>
             <button className="xm-button" onClick={() => this.jumpSteps(2)}>
               继续
