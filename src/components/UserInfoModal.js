@@ -95,7 +95,7 @@ class UserInfoModal extends React.Component {
               ],
             })(<Input placeholder="电子邮箱" />)}
           </Form.Item>
-          <Form.Item style={{ textAlign: 'center', marginTop: 40 }}>
+          <Form.Item style={{ textAlign: 'center', marginTop: 20 }}>
             <Button type="primary" htmlType="submit" className="xm-button">
               确认信息
             </Button>

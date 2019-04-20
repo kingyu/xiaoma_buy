@@ -52,6 +52,7 @@ class ScanCodeModal extends React.Component {
       <Modal
         className="scan-code-modal"
         title="选择付款方式"
+        width={530}
         visible={visible}
         centered
         footer={null}
@@ -64,9 +65,9 @@ class ScanCodeModal extends React.Component {
           <Form.Item {...formItemLayout} label="支付金额:">
             <span className="ant-form-text">
               {data.selectedTerm === 1 ? (
-                <span>{toMoney(data.discountPrice, '')}元</span>
+                <span><span style={{color:'#FF6A44',fontSize: '18px'}}>{toMoney(data.discountPrice, '')}</span>元</span>
               ) : (
-                <span>{toMoney(data.downPayment, '')}元</span>
+                <span><span style={{color:'#FF6A44',fontSize: '18px'}}>{toMoney(data.downPayment, '')}</span>元</span>
               )}
             </span>
           </Form.Item>
@@ -88,18 +89,23 @@ class ScanCodeModal extends React.Component {
           ) : (
             <React.Fragment>
               <div className="remittance">
-                <p style={{ fontSize: 12 }}>
+                <p style={{ fontSize: 14,marginBottom:20,fontWeight: 500,letterSpacing:1 }}>
                   您需汇款
                   {data.selectedTerm === 1 ? (
-                    <span>{toMoney(data.discountPrice, '')}元</span>
+                    <span><span style={{color:'#FF6A44',fontSize: '18px'}}>{toMoney(data.discountPrice, '')}</span>元</span>
                   ) : (
-                    <span>{toMoney(data.downPayment, '')}元</span>
+                    <span><span style={{color:'#FF6A44',fontSize: '18px'}}>{toMoney(data.downPayment, '')}</span>元</span>
                   )}
                   至以下账户，汇款成功后上传凭证信息，审核通过后到账
                 </p>
-                <p>收款方户名：南昌小马飞腾信息技术有限公司</p>
-                <p>收款方开户行：招商银行南昌分行青山湖支行</p>
-                <p>收款方账户： 7919 0710 1710 202</p>
+                <p>1. 招商银行 (企业对公账号)</p>
+                <p>账号：7919 0710 1710 202</p>
+                <p>支行: 招商银行南昌分行青山湖支行</p>
+                <p style={{marginBottom:20}}>户名：南昌小马飞腾信息技术有限公司 </p>
+                <p>2. 建设银行汇款(法人账号)</p>
+                <p>账号：6217 0020 2002 8552 933</p>
+                <p>支行：南航分理处</p>
+                <p style={{marginBottom:20}}>户名：张奇奇</p>
               </div>
               <Form.Item style={{ textAlign: 'right', marginTop: 40, marginRight: 26 }}>
                 <Button type="primary" htmlType="submit" className="xm-button">
