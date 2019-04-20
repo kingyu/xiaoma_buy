@@ -4,6 +4,7 @@ export default {
   base:"/buy/",
   publicPath:"/buy/",
   treeShaking: true,
+  hash:true,
   plugins: [
     [
       'umi-plugin-react',
@@ -25,8 +26,9 @@ export default {
       },
     ],
   ],
-  exportStatic:{
-    htmlSuffix:true
+  exportStatic: {
+    htmlSuffix: true,
+    dynamicRoot: false,
   },
   disableCSSModules: true,
   sass: {},
