@@ -78,9 +78,12 @@
 .ant-modal {
   .ant-form {
     .ant-form-item {
-      margin-bottom: 14px;
+      margin-bottom: 0px;
       &.ant-form-item-with-help {
         margin-bottom: 0px;
+      }
+      .ant-form-explain{
+        margin-top: 0px
       }
     }
   }
@@ -94,6 +97,7 @@
   }
 }
 .user-form-modal {
+  min-height: 461px;
   .modal-content {
     width: 530px;
     .modal-box {
@@ -122,13 +126,16 @@
     margin-bottom: 20px;
   }
   .ant-modal-body {
-    padding: 30px 50px;
+    padding: 30px 60px 0px 60px;
   }
   .ant-input {
     font-size: 18px;
     height: 48px;
     padding: 6px 11px 6px 25px;
     letter-spacing: -1px;
+  }
+  .ant-form-item-control{
+    min-height: 69px;
   }
 }
 .scan-code-modal {
@@ -168,29 +175,33 @@
   }
   .pay-tip {
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     color: #666666;
-    font-weight: 600;
-    padding: 10px 0px;
+    font-weight: 500;
+    padding: 15px 0px;
     border-top: solid 1px #e5e5e5;
-    margin: 0 20px;
+    letter-spacing: 1.5px;
   }
   .pay-code {
     text-align: center;
+    height: 220px;
+    overflow: hidden;
     img.code {
       width: 177px;
       height: 177px;
     }
   }
   .remittance {
-    padding: 15px 40px 0px 40px;
+    padding: 15px 20px 0px 20px;
     border: solid 1px #e5e5e5;
     margin: 20px 26px;
     font-weight: 600;
     color: #666666;
     border-radius: 6px;
     >p{
-      margin-bottom: 10px;
+      margin-bottom: 8px;
+      font-weight: 400;
+      letterSpacing:1
     }
   }
 }
